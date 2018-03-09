@@ -1,0 +1,9 @@
+/* 清除默认值 */
+*{margin:0;padding:0;}
+li{list-style:none;}
+a{text-decoration:none;}
+
+.clear{zoom:1;}
+.clear:before{content:""; display:table;}/* 解决margin-top无限向父元素传递的问题 */
+.clear:after{content:""; display:block;clear:both;}/* 解决浮动元素的父元素高度塌陷问题 */
+
