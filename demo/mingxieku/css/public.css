@@ -1,3 +1,13 @@
 *{margin:0;padding:0;}
 li{list-style: none;}
 a{text-decoration: none;}
+
+.clear{zoom:1;}
+.clear:before{content:"";display:table;}/* 解决margin-top无限向父元素传递的问题 */
+.clear:after{content:""; display:block;clear:both;}/* 解决浮动元素的父元素高度塌陷问题 */
+
+
+/* 图片居中 */
+.pcenter{text-align:center;}
+.pcenter:after{display:inline-block;vertical-align:middle;height:100%;width:0;}
+.pcenter img{vertical-align:middle;}

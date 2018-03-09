@@ -88,6 +88,18 @@
 
 #jinqiu{height:288px;background:#f6f6f6;}
 #jinqiu ul{height:288px;}
-#jinqiu ul li{float:left;border:1px solid #c4c4c4;height:286px;width:203px;margin-right:10px; position: relative;}
-#jinqiu ul li a{margin-top:5px;border-bottom:1px dashed #d0d0d0;display:block;height:216px;width:194px;position:absolute;left:0;right:0;top:5px;margin:auto;}
+#jinqiu ul li{background:white;padding:5px  5px 0 5px; float:left;border:1px solid #c4c4c4;height:282px;margin-right:10px;}
+#jinqiu ul li a{border-bottom:1px dashed #d0d0d0;display:block;height:216px;}
 #jinqiu ul li a img{display:block;}
+#jinqiu ul li p{font:18px "";color:#3b3b3b;}
+#jinqiu ul li span{font:12px "";color:#7d7d7d;}
+#jinqiu ul li.last{margin-right:0;}
+
+
+#fone{height:452px;background:#f6f6f6;}
+#fone .fone-l,#fone .fone-c,#fone .fone-r{margin-top:26px;float:left;border:0px solid black}
+#fone .fone-l{background:white;}
+#fone .fone-l img{display: block;}
+#fone .fone-l ul {width:190px;border: 0px solid black;overflow: hidden;}
+#fone .fone-l ul li{float:left;width:93px;height:40px;border:1px  dashed #dedede;}
+#fone .fone-m{border:0px solid black;}
