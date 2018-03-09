@@ -1,0 +1,181 @@
+*{margin:0;padding:0;}
+li{list-style: none;}
+a{text-decoration: none;}
+
+#qianfeng{
+	width: 1001px;
+	margin:0 auto;
+}
+
+/*nav*/
+#nav{
+	height:62px;
+	
+	background: #232323;
+}
+#nav .nav-l{
+	float: left;
+	margin:12px 0 0 10px;
+}
+
+#nav ul{
+	height:62px;
+	float: right;
+}
+
+#nav ul li{
+	float:left;
+	width: 84px;
+	height:18px;
+	border-left:1px solid #000;
+	border-right:1px solid #444444;
+	color:white;
+	text-align:center;
+	margin-top:20px;
+	font: 12px/18px "";
+
+}
+#nav ul li a{
+	color:white;
+}
+#nav ul li.first{
+	width: 58px;
+	height:62px;
+	font:12px/62px "";
+	background: #f15a23;
+	margin-top:0;
+}
+/*banner*/
+#banner{
+	height: 420px;
+}
+
+/*main*/
+#main{
+	height:352px;
+	background: #f5f5f5;
+}
+#main ul{
+	height:290px;
+}
+#main ul li{
+	float:left;
+	height: 290px;
+	width: 248px;
+	border: 0px solid black;
+	border-right:1px solid #e1e2f6;
+	border-left:1px solid #feffff;
+	margin-top:36px;
+}
+#main ul li.first{
+	width: 260px;
+}
+#main ul li.last{
+	width: 235px;
+}
+#main ul li img{
+	margin:20px 0 0 61px;
+}
+#main ul li span.title{
+	width: 248px;
+	text-align:center;
+	font:22px "";
+	color: #2d2c3c;
+	display: block;
+	margin-top;
+}
+#main ul li span.intr{
+	font:14px "";
+	color: #4c6d76;
+	text-align:center;
+	display:block;
+	margin-top:18px;
+}
+#main ul li p{
+	width: 110px;
+	font:12px/18px "";
+	color:#a1c2e1;
+	
+	margin: 0 auto;
+	margin-top:18px;
+}
+#main ul li p.content-p{
+	width: 105px;
+}
+#main ul li p.content-g{
+	width: 185px;
+	text-align:center;
+}
+
+
+#news{
+	height:311px;
+	background: white;
+	
+}
+#news .news-l{
+	
+	width: 299px;
+	height: 227px;
+	padding: 42px 0;
+	float:left;
+}
+#news .news-c{
+	width: 339px;	
+	height: 264px;
+
+	float:left;
+	padding:47px 0 0 15px;
+}
+
+#news  h3{
+	font:20px "";
+	color:#262429;
+}
+#news .news-c span{
+	font:16px/47px "";
+	color: #4f4c47;
+}
+#news .news-c  p{
+	font:12px/18px "";
+	color:#9a9a9a;
+	width: 320px;
+	text-indent:2em;
+	border-bottom:dashed 1px #9a9a9a;
+	padding-bottom:13px;
+}
+#news .news-c ul li{
+	width: 296px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	background:url(../image/jiantou.jpg) no-repeat left;
+	text-indent:12px;
+}
+#news .news-c ul li a{
+	font:12px/25px "";
+	color: #42424a;
+}
+#news .news-r{
+
+	float:left;
+	width:327px;
+	height: 264px;
+	padding:47px 0 0 13px;
+}
+#news .news-r img{
+	margin-right:15px;
+	margin-top:15px;
+	display: inline;
+}
+#news .news-r span{
+	font:18px/52px "";
+}
+#news .news-r li{
+	font:12px/24px "";
+	color:#67645f;
+}
+#map{
+	height: 214px;
+	background: #222;
+}
