@@ -96,10 +96,33 @@
 #jinqiu ul li.last{margin-right:0;}
 
 
-#fone{height:452px;background:#f6f6f6;}
+#fone{height:452px;background:#f6f6f6;padding-bottom:30px;}
+#fone li{background:white;}
 #fone .fone-l,#fone .fone-c,#fone .fone-r{margin-top:26px;float:left;border:0px solid black}
 #fone .fone-l{background:white;}
 #fone .fone-l img{display: block;}
 #fone .fone-l ul {width:190px;border: 0px solid black;overflow: hidden;}
 #fone .fone-l ul li{float:left;width:93px;height:40px;border:1px  dashed #dedede;}
+#fone .fone-l ul.last li{border:0;height:26px;}
+#fone .fone-l ul.last{padding-bottom:26px;}
+#fone .fone-l ul.last li a{font:14px/26px "";color:#463b43;}
 #fone .fone-m{border:0px solid black;}
+#fone .fone-r{border:0px solid black;width:597px;}
+#fone .fone-r ul li{float:left;width:198px;border-left:1px solid #d2d2d2;border-right:1px solid #d2d2d2;}
+#fone .fone-r ul.first li{height:244px;border-bottom:1px solid #d2d2d2;margin-left:-1px;}
+#fone .fone-r ul.first {border:0px solid black;}
+#fone .fone-r ul.last li{height:181px;margin-left:-1px;}
+#fone .fone-r ul.last {border:0px solid black;}
+
+#kefu{height:225px;background: #f6f6f6;border-top:2px solid #cd3b3b;}
+#kefu .kefu-m{height:225px;margin-top:13px;}
+#kefu .kefu-l{height:195px;width:230px;border-right:1px solid #dedede;margin-left:15px;float:left;}
+#kefu .kefu-l img{display: block;margin-bottom:5px;}
+#kefu .kefu-l p{font:12px/17px "";color:#999999;}
+#kefu .kefu-l .qr{margin-top:13px;}
+#kefu .kefu-l .qr img{float:left;margin-right:16px;}
+#kefu .kefu-r{float: left;}
+#kefu .kefu-r ul{margin-left:30px;}
+#kefu .kefu-r ul li{float: left;width:228px;}
+#kefu .kefu-r ul li a{font:12px/19px "";color:#969696;}
+#kefu .kefu-r ul li p:nth-child(2) a{font-size:14px;color:#646464;font-weight: 700;}
