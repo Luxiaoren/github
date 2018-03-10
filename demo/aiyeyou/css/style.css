@@ -1,0 +1,16 @@
+.margin{width:980px;margin:0 auto;}
+
+#top{height:29px;background:url(../image/top-1.jpg) repeat-x;font:12px/29px ""}
+#header{height:29px;}
+
+
+
+#header .header-l{float:left;border:0px solid black;}
+#header .header-l a{;color:#f26522;}
+#header .header-l a:first-child{border:0px solid black;vertical-align:middle;display:inline-block;height:16px;width:93px;background:url(../image/xiaologo.jpg);}
+#header .header-l span{margin:0 5px;}
+#header .header-r{float:right;text-align: right;height:29px;}
+#header .header-r i{vertical-align:middle;display:inline-block;height:13px;width:13px;background: url(../image/xiajian.jpg);margin:0 11px 0 6px;}
+#header .header-r a{color:#333333;}
+#header .header-r a:first-child{ color: #ed1c24;}
+#header .header-r span{margin:0 7px 0 8px;}
