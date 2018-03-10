@@ -14,3 +14,40 @@
 #header .header-r a{color:#333333;}
 #header .header-r a:first-child{ color: #ed1c24;}
 #header .header-r span{margin:0 7px 0 8px;}
+
+
+#main{height:891px;background:url(../image/bg.jpg) repeat;}
+
+#nav{height:70px;}
+#nav>a{display:inline-block;height:58px;width:212px;background:url(../image/logo.png);float:left;margin-top:6px;}
+#nav>ul{float:right;margin-top:19px;margin-right:7px;}
+#nav>ul li{float:left;margin-left:18px;}
+#nav>ul li>a{font:14px/40px "";text-align:center;color:#141414;display:block;height:40px;width:106px;background:url("../image/nav-1.png");}
+#nav>ul li:hover >a{background: url("../image/nav-2.png");font:14px/40px "";color:white;}
+
+
+#login{height:272px;background: url(../image/loginbg.jpg);}
+#login .login-l{height:253px;width:274px;background: url(../image/login-lbg.jpg);margin:9px 0 0 8px;float:left;}
+#login .login-l ul li:first-child,#login .login-l ul li:first-child+li{height:46px;width:257px;background: url(../image/inputbg.png);}
+#login .login-l ul li span{display:inline-block;font:12px/46px "";color:#666666;text-indent:17px;}
+#login .login-l ul li input{display: inline-block;height:33px;border:0;padding:0;}
+#login .login-l ul li:first-child{margin-top:19px;margin-left:7px;}
+#login .login-l ul li:first-child +li{margin-top:18px;margin-left:7px;}
+#login .login-l ul li input[type=submit]{vertical-align:bottom;text-align:right;text-indent:20px;font:18px "";color:white;width:112px;height:35px;background:url(../image/submitbg.png);letter-spacing:18px;text-align:center;}
+#login .login-l ul li:nth-child(3){margin:18px 0 0 11px;}
+#login .login-l ul li:nth-child(3) a{font:12px "";color:#8f5006;display:inline-block;margin-left:74px;}
+#login .login-l ul li:last-child a{ margin:20px 0 0 9px;display:block;height:45px;width:256px;background:url(../image/zhucebg.png);}
+#login .login-r{float:right;width:683px;height:253px;background:url(../image/login-rbg.jpg);margin:9px 9px 0 0;}
+
+
+
+#content{height:458px;}
+.content-l{float:left;}
+.content-l .content-l-t{height:218px;width:283px;}
+.content-l .content-l-t h3{text-indent:17px;font:700 12px/31px "";color:#444444;height:31px;width:283px;background:url(../image/titlebg.png);}
+.content-l .content-l-t ul{background:#fff;overflow: hidden;}
+.content-l .content-l-t ul li a{font:12px/25px "";color:#666666;}
+.content-l .content-l-t ul li{width:280px;border:0px solid black;background:url(../image/jiantou.png) no-repeat 11px center;text-indent:28px;}
+.content-l .content-l-t ul li:first-child{margin-top:5px;}
+
+.content-r{float:right;}
