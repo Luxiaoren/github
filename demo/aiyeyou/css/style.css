@@ -60,6 +60,8 @@
 .content-r{float:right;width:690px;height:435px;border:1px solid #dadada;margin-top:12px;}
 .content-r .content-r-t{height:104px;width: 687px;background:url(../image/mmm.png);margin-left:5px;}
 .content-r .content-r-t ul {height:104px;}
-.content-r .content-r-t ul span{dispay:block;}
-.content-r .content-r-t ul a{display:block;}
-.content-r .content-r-t ul li{float:left;}
+
+.content-r .content-r-t ul a{display:inline-block;font:12px "";color:#fcb104;margin-right:7px;}
+.content-r .content-r-t ul li{float:left;height:90px;width:200px;margin:18px 8px 0;padding-left:11px}
+.content-r .content-r-t ul li span{font:12px "";color:#666;display: block;}
+.content-r .content-r-t ul li a:last-child{margin-top:5px;display:block;height:17px;width:73px;background:url(../image/jinruyouxi.png);}
