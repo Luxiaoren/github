@@ -65,3 +65,14 @@
 .content-r .content-r-t ul li{float:left;height:90px;width:200px;margin:18px 8px 0;padding-left:11px}
 .content-r .content-r-t ul li span{font:12px "";color:#666;display: block;}
 .content-r .content-r-t ul li a:last-child{margin-top:5px;display:block;height:17px;width:73px;background:url(../image/jinruyouxi.png);}
+.content-r .content-r-b {height:323px;width:426px;margin:10px 10px 0 10px;}
+.content-r .content-r-b .left{height:31px;background:url(../image/zuixinyouxi.png) repeat-x;}
+.content-r .content-r-b .left .top{height:31px;}
+.content-r .content-r-b .left .top i{margin-left:8px;height:9px;width:9px;display:inline-block;background:url(../image/youjian.png);vertical-align: middle;}
+.content-r .content-r-b .left .top h3{margin-left:10px;display:inline-block;font:700 12px/31px "";color:#444444;}
+.content-r .content-r-b .left .top a{margin-left:304px;display:inline-block;font:12px/31px "";color:#666666;}
+.content-r .content-r-b .left ul{height:289px;border:1px solid #dadada;background:white;}
+.content-r .content-r-b .left ul li{font:12px "";color:#666666;height:134px;width:204px;background:#fff4ca;border:1px solid #fce287;float:left;margin:6px 3px 0 3px;}
+.content-r .content-r-b .left ul li p{line-height:29px;text-indent:2px;}
+.content-r .content-r-b .left ul li a{color:#666;margin-right:4px;text-indent:2px;display:inline-block;}
+.content-r .content-r-b .left ul li a:last-child{margin-left:10px;margin-right:0;vertical-align:middle;height:17px;width:73px;display: inline-block;background:url(../image/jinruyouxi.png);}
