@@ -1,0 +1,8 @@
+
+.margin{width:1170px;margin:0 auto;}
+#t{height:98px;border-top:1px solid #f1f2f3;border-bottom:1px solid #f1f2f3;}
+#header{height:98px;}
+#header a:first-child{float:left;}
+#header ul{float:left;}
+#header ul li{float:left;}
+
