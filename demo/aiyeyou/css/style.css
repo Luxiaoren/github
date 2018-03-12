@@ -47,7 +47,7 @@
 .content-l .content-l-t h3{text-indent:29px;font:700 12px/31px "";color:#444444;height:31px;width:283px;background:url(../image/titlebg.png);}
 .content-l .content-l-t ul{background:#fff;overflow: hidden;border:1px solid #dadada;height:186px;}
 .content-l .content-l-t ul li a{font:12px/25px "";color:#666666;}
-.content-l .content-l-t ul li{width:280px;border:0px solid black;background:url(../image/jiantou.png) no-repeat 11px center;text-indent:28px;}
+.content-l .content-l-t ul li{width:270px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background:url(../image/jiantou.png) no-repeat 11px center;text-indent:28px;}
 .content-l .content-l-t ul li:first-child{margin-top:5px;}
 .content-l .content-l-b{background:white;margin-top:16px;}
 .content-l .content-l-b h3{text-indent:29px;height:31px;font:700 12px/31px "";color:#444444;background:url(../image/kefubg.png);}
@@ -80,8 +80,8 @@
 .content-r .content-r-b .right .top{height:31px;font: 700 12px/31px "";color:#444;background:url(../image/kaifu.png);}
 .content-r .content-r-b .right ul li{overflow:hidden;background:url(../image/li-1.png) no-repeat 7px center;}
 .content-r .content-r-b .right ul{border:1px solid #dadada;}
-.content-r .content-r-b .right ul li a{text-indent:36px;width:160px;font:12px/32px "";color:#666;float:left;border:0px solid black;}
-.content-r .content-r-b .right ul li span{float:right;font:12px/32px "";color:#666;border:0x solid black;}
+.content-r .content-r-b .right ul li a{text-indent:36px;width:160px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font:12px/32px "";color:#666;float:left;border:0px solid black;}
+.content-r .content-r-b .right ul li span{float:right;font:12px/32px "";color:#666;}
 
 
 #friendlink{height:89px;background:white;}

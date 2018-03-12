@@ -14,5 +14,5 @@ a{text-decoration:none;}
 .tocenter:after{content:"";display:inline-block;vertical-align:middle;height:100%;width:0;}
 .tocenter img{vertical-align:middle;}
 
-.overhide{}
-.overhide li {overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+
+.overhide{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
