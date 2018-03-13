@@ -1,0 +1,51 @@
+.margin{width:950px;margin:0 auto;}
+
+#t{height:35px;background:url(../image/1.png);}
+#top{height:35px;}
+#top img{float:right;margin:10px 10px 0 0;}
+
+#header{height:100px;}
+#header > a{display:block;float:left;height:42px;width:194px;background:url(../image/3.png) no-repeat;margin:42px 0 0 10px;}
+#header ul{float:left;margin:33px 0 0 80px;}
+#header ul li{float:left;padding:0 11px;background:url(../image/z-4.png) no-repeat right;height:44px;}
+#header ul li a{font:12px/44px "";color:#666;display: block;width:80px;text-align:center;}
+#header ul li a:hover{border-bottom:3px solid black;color:#000;}
+#banner{height:400px;background:url(../image/z-5.png) no-repeat center;}
+
+#main{overflow:hidden;padding:46px 0 69px;}
+#main ul{width:110%;}
+#main ul li{float:left;margin:0 48px 0 36px;}
+
+.title{text-align:center;}
+.title > h3{border-bottom:1px solid #dadbdc;font:20px/32px "";color:#f00;background:#2d3237;}
+.title > p{background:url(../image/z-7.png) repeat-x;}
+.title > p >span{font:14px "";color:#30353a;background:#fff;padding:0 10px;}
+
+#ex{overflow:hidden;padding:39px 0 57px;}
+#ex ul{width:110%;}
+#ex ul li{float:left;margin-right:20px;width:172px;}
+#ex ul li img{display:block;}
+#ex ul li > p{height:70px;background:#2d3237;}
+#ex ul li > p:hover{background:#f00;cursor: pointer;}
+#ex ul li > p:hover b span:first-child{color:#000;}
+#ex ul li > p > b{display:inline-block;vertical-align:middle;text-align:left;margin-left:27px;}
+#ex ul li > p > b span{display:block;color:#fff;font:12px "";}
+#ex ul li > p > b span:first-child{font:14px "";color:#f30203;}
+
+#about-title h3 span{color:#fff;}
+
+#about{text-align:center;padding:20px 0 93px;}
+#about h4{font:18px/33px "";color:#666;}
+#about h4 span{font-weight:700;}
+#about p{font:14px/27px "";color:#666;}
+
+#service-title h3 span{color:#fff;}
+
+#service{padding-bottom:132px;}
+#service img{display:block;margin:0 auto;margin-top:40px;}
+
+#footer{height:117px;background:#eaeaea;font:10px/20px "";color:#333;text-align:center;}
+#footer p:first-child{margin-top:26px;}
+#footer p a{color:#333;}
+
+
