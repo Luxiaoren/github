@@ -1,0 +1,26 @@
+/* 清除默认值 */
+/* 清除默认值 */
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select,td
+{margin:0;padding:0;}
+body{font:12px  "宋体"; word-wrap:break-word;}
+a,u,s,del{color:#666;text-decoration:none}
+fieldset ,a img,.bor0 {border:0;}
+i,em,b{font-style:normal;font-weight:100;}
+li{list-style:none;}
+img{vertical-align:middle;}
+table{border-collapse:collapse;}
+.ind2{text-indent:2em;}
+
+
+.clear{zoom:1;}
+.clear:before{content:"";display:table;}/* 解决margin-top无限向父元素传递的问题 */
+.clear:after{content:""; display:block;clear:both;}/* 解决浮动元素的父元素高度塌陷问题 */
+
+
+/* 图片居中 */
+.tocenter{text-align:center;}
+.tocenter:after{content:"";display:inline-block;vertical-align:middle;height:100%;width:0;}
+.tocenter img{vertical-align:middle;}
+
+
+.overhide{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}

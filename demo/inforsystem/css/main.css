@@ -1,0 +1,9 @@
+body,html{height:100%;}
+
+header{height:50px;background:#438eb9;}
+
+header a{font:18px/50px "";color:#fff;text-indent:38px;display:block;float:left;height:50px;width:300px;background:url(../image/i-1.png) no-repeat left center;}
+
+aside{width:191px;height:100%;background:blue;float:left;}
+
+#main{width:100%;background:red;height:100%;margin-left:200px;}

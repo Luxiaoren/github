@@ -1,0 +1,13 @@
+body{background:#6fb3e0;}
+#logo{height:295px;width:363px;position:fixed;left:0;right:0;top:121px;margin:auto;background:#f7f7f7;}
+#logo h2{font:22px/37px "";color:#478fca;width:291px;margin:0 auto;border-bottom:1px solid #d5e3ef;margin-top:29px;}
+#logo label{display:block;height:34px;width:291px;margin:0 auto;}
+#logo label.first{margin:22px auto 11px;}
+#logo label input{border:1px solid #d5d5d5;display: block;height:32px;width:289px;text-indent:7px;color:#999999;}
+#logo label input:focus{outline-color:#f59942;}
+#logo label.last{border:3px solid #428bca;height:28px;width:285px;margin-top:25px;}
+#logo label.last input{background:#428bca;color:#fff;height:28px;width:285px;outline:none;border:0;}
+#logo label.last:hover input{background:#1b6aaa;cursor:pointer;}
+#logo  p{height:42px;background:#5090c1;border-top:2px solid #597597;text-align:center;margin-top:24px;}
+#logo  p a{font:14px/42px "";color:#fff;}
+#logo  p a:hover{text-decoration: underline;}
