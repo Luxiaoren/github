@@ -1,0 +1,163 @@
+.margin{width:1190px;margin:0 auto;}
+
+header{height:35px;background:#f5f5f5;border-bottom:1px solid #eee;}
+header #header-main{height:35px;}
+header #header-main .left{
+    float:left;
+}
+header #header-main .left a{
+
+    font:12px/35px "";
+    color:#6c6c6c;
+}
+header #header-main .left a:first-child{
+    color:#f22e00;
+    margin-right:3px;
+}
+header #header-main .left a:last-child{
+    margin-left:15px;
+}
+header #header-main .right{
+    float:right;
+}
+header #header-main .right a{font:12px/35px "";color:#6c6c6c;}
+header #header-main .right span{font:12px/35px "";color:#6c6c6c;margin:0 8px 0 16px;}
+header #header-main .right a i{display:inline-block;vertical-align: middle;}
+header #header-main .right a:nth-child(1) i{margin:0 16px 0 12px;width:4px;height:2px;background:url(../image/t-1.png);}
+header #header-main .right a:nth-child(2) i:nth-child(1){margin-right:6px;width:12px;height:11px;background:url(../image/t-2.png);}
+header #header-main .right a:nth-child(2) i:nth-child(3){margin:0 16px 0 12px;width:4px;height:2px;background:url(../image/t-1.png);}
+header #header-main .right a:nth-child(3) i:nth-child(1){margin-right:5px;width:12px;height:10px;background:url(../image/t-3.png);}
+header #header-main .right a:nth-child(3) i:nth-child(2){margin:0 16px 0 12px;width:4px;height:2px;background:url(../image/t-1.png);}
+header #header-main .right a:nth-child(6) i{margin:0 16px 0 12px;width:4px;height:2px;background:url(../image/t-1.png);}
+header #header-main .right a:nth-child(7) i{margin:0 16px 0 12px;width:4px;height:2px;background:url(../image/t-1.png);}
+header #header-main .right a:nth-child(8) i:nth-child(1){margin-right:7px;width:8px;height:6px;background:url(../image/t-4.png);}
+header #header-main .right a:nth-child(8) i:nth-child(2){margin:0 10px 0 12px;width:4px;height:2px;background:url(../image/t-1.png);}
+
+#search{height:174px;}
+#search .search-main .top{
+    height:140px;
+}
+#search .search-main .top img{display:block;float:left;margin:28px 94px 0 15px;}
+#search .search-main .top .top-center{/*中间包含搜索框部分*/
+    margin-top:40px;
+    width:658px;
+    float:left;
+
+}
+#search .search-main .top .top-center div:nth-child(1){/*宝贝天猫店铺*/
+
+}
+#search .search-main .top .top-center div:nth-child(1) a{
+    display:inline-block;
+    font:14px/25px "";
+    color:#ff4400;
+    padding:0 13px;
+}
+#search .search-main .top .top-center div:nth-child(1) a:hover{
+    background-color:#ff4400;
+    color:#fff;
+
+}
+#search .search-main .top .top-center div:nth-child(2){/*搜索框*/
+    height:40px;
+}
+#search .search-main .top .top-center div:nth-child(2) input[type="text"]{
+    outline:none;
+    border:3px solid #ff5500;
+    border-right:0;
+    float:left;
+    height:34px;
+    width:500px;
+    background:url(../image/t-6.png) no-repeat 13px center,url(../image/t-7.png) no-repeat 473px center;
+    text-indent:31px;
+    font-size:12px;
+    color:#9c9c9c;
+}
+#search .search-main .top .top-center div:nth-child(2) input[type="submit"]{
+    outline:none;
+    width:122px;
+    height:40px;
+    float:left;
+    background:#ff4200;
+    font:18px/40px "";
+    color:#fff;
+    border:0;
+    cursor: pointer;
+}
+#search .search-main .top .top-center div:nth-child(2) span{
+    font:12px/18px "";
+    color:#666;
+    display:block;
+    float:right;
+    width:25px;
+    cursor:pointer;
+}
+#search .search-main .top .top-center ul{overflow: hidden;}
+#search .search-main .top .top-center ul li{float:left;margin-right:10px;}
+#search .search-main .top .top-center ul li:last-child{float:right;margin-right:35px;}
+#search .search-main .top .top-center ul li a{font:12px/30px "";color:#666;}
+#search .search-main .top .top-center ul li.hot a{color:#ff4400;}
+#search .search-main .bottom{height:34px;position:relative;}
+#search .search-main .bottom >a{ display: block;float:left;}
+#search .search-main .bottom  > a:nth-child(1){/*主题市场*/
+    display:block;
+    width:190px;
+    height:34px;
+    font:14px/34px "";
+    color:#fff;
+    text-indent:10px;
+    background:#ff6537;
+
+}
+#search .search-main .bottom > a:nth-child(1) img{margin:10px 9px 0 0;float:right;}/*主题市场旁边的*/
+
+#search .search-main .bottom >  i:nth-child(2){/*!*天猫logo*!*/
+    float:left;
+    margin:3px 0 0 14px;
+    display:block;
+    height:25px;
+    width:40px;
+    background:url(../image/t-9.png);
+}
+#search .search-main .bottom > a:nth-child(3),#search .search-main .bottom > a:nth-child(4){/*聚划算和天猫超市*/
+    font:16px/34px "";
+    color:#ff4400;
+    margin-left:26px;
+}
+#search .search-main .bottom > span{/*竖线*/
+    margin:0 9px 0 17px;
+    font:16px/34px "";
+    color:#e3dde3;
+    float:left;
+}
+#search .search-main .bottom ul:nth-of-type(1){/*淘抢购*/
+    overflow: hidden;
+    float:left;
+}
+#search .search-main .bottom ul:nth-of-type(1) li{
+    float:left;
+    margin-right:19px;
+}
+#search .search-main .bottom ul:nth-of-type(1) li:last-child{/*最后一个的右边距*/
+
+    margin-right:0;
+}
+#search .search-main .bottom ul:nth-of-type(1) li a{/*字体样式*/
+    font:14px/34px "";
+    color:#3c3c3c;
+}
+#search .search-main .bottom ul:nth-of-type(2) li{float:left;margin-right:21px;}/*飞猪旅行*/
+#search .search-main .bottom ul:nth-of-type(2) li a{
+    font:14px/34px "";
+    color:#3c3c3c;
+}
+#search .search-main .bottom ul:nth-of-type(2) li:first-child a{color:#ffba00;}
+
+/*主要展示区*/
+#mm{height:607px;background:#f1f1f1;}
+#main .main-left .market{
+    height:521px;
+    width:190px;
+
+}
+#main .main-left .market ul{height:481px;background:#ff6537;}
