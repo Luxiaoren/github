@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="public.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+
+    <title>响应式布局</title>
+    <style>
+        body,html{height:100%;}
+        .div{display:flex;height:100%;}
+        .div1{height:200px;background:red;flex:50%;}
+        .div2{height:100px;background:blue;flex:50%;}
+        @media screen and (max-width:800px) {
+            .div{display:flex;flex-direction:column;}
+            .div1{flex:1;}
+            .div2{}
+        }
+    </style>
+</head>
+<body>
+        <div class="div">
+            <div class="div1"></div>
+            <div class="div2"></div>
+        </div>
+</body>
+</html>

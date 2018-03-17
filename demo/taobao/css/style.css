@@ -158,6 +158,10 @@ header #header-main .right a:nth-child(8) i:nth-child(2){margin:0 10px 0 12px;wi
 #main .main-left .market{
     height:521px;
     width:190px;
+    float:left;
 
 }
-#main .main-left .market ul{height:481px;background:#ff6537;}
+#main .main-left .market ul{height:481px;background:#ff6537;}/*主题市场下面的列表*/
+#main .main-left .top .banner{float:left;}
+#main .main-left .top .banner .photo img{display:block;float:left;}
+#main .main-left .top .banner .photo img:first-child{margin:0 9px 0 10px;}

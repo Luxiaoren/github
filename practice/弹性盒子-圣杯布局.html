@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="public.css">
+    <title>弹性盒子-圣杯布局</title>
+    <style>
+        body ,html{height:100%;}
+        body{display:flex;flex-direction:column;}
+        section {flex:1;background:blue;display:flex;justify-content:space-between;padding:20px 0;}
+        header{height:100px;background:#666;}
+        footer{height:100px;background:#333;}
+
+
+        section aside{width:200px;background: red;}
+        section article{width:200px;background:yellow;}
+        section div{flex:1;background:black;margin:0 20px;}
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <section>
+        <aside></aside>
+        <div></div>
+        <article></article>
+    </section>
+    <footer>
+
+    </footer>
+</body>
+</html>
