@@ -1,6 +1,6 @@
 /*设置居中*/
 .margin{width:1140px;margin:0 auto;}
-
+html,body{width:100%;}
 #banner{/*banner背景图*/
     height:222px;
     background:url(../image/g-1.jpg) no-repeat center 20%;
@@ -16,6 +16,8 @@ nav{height:46px;border-top:1px solid #ebebeb;border-bottom:2px solid #e1e1e1;dis
 nav ul{display:flex;height:46px;}
 nav a{font:12px/46px "";color:#505050;padding:0 21px;display:block;}
 nav a:hover{border-bottom:3px solid #e67e22;}
+nav i{display:none;width:25px;height:12px;border-top:4px solid #505050;border-bottom:4px solid #505050;}
+nav i:after{content: "";width:25px;height:4px;background:#505050;align-self:center;}
 
 /*主要展示区*/
 main{background:#ebebeb;padding-top:35px;}
@@ -78,20 +80,37 @@ main aside > ul > li:nth-child(3) ul li a:hover{background:#e67e22;color:#fff;bo
 /*响应1199px的布局*/
 @media screen and (max-width:1199px) {
     .margin{width:939px;}
+
     main article{width:616px;}
     main aside{width:293px;}
-
+    #bottom > ul{width:233px;}
 }
 /*响应991px的布局*/
 @media screen and (max-width:991px) {
     .margin{width:720px;}
+
+    main{width:100%;}
     main article{
-        width:auto;
+        width:720px;
         float:none;
     }
     main aside{
-        width:auto;
+        width:720px;
         float:none;
     }
 
 }
+/*
+响应767px的布局*/
+@media screen and (max-width:767px) {
+    nav ul{display:none;}
+    nav i{display:flex;}
+    main{width:auto;padding:35px  15px  1px 15px;}
+    main article{width:auto;}
+    main aside{width:auto;}
+    .margin{width:auto;}
+    #bottom{flex-direction:column;height:833px;}
+    #bottom > ul{width:auto;padding-left:36px;padding-right:36px;margin-top:36px;}
+    #bottom > ul:nth-child(2){margin-left:0;margin-right:0;margin-top:36px;}
+}
+
