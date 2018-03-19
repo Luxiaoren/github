@@ -1,0 +1,102 @@
+html{font-size:9.2592vw;}
+header{
+    height:1.32rem;
+    background:#098fe4 url(../image/d3.png) no-repeat .25rem;
+    background-size:.43rem .76rem;
+
+    font:.6rem/1.32rem "";
+    color:#fff;
+    text-align:center;
+}
+main{
+    width:10rem;
+    margin:0 auto;
+}
+main form{
+    display:flex;
+    flex-direction:column;
+}
+main label{
+    width:9.98rem;
+    height:1.06rem;
+    border:.01rem solid #ddd;
+    border-radius:.10rem;
+    margin-top:.31rem;
+    display:flex;
+}
+main span{
+    text-indent:.58rem;
+    font:.36rem/1.06rem "";
+    color:#9c9c9c;
+}
+main input{
+    height:100%;
+    flex-grow:1;
+    border:0;
+    font:.36rem/1.06rem "";
+    color:#9c9c9c;
+}
+main select{
+    font:.36rem/1.06rem "";
+    color:#9c9c9c;
+    flex-grow:1;
+    height:.8rem;
+    align-self:center;
+    border:.01rem solid #ddd;
+    padding-left:1.22rem
+}
+main label:nth-child(5){
+    border:0;
+
+}
+main label:nth-child(5) span{
+    text-indent:0;
+    width:1.94rem;
+}
+main label:nth-child(5) #city{
+    margin-right:.56rem;
+}
+
+
+main p{
+
+    margin-top:.31rem;
+    display:flex;
+}
+main p span{
+    text-indent:0;
+    width:1.94rem;
+}
+main textarea{
+    vertical-align: top;
+    border:.01rem solid #ddd;
+    flex-grow:1;
+    height:2.87rem;
+    resize:none;
+}
+main .upload {}
+main .upload span{}
+main .upload #file1{display:none;}
+main .upload #up{position:relative;cursor:pointer;width:1.6rem;height:1.6rem;display:flex;justify-content: center;align-items:center;}
+main .upload #up:before{
+    content:"";
+    width:.1rem;
+    height:.74rem;
+    background:#c4c4c4;
+    border-radius:.05rem;
+    position:absolute;
+
+}
+main .upload #up:after{
+    content:"";
+    width:.74rem;
+    height:.1rem;
+    border-radius:.05rem;
+    background:#c4c4c4;
+}
+main form > label:last-child{margin-bottom:2.4rem;margin-top:1.21rem;}
+main form > label:last-child input[type=submit]{
+
+    background:#098fe4;
+    color:#fff;
+}

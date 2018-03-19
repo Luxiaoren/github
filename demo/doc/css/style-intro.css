@@ -1,0 +1,84 @@
+html{font-size:9.2592vw;}
+body{position: relative;}
+header{
+    height:1.32rem;
+    background:#098fe4 url(../image/d3.png) no-repeat .25rem;
+    background-size:.43rem .76rem;
+    position:fixed;
+    width:100%;
+    font:.6rem/1.32rem "";
+    color:#fff;
+    text-align:center;
+}
+#top{padding-top:1.34rem;background:#efefef;padding-bottom:1.66rem;}
+#top article{
+    width:10.3rem;
+    margin:0 auto;
+    background: #fff;
+
+}
+#top article h3{font:.36rem/.81rem "";color:#333;padding:0 .36rem;}
+#top article p{text-indent: 2em;font:.3rem/.76rem "";color:#595758;padding:0 .36rem;}
+.intro {margin:0 auto;}
+.intro {margin-bottom:.2rem;}
+.intro  a{
+    display:flex;
+    flex-direction:column;
+    height:2.97rem;
+
+    border-radius:.05rem;
+    background:#fff;
+
+}
+.intro  a > div{
+    display:flex;
+}
+.intro  a > div  >i{
+    height:1.56rem;
+    width:1.56rem;
+    border-radius:.78rem;
+    background:url(../image/d4.png) no-repeat center;
+    background-size:1.56rem 1.56rem;
+    margin:.26rem .18rem 0;
+}
+.intro a > div > div >h4{
+    font:.4rem/.71rem "";
+    color:#333;
+}
+.intro a > div > div >h4 span{
+    font:.3rem/.61rem "";
+    color:#5b595a;
+}
+.intro a > div > div p{
+    font:.3rem/.48rem "";
+    color:#5b595a;
+}
+.intro a > label{
+    margin-top:.31rem;
+    border-top:.01rem solid #ddd;
+    display:flex;
+    align-items: center;
+    height:.8rem;
+}
+.intro a > label i{
+    font:.28rem/.46rem "";
+    padding:0 .2rem;
+    background:#6ec7ff;
+    margin-right:.22rem;
+    border-radius:.1rem;
+}
+footer {
+    height:1.43rem;
+    border-top:.01rem solid #d2d2d2;
+    position:fixed;
+    bottom:0;
+    width:100%;
+    background:#fff;
+    display:flex;
+    justify-content: center;
+}
+footer a{display:flex; flex-direction: column;justify-content: center;align-items: center;}
+footer a i{margin-bottom:.2rem;display:block;background:url(../image/d5.png);background-size:1.73rem .56rem;height:.52rem;width:.53rem;}
+footer a:nth-child(2){margin:0 2.53rem;}
+footer a:nth-child(2) i{background-position:-.56rem 0; width:.55rem;height:.56rem;}
+footer a:nth-child(3) i{background-position:-1.23rem 0; width:.49rem;height:.50rem;}
