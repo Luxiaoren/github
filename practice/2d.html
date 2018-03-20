@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="public.css">
+
+    <title>Document</title>
+    <style>
+
+        div{
+            height:100px;
+            width:200px;
+            background:yellow;
+            border-radius:10px;
+            margin:100px;
+            cursor:pointer;
+            font:40px/100px "";
+            color:white;
+            text-align:center;
+        }
+        div span{
+
+            display: inline-block;
+            transition:.5s linear;
+            transform:translate(20px, 0);
+        }div span:after{
+            content: ">>";
+            opacity: 0;
+                     transition:.5s linear;
+                 }
+
+        div:hover span{
+            transform:translate(-10px, 0);
+        }
+        div:hover span:after{
+
+            opacity:1;
+        }
+        .two{
+            height:100px;
+            width:200px;
+            background:#376477;
+            transition:1s;
+
+
+        }
+        .two:hover{
+            transform:rotate(30deg);
+            transform-origin:left top;
+        }
+        .three{
+            height:300px;
+            width:300px;
+            background:url(image/girl.jpg) center;
+            background-size:300px 300px;
+            position: relative;
+         }
+        .three span{
+            content:"";
+            height:100%;
+            width:100%;
+            background:#000;
+            opacity: .9;
+           position:absolute;
+            left:0;
+         }
+        .three:hover span{
+            transform:translate(0,300px);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>手语舞</span>
+    </div>
+    <div class="two"></div>
+<div class="three"><span></span></div>
+</body>
+</html>

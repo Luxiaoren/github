@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="public.css">
+    <title>Document</title>
+    <style>
+        html{height:100%;}
+        body{
+            background:url(image/bg.jpg) no-repeat ;
+            background-size:100% 100%;
+            height:100%;
+        }
+        i{float:left;
+            height:135px;
+            width:160px;
+            background:url(image/1.png) center;
+            position:relative;
+            z-index: 10;
+        }
+        div{width:960px;
+            margin:100px auto;
+            position:relative;
+        }
+        b.d7{
+            position:absolute;
+            left:30px;
+            width:100px;
+            height:175px;
+            background:#C39449;
+            top:-20px;
+
+            border-radius:10px;
+            transition:.5s cubic-bezier(.45,1.82,.5,.8);
+        }
+        b:before{
+            content: "";
+            border-top:10px solid #C39449;
+            border-left:10px solid transparent;
+            border-right:10px solid transparent;
+            left:0;right:0;margin:auto;
+            position:absolute;
+            width:0;
+            top:20px;
+            z-index:200;
+        }
+        i:hover ~ b{left:20px;}
+        i:nth-child(2):hover ~ b{left:180px;}
+        i:nth-child(3):hover ~ b{left:340px;}
+        i:nth-child(4):hover ~ b{left:500px;}
+        i:nth-child(5):hover ~ b{left:660px;}
+        i:nth-child(6):hover ~ b{left:820px;}
+    </style>
+</head>
+<body>
+    <div>
+        <i class="d1"></i>
+        <i class="d2"></i>
+        <i class="d3"></i>
+        <i class="d4"></i>
+        <i class="d5"></i>
+        <i class="d6"></i>
+        <b class="d7"></b>
+    </div>
+</body>
+</html>
