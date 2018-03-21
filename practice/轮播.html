@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="public.css">
+    <title>轮播图</title>
+    <style>
+        @keyframes frames1 {
+            0%{margin-left:0;}
+            10%{margin-left:0;}
+            20%{margin-left:-300px;}
+            30%{margin-left:-300px;}
+            40%{margin-left:-600px;}
+            50%{margin-left:-600px;}
+            60%{margin-left:-900px;}
+            70%{margin-left:-900px;}
+            80%{margin-left:-1200px;}
+            90%{margin-left:-1200px;}
+            100%{margin-left:-1500px;}
+        }
+        div{
+            height:200px;
+            width:300px;
+            box-shadow:0 0 10px #000;
+            margin:100px auto;
+            overflow: hidden;
+        }
+        ul{width:10000%;animation:10s frames1 linear infinite;}
+        ul li{float:left;}
+        ul li img{float:left;height:200px; width:300px;}
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li><img src="image/amd.jpg" alt=""></li>
+            <li><img src="image/apple.jpg" alt=""></li>
+            <li><img src="image/facebook.jpg" alt=""></li>
+            <li><img src="image/intel.jpg" alt=""></li>
+            <li><img src="image/girl.jpg" alt=""></li>
+            <li><img src="image/amd.jpg" alt=""></li>
+        </ul>
+    </div>
+</body>
+</html>

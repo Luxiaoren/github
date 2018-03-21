@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="public.css">
+    <title>动画</title>
+    <script>
+        
+    </script>
+    <style>
+        @keyframes frames1 {
+            0%{left:0;}
+            25%{left:400px;top:0;}
+            50%{top:400px;left:400px;}
+            75%{left:0;top:400px;}
+            100%{top:0;left:0;}
+        }
+            div{
+                height:500px;
+                width:500px;
+                box-shadow:0 0 5px #000;
+                margin:100px auto;
+                position: relative;
+            }
+            p{
+                height:100px;
+                width:100px;
+                box-shadow:0 0 5px #000;
+                animation:8s frames1 linear infinite;
+                position:absolute;
+            }
+            i{
+                position: absolute;
+                height:100px;
+                width:100px;
+                box-shadow:0 0 5px #000;
+                background:#000;
+                animation:frames1 8s  linear 2s  infinite;
+            }
+    </style>
+</head>
+<body>
+    <div>
+        <p></p>
+        <i></i>
+    </div>
+</body>
+</html>

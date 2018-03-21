@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="public.css">
+    <title>划过我</title>
+    <style>
+        @keyframes frames1 {
+            0%{transform: scale(1,1);}
+            100%{transform: scale(1.5,1.5);}
+        }
+        div{
+            width:300px;
+            height:300px;
+            border-radius:50%;
+            box-shadow:0 0 5px #000;
+            margin:100px auto;
+            position: relative;
+        }
+
+        p{
+            width:300px;
+            height:300px;
+            border-radius:50%;
+            position:absolute;
+            box-shadow: 0 0 10px #000;
+
+        }
+        div:hover p:nth-child(1){
+            border:2px solid #f4eb22;
+            animation:1s .2s frames1 linear infinite;
+        }
+        div:hover p:nth-child(2){
+            border:2px solid #b9363c;
+            animation:1s .4s frames1 linear infinite;
+        }
+        div:hover p:nth-child(3){
+            border:2px solid #f15a53;
+            animation:1s .6s frames1 linear infinite;
+        }
+        div:hover p:nth-child(4){
+            border:2px solid #2d3237;
+            animation:1s .8s frames1 linear infinite;
+        }
+        div:hover p:nth-child(5){
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+</body>
+</html>
