@@ -20,25 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/demo/cat/index.html">
+      <file leaf-file-name="旋转.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/practice/旋转.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="207" column="19" lean-forward="false" selection-start-line="207" selection-start-column="19" selection-end-line="207" selection-end-column="19" />
-              <folding>
-                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo/cat/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="665">
+              <caret line="50" column="8" lean-forward="true" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -49,8 +35,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -72,8 +58,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/practice/1.html" />
-        <option value="$PROJECT_DIR$/practice/啊.html" />
         <option value="$PROJECT_DIR$/practice/测试.html" />
         <option value="$PROJECT_DIR$/practice/高级表单啊.html" />
         <option value="$PROJECT_DIR$/practice/高级表格.html" />
@@ -123,6 +107,8 @@
         <option value="$PROJECT_DIR$/practice/nav.html" />
         <option value="$PROJECT_DIR$/demo/cat/css/style.css" />
         <option value="$PROJECT_DIR$/demo/cat/index.html" />
+        <option value="$PROJECT_DIR$/practice/3d.html" />
+        <option value="$PROJECT_DIR$/practice/旋转.html" />
       </list>
     </option>
   </component>
@@ -203,19 +189,6 @@
               <item name="github" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="github" type="b2602c69:ProjectViewProjectNode" />
-              <item name="github" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="cat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="github" type="b2602c69:ProjectViewProjectNode" />
-              <item name="github" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="cat" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -255,28 +228,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
+  <component name="RunManager" selected="JavaScript Debug.旋转.html">
     <configuration name="2d.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/github/practice/2d.html" />
-    <configuration name="渐变.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/github/practice/渐变.html" />
-    <configuration name="过度动画.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/github/practice/过度动画.html" />
+    <configuration name="3d.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/github/practice/3d.html" />
+    <configuration name="旋转.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/github/practice/旋转.html" />
     <configuration name="怪异盒模型.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/github/practice/怪异盒模型.html" />
     <configuration name="弹性盒子.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/github/practice/弹性盒子.html" />
     <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/github/demo/cat/index.html" />
     <configuration name="nav.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/github/practice/nav.html" />
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.渐变.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.过度动画.html" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.2d.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.nav.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.2d.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.nav.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.3d.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.旋转.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.nav.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.2d.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.过度动画.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.渐变.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.旋转.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.3d.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.nav.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.2d.html" />
       </list>
     </recent_temporary>
   </component>
@@ -303,12 +276,12 @@
       <workItem from="1520921985202" duration="23239000" />
       <workItem from="1520987383547" duration="53115000" />
       <workItem from="1521180621189" duration="26294000" />
-      <workItem from="1521423118124" duration="48190000" />
+      <workItem from="1521423118124" duration="55769000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="230433000" />
+    <option name="totallyTimeSpent" value="238012000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -366,20 +339,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/demo/tanluzhe/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/inforsystem/css/public.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/demo/tanluzhe/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -744,6 +703,22 @@
             <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practice/3d.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="19" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practice/旋转.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="50" column="8" lean-forward="true" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
