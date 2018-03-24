@@ -1,0 +1,96 @@
+html{font-size:13.333vw;}
+header{
+    height:.85rem;
+    border-bottom: .01rem solid #d9d9d9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header a:nth-child(1){
+    height:.3rem;
+    width:.57rem;
+    background: url(../vipimage/v-1.png) no-repeat ;
+    background-size:.57rem .3rem;
+}
+header span{
+    font:.32rem "";
+    color:#222;
+}
+header a:nth-child(3){
+    height:.09rem;
+    width:.68rem;
+    background: url(../vipimage/v-2.png) no-repeat;
+    background-size:.68rem .09rem;
+}
+main{
+    border-bottom:.01rem solid #d9d9d9;
+    padding-bottom:.7rem;
+}
+main h3{
+    font:.28rem "";
+    color:#222;
+    margin-top:.25rem;
+    text-indent: .27rem;
+}
+main a{
+    display:block;
+    height:1.28rem;
+    width:1.59rem;
+    background:url(../vipimage/v-3.png);
+    background-size:1.59rem 1.28rem;
+    margin-top:.40rem;
+}
+main p{
+    font:.24rem "";
+    text-indent: .56rem;
+    color:#222;
+    margin-top:.2rem;
+}
+main i{
+    display: block;
+    height:.52rem;
+    width:1.1rem;
+
+    border-radius:.25rem;
+    margin-left:.4rem;
+    margin-top:.21rem;
+    background:#f5f7f9 url(../vipimage/m-4.png) no-repeat center;
+    background-size:.24rem .24rem;
+}
+
+#pinglun{}
+#pinglun h4{overflow: hidden;margin-top:.38rem;}
+#pinglun h4 span{
+
+    font:.3rem "";
+    color:#222;
+    float: left;
+}
+#pinglun h4 a:nth-child(2){
+    float:right;
+    display:block;
+    font:.26rem "";
+    color:#ff7000;
+    text-indent: .36rem;
+    background: url(../vipimage/m-6.png) no-repeat left;
+    background-size: .26rem .26rem;
+}
+#pinglun h4 a:nth-child(3){
+    float:right;
+    display:block;
+    font:.26rem "";
+     color:#979797;
+    text-indent: .36rem;
+    background: url(../vipimage/m-5.png) no-repeat left;
+    background-size: .26rem .22rem;
+    margin:0 .32rem 0 .64rem;
+}
+
+#pinglun　ul li .left{
+    background: url(../vipimage/m-7.png) no-repeat left;
+    text-indent:1.12rem;
+}
+#pinglun　ul li .left p{
+    font:.22rem "";
+    color:#588ec0;
+}

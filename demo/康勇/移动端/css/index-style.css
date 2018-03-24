@@ -1,0 +1,168 @@
+html{font-size:13.333vw;}
+
+nav{
+    height:.89rem;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top:0;
+    width:100%;
+    background:#fff;
+}
+nav a{
+    font:.32rem/.7rem  "";
+    color:#292828;
+    height:.7rem;
+
+
+}
+nav:before{
+    content:"";
+    display: block;
+    height:.06rem;
+    width:.35rem;
+    background:#fe7000; ;
+    position: absolute;
+    left:.40rem;
+    top:.75rem;
+}
+nav a:nth-child(1){
+   color:#fe7000;
+
+}
+nav a:last-child{
+    display: flex;
+
+    align-items: center;
+    padding-left:.3rem;
+    text-indent: .39rem;
+
+    background: url(../image/m-1.png) no-repeat left;
+    background-size: .1rem .68rem;
+
+}
+nav a:last-child i{
+    width:.28rem;
+    height:.18rem;
+    border-top:.04rem solid #222;
+    border-bottom:.04rem solid #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav a:last-child i:after{
+    content:"";
+    display: block;
+    height:.04rem;
+    width:.28rem;
+    background:#222;
+}
+#search{
+    height:.92rem;
+    width:7.5rem;
+    background:url(../image/m-2.png) repeat-y;
+    background-size: 7.5rem .01rem;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    position: fixed;
+    top:.89rem;
+}
+#search input{
+    height:.6rem;
+    width:4.7rem;
+    border:none;
+    background: rgba(221,222,223,.7) url(../image/m-3.png)no-repeat 1.31rem center ;
+    border-radius:.1rem;
+    text-indent: 1.68rem;
+    font:.24rem/.6rem "";
+    color:#666;
+    background-size: .25rem .25rem;
+
+}
+#search a:nth-child(2){
+    width:.48rem;
+    height:.33rem;
+    background: url(../image/m-4.png);
+    background-size: .48rem .33rem;
+}
+#search a:nth-child(3){
+    width:.36rem;
+    height:.37rem;
+    background: url(../image/m-5.png);
+    background-size: .36rem .37rem;
+}
+#search a:nth-child(4){
+    width:.41rem;
+    height:.37rem;
+    background: url(../image/m-6.png);
+    background-size: .41rem .37rem;
+}
+
+#banner{
+    height:3.96rem;
+
+}
+
+#banner img{
+    display: block;
+    height:3.96rem;
+    width:100%;
+    margin-top:1.82rem;
+}
+
+#news{
+    width:7.02rem;
+    height:1.2rem;
+    border-bottom:.01rem solid #ebebeb;
+    margin:0 auto;
+}
+#news a{
+    display:block;
+    background:url(../image/m-8.png) no-repeat left, url(../image/m-9.png) no-repeat right;
+    background-size: .34rem .33rem, .14rem .25rem;
+    height:1.2rem;
+    font:.26rem/1.2rem "";
+    text-indent:.57rem;
+    color:#222;
+}
+
+main{}
+main h3{
+    font:700 .28rem/.84rem "";
+    color:#222;
+    margin-top:.25rem;
+}
+main ul{
+    display:flex;
+    text-indent:.24rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom:1rem;
+}
+main ul li{
+    width:3.72rem;
+    margin-bottom:.40rem;
+}
+main ul li img{
+    display:block;
+    height:2.10rem;
+    width:3.72rem;
+}
+main ul li p:nth-child(2){
+    font:.28rem "";
+    color:#222;
+}
+main ul li p:nth-child(3){
+    font:.24rem "";
+    color:#979797;
+}
+
+footer{
+    position: fixed;
+    bottom:0;
+    height:.99rem;
+    width:100%;
+    background: #fff;
+}
