@@ -32,10 +32,13 @@ header ul li a{font:16px "";color:#5e5e5e;}
 #server ul li p{font:14px/22px "";color:#444;}
 #server ul li i{display:flex;justify-content: center;}
 
-#server ul li b{padding-top:52px;box-sizing:border-box; display:none;background:rgba(0,0,0,.5); z-index:10;top:0;width:376px;height:279px;position:absolute;color:#2ebcfc;font: 700 28px "";}
-#server ul li s{background:#1a98d5 url(../image/p-6.png) no-repeat center; left:0;right:0;top:110px;margin:auto;z-index:10;height:80px;width:80px;border-radius:50px;display: none;position: absolute;}
-#server ul li:hover   b{display:block;}
-#server ul li:hover   s{display:block;}
+#server ul li b{padding-top:52px;z-index:10;box-sizing:border-box; display:none;background:rgba(0,0,0,0.5); top:0;width:376px;height:279px;position:absolute;color:#2ebcfc;font: 700 28px "";}
+#server ul li s{z-index:10;background:#1a98d5 url(../image/p-6.png) no-repeat center; left:0;right:0;top:110px;margin:auto;height:80px;width:80px;border-radius:50px;display: none;position: absolute;}
+#server ul li > img:hover ~ b{display:block;}
+#server ul li >  b:hover{display:block;}
+#server ul li >  b:hover + s{display:block;}
+#server ul li > s:hover{display:block;}
+
 
 
 #server ul li i a{width:115px;height:32px;border-radius:3px;box-sizing: border-box;border:1px solid #ccc;font:12px/32px "";color:#5e5e5e;margin:17px 12px 25px;}

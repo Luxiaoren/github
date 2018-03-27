@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+    <script>
+        document.write("<h3>1.为了抵抗洪水，展示连续作战三个小时，编程计算一共多少天多少个小时</h3>");
+        var sumHours=89;
+        var day,hours;//定义天数和小时数
+        day = (sumHours - sumHours%24)/24;
+        hours = sumHours%24;
+        document.write("<br>" + day +"天" + hours + "小时" + "<br/><hr/>" );
+
+
+
+
+        document.write("<h3>2.小明要到美国旅游，可是那里的温度是以华氏度为单位记录的。\n" +
+            "它需要一个程序将华氏温度（80度）转换为摄氏度，并以华氏度和摄氏度为单位分别显示该温度。\n" +
+            "提示：摄氏度与芈氏度的转换公式为：摄氏度 = 5/9.0*(华氏度-32)     保留3位小数。</h3>");
+
+        var hTem = 80;
+        var sTem = (hTem-32) * 5/9.0;
+        document.write("<br>" + hTem + "华氏度=" + sTem + "摄氏度<br/><hr/>");
+
+
+
+        document.write("<h3>3.计算一个半径为80cm的圆的面积。打印到页面上。</h3>");
+        var PI = 3.14;
+        var r = 80;
+        var s = PI*r*r;
+        document.write("<br>"+"圆的面积=" + s + "平方厘米<br/><hr/>");
+
+    </script>
+</html>
