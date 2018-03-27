@@ -9,12 +9,13 @@
 <body>
     <div id="logo">
         <h2>大学信息基础作业管理系统</h2>
-        <form action="main.html">
-        <label class="first"><input type="text" placeholder="身份证号/学号"></label>
-        <label ><input type="password" placeholder="密码"></label>
-        <label class="last"><input type="submit" value="登录"></label>
-        </form>
+
+        <label class="first"><input type="text" id="name" placeholder="身份证号/学号"></label>
+        <label ><input type="password" id="password" placeholder="密码"></label>
+        <label class="last"><input type="submit" value="登录" onclick="checkid('name','password')"></label>
+
         <p><a href="#">学习总结入口</a></p>
     </div>
 </body>
+<script src="js/style.js"></script>
 </html>

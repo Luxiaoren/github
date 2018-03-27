@@ -1,0 +1,19 @@
+<log>
+    <loginfo>
+        <count>2014014013</count>
+        <password>123456</password>
+        <belong>student</belong>
+    </loginfo>
+
+    <loginfo>
+        <count>wangming</count>
+        <password>123456</password>
+        <belong>teacher</belong>
+    </loginfo>
+
+    <loginfo>
+        <count>admin</count>
+        <password>123456</password>
+        <belong>admin</belong>
+    </loginfo>
+</log>

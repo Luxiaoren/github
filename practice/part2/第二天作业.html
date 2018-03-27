@@ -18,7 +18,7 @@
     <input type="submit" id="btn3" value="判断空格">
 
     <input type="text" id="num4" value=""/>
-    <input type="submit" id="btn4" value="检测电话是否为纯数字">
+    <input type="submit" id="btn4" value="检测电话是否为纯数字" >
 </body>
 
 <script>
@@ -58,14 +58,12 @@
 
     document.write("<h4>4.点击保存按钮时，使用JS判断用户的联系电话是否为纯数字，如果用户输入有错误，使用alert()弹框警告</h4><br/><hr/>");
     var btn4=document.getElementById('btn4');
-    btn4.onclick=function(){
+    btn4.onclick=function (){
         var num4 = document.getElementById('num4').value;
         num4=Number(num4);
         alert(isNaN(num4)?"电话号应为纯数字":"正确")
     }
 
 
-
-    
 </script>
 </html>

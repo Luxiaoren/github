@@ -22,68 +22,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="tec-basefile.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo/inforsystem/tec-basefile.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="31" column="62" lean-forward="false" selection-start-line="31" selection-start-column="62" selection-end-line="31" selection-end-column="62" />
-              <folding>
-                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tec-classdate.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo/inforsystem/tec-classdate.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="31" column="62" lean-forward="false" selection-start-line="31" selection-start-column="62" selection-end-line="31" selection-end-column="62" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tec-classmate.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo/inforsystem/tec-classmate.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="31" column="62" lean-forward="false" selection-start-line="31" selection-start-column="62" selection-end-line="31" selection-end-column="62" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tec-homework.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo/inforsystem/tec-homework.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="31" column="62" lean-forward="false" selection-start-line="31" selection-start-column="62" selection-end-line="31" selection-end-column="62" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin-peo.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo/inforsystem/admin-peo.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="38" column="66" lean-forward="false" selection-start-line="38" selection-start-column="66" selection-end-line="38" selection-end-column="66" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin-contacts.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo/inforsystem/admin-contacts.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
-              <caret line="38" column="66" lean-forward="false" selection-start-line="38" selection-start-column="66" selection-end-line="38" selection-end-column="66" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="admin-abouts.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo/inforsystem/admin-abouts.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -114,11 +52,71 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="第二天作业.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="第二天作业.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/practice/part2/第二天作业.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="519">
-              <caret line="68" column="4" lean-forward="false" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="4" />
+            <state relative-caret-position="-114">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo/inforsystem/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="14" column="105" lean-forward="true" selection-start-line="14" selection-start-column="105" selection-end-line="14" selection-end-column="105" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo/inforsystem/js/style.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="classfile.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo/inforsystem/xml/classfile.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="basefile.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo/inforsystem/xml/basefile.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="741">
+              <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logfile.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/demo/inforsystem/xml/logfile.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stu-basefile.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo/inforsystem/stu-basefile.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="410">
+              <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -157,8 +155,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/practice/照片.html" />
-        <option value="$PROJECT_DIR$/practice/test.html" />
         <option value="$PROJECT_DIR$/demo/testKY/css/style.css" />
         <option value="$PROJECT_DIR$/demo/testKY/index.html" />
         <option value="$PROJECT_DIR$/demo/testPC/index.html" />
@@ -178,7 +174,6 @@
         <option value="$PROJECT_DIR$/practice/高度变化测试.html" />
         <option value="$PROJECT_DIR$/practice/part2/单分支-双分支-多分枝-作业.html" />
         <option value="$PROJECT_DIR$/demo/inforsystem/css/style-classdate.css" />
-        <option value="$PROJECT_DIR$/demo/inforsystem/js/style.js" />
         <option value="$PROJECT_DIR$/demo/inforsystem/css/style-homework.css" />
         <option value="$PROJECT_DIR$/demo/inforsystem/basefile.html" />
         <option value="$PROJECT_DIR$/demo/inforsystem/css/style-classconf.css" />
@@ -194,7 +189,6 @@
         <option value="$PROJECT_DIR$/demo/inforsystem/css/tec-style-homework.css" />
         <option value="$PROJECT_DIR$/demo/inforsystem/css/admin-style-peo.css" />
         <option value="$PROJECT_DIR$/demo/inforsystem/main.html" />
-        <option value="$PROJECT_DIR$/demo/inforsystem/stu-basefile.html" />
         <option value="$PROJECT_DIR$/demo/inforsystem/stu-classconf.html" />
         <option value="$PROJECT_DIR$/demo/inforsystem/stu-classdate.html" />
         <option value="$PROJECT_DIR$/demo/inforsystem/stu-homewok.html" />
@@ -208,6 +202,10 @@
         <option value="$PROJECT_DIR$/demo/inforsystem/css/admin-style-contacts.css" />
         <option value="$PROJECT_DIR$/demo/inforsystem/css/admin-style-abouts.css" />
         <option value="$PROJECT_DIR$/practice/part2/第二天作业.html" />
+        <option value="$PROJECT_DIR$/demo/inforsystem/stu-basefile.html" />
+        <option value="$PROJECT_DIR$/demo/inforsystem/xml/logfile.xml" />
+        <option value="$PROJECT_DIR$/demo/inforsystem/index.html" />
+        <option value="$PROJECT_DIR$/demo/inforsystem/js/style.js" />
       </list>
     </option>
   </component>
@@ -285,13 +283,27 @@
             <path>
               <item name="github" type="b2602c69:ProjectViewProjectNode" />
               <item name="github" type="462c0819:PsiDirectoryNode" />
-              <item name="practice" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="github" type="b2602c69:ProjectViewProjectNode" />
               <item name="github" type="462c0819:PsiDirectoryNode" />
-              <item name="practice" type="462c0819:PsiDirectoryNode" />
-              <item name="part2" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="inforsystem" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="github" type="b2602c69:ProjectViewProjectNode" />
+              <item name="github" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="inforsystem" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="github" type="b2602c69:ProjectViewProjectNode" />
+              <item name="github" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="inforsystem" type="462c0819:PsiDirectoryNode" />
+              <item name="xml" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -333,30 +345,30 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.第二天作业.html">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
     <configuration name="单分支-双分支-多分枝-作业.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/github/practice/part2/单分支-双分支-多分枝-作业.html" />
-    <configuration name="高度变化测试.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/github/practice/高度变化测试.html" />
     <configuration name="寻找第几天.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/github/practice/part2/寻找第几天.html" />
     <configuration name="第二天作业.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/github/practice/part2/第二天作业.html" />
     <configuration name="动画.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/github/practice/动画.html" />
     <configuration name="轮播.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/github/practice/轮播.html" />
     <configuration name="怪异盒模型.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/github/practice/怪异盒模型.html" />
     <configuration name="弹性盒子.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/github/practice/弹性盒子.html" />
+    <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/github/demo/inforsystem/index.html" />
     <configuration name="main.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/github/demo/inforsystem/main.html" />
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.main.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.高度变化测试.html" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.单分支-双分支-多分枝-作业.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.寻找第几天.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.第二天作业.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.单分支-双分支-多分枝-作业.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.寻找第几天.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.第二天作业.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.第二天作业.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.寻找第几天.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.main.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.单分支-双分支-多分枝-作业.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.高度变化测试.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.第二天作业.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.寻找第几天.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.main.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.单分支-双分支-多分枝-作业.html" />
       </list>
     </recent_temporary>
   </component>
@@ -388,12 +400,12 @@
       <workItem from="1521777072814" duration="19762000" />
       <workItem from="1521863479986" duration="4998000" />
       <workItem from="1521896496998" duration="615000" />
-      <workItem from="1522025237038" duration="52770000" />
+      <workItem from="1522025237038" duration="59179000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="333786000" />
+    <option name="totallyTimeSpent" value="340195000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -451,13 +463,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/practice/轮播.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/practice/动画.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -547,22 +552,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/inforsystem/xml/classfile.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/inforsystem/xml/basefile.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="633">
-          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/demo/inforsystem/css/common.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -593,14 +582,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/inforsystem/js/style.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -645,14 +626,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/inforsystem/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="7" lean-forward="false" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/demo/inforsystem/css/tec-style-homework.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -689,14 +662,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="42" column="13" lean-forward="false" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/inforsystem/stu-basefile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="43" column="9" lean-forward="false" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -775,6 +740,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/demo/inforsystem/admin-abouts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="38" column="66" lean-forward="false" selection-start-line="38" selection-start-column="66" selection-end-line="38" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/inforsystem/stu-basefile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practice/part2/第二天作业.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-114">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/demo/inforsystem/css/admin-style-contacts.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -783,10 +772,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/inforsystem/admin-abouts.html">
+    <entry file="file://$PROJECT_DIR$/demo/inforsystem/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="38" column="66" lean-forward="false" selection-start-line="38" selection-start-column="66" selection-end-line="38" selection-end-column="66" />
+        <state relative-caret-position="266">
+          <caret line="14" column="105" lean-forward="true" selection-start-line="14" selection-start-column="105" selection-end-line="14" selection-end-column="105" />
           <folding />
         </state>
       </provider>
@@ -799,10 +788,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/practice/part2/第二天作业.html">
+    <entry file="file://$PROJECT_DIR$/demo/inforsystem/js/style.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="68" column="4" lean-forward="false" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="4" />
+        <state relative-caret-position="114">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/inforsystem/xml/classfile.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/inforsystem/xml/basefile.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/inforsystem/xml/logfile.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
           <folding />
         </state>
       </provider>

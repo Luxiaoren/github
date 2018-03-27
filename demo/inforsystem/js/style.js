@@ -1,5 +1,43 @@
 
+function checkid(logname,logpassword){
+        var name = document.getElementById(logname).value;
+        var password = document.getElementById(logpassword).value;
+        console.log(name,password);
+    if (window.XMLHttpRequest)
+    {// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp=new XMLHttpRequest();
+    }
+    else
+    {// code for IE6, IE5
+        xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.open("GET","xml/logfile.xml",false);
+    xmlhttp.send();
+    xmlDoc=xmlhttp.responseXML;
 
+    var lenght=xmlDoc.getElementsByTagName("loginfo").length;
+    var x=xmlDoc.getElementsByTagName("loginfo");
+    var flag=false;
+    for(i=0;i<lenght;i++){
+        /*判断用户名是否相*/
+        if(x[i].getElementsByTagName("count")[0].childNodes[0].nodeValue===name){
+            /*当用户名相等时判断密码是否相等*/
+            if(x[i].getElementsByTagName("password")[0].childNodes[0].nodeValue===password){
+                /*当用户名和密码都相等的时候*/
+                flag=true;break;/*设置用户名和密码都成功的标志*//*跳出循环*/
+            }
+        }
+    }
+    if(flag){
+        window.location.href="main.html";/*登录成功跳转*/
+    }else{
+        alert("登录失败")
+    }
+    console.log();
+
+
+
+}
 
 
 
