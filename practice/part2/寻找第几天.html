@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="num" value="">
+<input type="submit" id="btn" value =   "1">
+</body>
+<script>
+    var num=document.getElementById('num');
+    var btn=document.getElementById('btn');
+
+    btn.onclick=function (){
+        num=num.value;
+        num=parseInt(num);
+        /*console.log(num);*/
+        var year = parseInt(num/10000);
+        var mouth = parseInt(num%10000/100);
+        var day = parseInt(num%100);
+        console.log(year,mouth,day);
+        var sum=0;
+         sum+=(year%4===0&&year%100!==0||year%400)&&(mouth>=3)?1:0;
+
+        switch(mouth){
+            case 1:break;
+            case 2:sum+=(31+day);break;
+            case 3:sum+=(31+28+day);break
+            case 4:sum+=(31+28+31+day);break;
+            case 5:sum+=(31+28+31+30+day);break;
+            case 6:sum+=(31+28+31+30+31+day);break;
+            case 7:sum+=(31+28+31+30+31+30+day);break;
+            case 8:sum+=(31+28+31+30+31+30+31+day);break;
+            case 9:sum+=(31+28+31+30+31+30+31+31+day);break;
+            case 10:sum+=(31+28+31+30+31+30+31+31+30+day);break;
+            case 11:sum+=(31+28+31+30+31+30+31+31+30+31+day);break;
+            case 12:sum+=(31+28+31+30+31+30+31+31+30+31+30+day);break;
+
+        }
+        alert("是第"+sum);
+    }
+</script>
+</html>

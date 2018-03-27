@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="num1" value=""/>
+    <input type="submit" id="btn1" value="判断数的范围"/>
+
+    <input type="text" id="num2" value=""/>
+    <input type="submit" id="btn2" value="判断数的奇偶性"/>
+
+    <input type="text" id="name" value=""/>
+    <input type="submit" id="btn3" value="判断空格">
+
+    <input type="text" id="num4" value=""/>
+    <input type="submit" id="btn4" value="检测电话是否为纯数字">
+</body>
+
+<script>
+    document.write("<h4>1.判断一个整数属于哪个范围：大于0；小于0；等于0</h4><br/><hr/>");
+    var num = document.getElementById('num1');
+    var btn = document.getElementById('btn1');
+
+
+    btn.onclick=function(){
+        var numm = num.value;
+        numm = parseInt(numm);
+        alert(numm>=0?(numm===0?"为0":"大于0"):"小于0");
+    }
+
+
+
+    document.write("<h4>2.判断一个整数是偶数还是奇数，并输出判断结果</h4><br/><hr/>");
+    var num2=document.getElementById('num2');
+    var btn2=document.getElementById('btn2');
+
+    btn2.onclick=function(){
+        num2_=parseInt(num2.value);
+        alert(num2_%2===0?"偶数":"奇数");
+    }
+
+
+
+    document.write("<h4>3.判断字符串中是否有空格</h4><br/><hr/>");
+    var name;
+    var btn3=document.getElementById('btn3');
+    btn3.onclick=function(){
+        name=document.getElementById('name').value;
+        var str=name.split(" ");
+       alert(str.length>=2?"不能含有空格":"正确");
+    }
+
+
+    document.write("<h4>4.点击保存按钮时，使用JS判断用户的联系电话是否为纯数字，如果用户输入有错误，使用alert()弹框警告</h4><br/><hr/>");
+    var btn4=document.getElementById('btn4');
+    btn4.onclick=function(){
+        var num4 = document.getElementById('num4').value;
+        num4=Number(num4);
+        alert(isNaN(num4)?"电话号应为纯数字":"正确")
+    }
+
+
+
+    
+</script>
+</html>

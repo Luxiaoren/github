@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/admin-style-contacts.css"/>
+    <title>管理员-联系我们</title>
+</head>
+<body>
+<header>
+    <a href="">大学信息基础作业管理系统</a>
+    <div id="setting">
+        <a href="">康勇</a>
+        <div id="bott">
+            <a href="#">修改密码</a>
+            <a href="#">退出</a>
+        </div>
+    </div>
+</header>
+<aside>
+    <div class="home">
+        <a href="" class="top"><img src="image/i-2.png" alt=""></a>
+    </div>
+    <a href="#" id="stu" onclick="changelist(this,stulist,false);return false;">学生模块</a>
+    <ul id="stulist">
+        <li><a href="stu-basefile.html">基本资料</a></li>
+        <li><a href="stu-classdate.html" >班级情况</a></li>
+        <li><a href="stu-homewok.html">家庭作业</a></li>
+        <li><a href="stu-classconf.html">班级通知</a></li>
+    </ul>
+    <a href="#" id="tec" onclick="changelist(this,teclist,false);return false;">教师模块</a><!--false表示初始高度为隐藏高度时-->
+    <ul id="teclist">
+        <li><a href="tec-basefile.html">基本资料</a></li>
+        <li><a href="tec-classdate.html">班级情况</a></li>
+        <li><a href="tec-classmate.html">人员管理</a></li>
+        <li><a href="tec-homework.html">班级作业</a></li>
+    </ul>
+    <a href="#" id="admin" onclick="changelist(this,adminlist,true);return false;">管理员模块</a>
+    <ul id="adminlist">
+        <li><a href="admin-peo.html">人员信息</a></li>
+        <li><a href="admin-abouts.html">关于我们</a></li>
+        <li><a href="admin-contacts.html">联系我们</a></li>
+    </ul>
+</aside>
+<div id="main">
+    <div class="bar">
+
+    </div>
+
+</div>
+</body>
+<script src="js/style.js"></script>
+</html>

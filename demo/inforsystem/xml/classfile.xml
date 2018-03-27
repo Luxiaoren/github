@@ -1,0 +1,41 @@
+<classfile>
+    <class>
+        <classname>计算机科学与技术1401班</classname>    <!--班级名-->
+        <classsum>班级人数</classsum>                 <!--班级人数-->
+        <classtec>班级辅导员</classtec>                 <!--辅导员-->
+
+        <classgov>                                      <!--班委-->
+            <leader>王班长</leader>
+            <vleader>张副班长</vleader>
+            <member>黄学习委员</member>
+            <pe>李体育班长</pe>
+            <life>陈生活委员</life>
+            <bra>刘团支书</bra>
+            <play>张文娱委员</play>
+        </classgov>
+
+        <classyear>第四学期</classyear>             <!--学期-->
+
+        <classsch>                                  <!--课表-->
+            <date>周三,上午,9:00-11:40</date>
+            <room>综合楼404</room>
+            <teach>张老师</teach>
+
+            <date>周三,上午,9:00-11:40</date>
+            <room>综合楼404</room>
+            <teach>张老师</teach>
+
+            <date>周三,上午,9:00-11:40</date>
+            <room>综合楼404</room>
+            <teach>张老师</teach>
+
+            <date>周三,上午,9:00-11:40</date>
+            <room>综合楼404</room>
+            <teach>张老师</teach>
+
+            <date>周三,上午,9:00-11:40</date>
+            <room>综合楼404</room>
+            <teach>张老师</teach>
+        </classsch>
+    </class>
+</classfile>

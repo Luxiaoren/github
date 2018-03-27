@@ -88,10 +88,7 @@ aside ul li a{
     text-indent:37px;
     font:14px/36px "";
     color:#616161;
-
-    background:url(../image/i-8.png) no-repeat 18px center;
-
-
+    background:url(../image/i-8.png) no-repeat 18px center ;
 }
 aside ul li a:hover{
     background: url(../image/i-9.png) no-repeat 15px,url(../image/i-8.png) no-repeat 18px center;

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="num" value=""/>
+    <input type="button" id="check" value="判断奇偶数">
+    <br/><hr/>
+
+    <input type="text" id="year" value=""/>
+    <input type="submit" id="checkyear" value="判断平闰年">
+</body>
+<script>
+    var num = document.getElementById('num');
+    var btn=document.getElementById('check');
+    btn.onclick=function (){
+        num = num.value;
+
+        alert(num%2===0?"该数是偶数" :"该数不是偶数");
+    }
+
+
+    var year = document.getElementById('year');
+    var ybtn = document.getElementById('checkyear');
+
+    ybtn.onclick = function (){
+        alert(year%4===0&&year%100!==0||year%400===0?"该年是闰年":"该年不是闰年");
+    }
+
+
+
+
+</script>
+
+</html>

@@ -1,0 +1,10 @@
+aside a#tec{
+    background:#fff;
+}
+aside ul#teclist{
+    height:144px;
+
+}
+aside ul#teclist li:nth-child(4) a{
+    background: #6fb3e0;
+}
