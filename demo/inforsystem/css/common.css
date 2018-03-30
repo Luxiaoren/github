@@ -40,7 +40,7 @@ header #setting > #bott > a:nth-child(2):hover{background: #fee188 url(../image/
 
 aside{width:191px;height:100%;background:#f2f2f2;float:left;}
 
-#main{width:1159px;background:none;height:100%;padding-left:192px;display:block; box-sizing: border-box;}
+#main{width:100%;background:none;height:100%;padding-left:192px;display:block; box-sizing: border-box;}
 #main .bar{/*面包屑栏*/
     height:40px;
     background:#f5f5f5;

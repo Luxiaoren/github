@@ -1,7 +1,7 @@
 
-function checkid(logname,logpassword){
-        var name = document.getElementById(logname).value;
-        var password = document.getElementById(logpassword).value;
+function checkid(){
+        var name = document.getElementById('name').value;
+        var password = document.getElementById('password').value;
         console.log(name,password);
     if (window.XMLHttpRequest)
     {// code for IE7+, Firefox, Chrome, Opera, Safari
@@ -29,11 +29,12 @@ function checkid(logname,logpassword){
         }
     }
     if(flag){
-        window.location.href="main.html";/*登录成功跳转*/
+        return true;/*登录成功返回正确跳转*/
     }else{
-        alert("登录失败")
+        alert("登录失败");
+        return false;/*登录失败返回错误*/
     }
-    console.log();
+
 
 
 
