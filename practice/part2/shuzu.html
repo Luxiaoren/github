@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    Array.prototype.method1=function(){
+        var arr=[];//定义一个临时数
+        for(var i = 0; i < this.length; i++){    //循环遍历当前数组
+            //判断当前数组下标为i的元素是否已经保存到临时数组
+            //如果已保存，则跳过，否则将此元素保存到临时数组中
+            if(arr.indexOf(this[i]) === -1){
+                arr.push(this[i]);
+            }
+        }
+        return arr;
+    }
+
+    var str=[1,2,3,4,2,31,1];
+    console.log(str.method1());
+</script>
+</html>

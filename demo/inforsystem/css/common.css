@@ -38,7 +38,7 @@ header #setting > #bott > a:nth-child(2){background: url(../image/i-5.png) no-re
 header #setting > #bott > a:nth-child(1):hover{background: #fee188 url(../image/i-6.png) no-repeat 14px;}/*设置划过时的标志和背景色*/
 header #setting > #bott > a:nth-child(2):hover{background: #fee188 url(../image/i-7.png) no-repeat 14px;}/*设置划过时的标志和背景色*/
 
-aside{width:191px;height:100%;background:#f2f2f2;float:left;}
+aside{width:191px;height:200%;background:#f2f2f2;float:left;}
 
 #main{width:100%;background:none;height:100%;padding-left:192px;display:block; box-sizing: border-box;}
 #main .bar{/*面包屑栏*/

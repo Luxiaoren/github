@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>第五天作业</title>
+</head>
+<body>
+<input type="text" id="text1"/>
+<input type="submit" id="btn1"/>
+
+<input type="text" id="text2">
+<input type="submit" id="btn2">
+</body>
+<script>
+    document.write("<br>1.编写一个函数，输入n为偶数时，调用函数求1/2+1/4+...+1/n,当输入n为奇数时，调用函数求1+1/3+...+1/n <br>");
+        document.getElementById('btn1').onclick=function (){
+            var tvalue=document.getElementById('text1').value;
+            tvalue=parseInt(tvalue);
+            var sum=0;
+            if(tvalue%2===0){
+
+                for(var i=2;i<=tvalue;i+=2){
+                    sum+=1/i;
+                }
+            }else{
+                for(i=1;i<=tvalue;i+=2){
+                    sum+=1/i;
+                }
+            }
+            alert(sum);
+        }
+
+    document.write("<br>2.使用函数完成任意数字阶乘的计算\n" +
+        "    要求：页面输入任意数字，点击按钮后计算阶乘 <br>");
+        document.getElementById('btn2').onclick=function (){
+            var a=document.getElementById('text2').value;
+            var summ=1;
+            for(var i=1;i<=a;i++){
+                summ*=i;
+            }
+            alert(summ);
+        }
+
+</script>
+</html>
