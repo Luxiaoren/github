@@ -8,120 +8,145 @@
     <title>大学信息基础作业管理系统</title>
 </head>
 <body>
-    <header>
-        <a href="">大学信息基础作业管理系统</a>
-        <div id="setting">
-            <a href="">康勇</a>
-            <div id="bott">
+<header>
+    <a href="">大学信息基础作业管理系统</a>
+    <div id="setting">
+        <a href="" id="username">康勇</a>
+        <div id="bott">
             <a href="#">修改密码</a>
             <a href="#">退出</a>
-            </div>
         </div>
-    </header>
-    <aside>
-        <div class="home">
-            <a href="" class="top"><img src="image/i-2.png" alt=""></a>
-        </div>
-        <a href="#" id="stu" onclick="changelist(this,stulist,false);return false;">学生模块</a>
-        <ul id="stulist">
-            <li><a href="stu-basefile.html">基本资料</a></li>
-            <li><a href="stu-classdate.html" >班级情况</a></li>
-            <li><a href="stu-homewok.html">家庭作业</a></li>
-            <li><a href="stu-classconf.html">班级通知</a></li>
-        </ul>
-        <a href="#" id="tec" onclick="changelist(this,teclist,false);return false;">教师模块</a><!--false表示初始高度为隐藏高度时-->
-        <ul id="teclist">
-            <li><a href="tec-basefile.html">基本资料</a></li>
-            <li><a href="tec-classdate.html">班级情况</a></li>
-            <li><a href="tec-classmate.html">人员管理</a></li>
-            <li><a href="tec-homework.html">班级作业</a></li>
-        </ul>
-        <a href="#" id="admin" onclick="changelist(this,adminlist,false);return false;">管理员模块</a>
-        <ul id="adminlist">
-            <li><a href="admin-peo.html">人员信息</a></li>
-            <li><a href="admin-abouts.html">关于我们</a></li>
-            <li><a href="admin-contacts.html">联系我们</a></li>
-        </ul>
-    </aside>
-    <div id="main">
-        <div class="bar">
-            首页
-        </div>
-        <div class="updateBtn"><!--修改资料区域-->
-            <a href="#">修改</a>
-        </div>
-        <div class="profile">
+    </div>
+</header>
+<aside>
+    <div class="home">
+        <a href="" class="top"><img src="image/i-2.png" alt=""></a>
+    </div>
+    <a href="#" id="stu" onclick="changelist(this,stulist,false);return false;">学生模块</a>
+    <ul id="stulist">
+        <li><a href="stu-basefile.html">基本资料</a></li>
+        <li><a href="stu-classdate.html">班级情况</a></li>
+        <li><a href="stu-homewok.html">家庭作业</a></li>
+        <li><a href="stu-classconf.html">班级通知</a></li>
+    </ul>
+    <a href="#" id="tec" onclick="changelist(this,teclist,false);return false;">教师模块</a><!--false表示初始高度为隐藏高度时-->
+    <ul id="teclist">
+        <li><a href="tec-basefile.html">基本资料</a></li>
+        <li><a href="tec-classdate.html">班级情况</a></li>
+        <li><a href="tec-classmate.html">人员管理</a></li>
+        <li><a href="tec-homework.html">班级作业</a></li>
+    </ul>
+    <a href="#" id="admin" onclick="changelist(this,adminlist,false);return false;">管理员模块</a>
+    <ul id="adminlist">
+        <li><a href="admin-peo.html">人员信息</a></li>
+        <li><a href="admin-abouts.html">关于我们</a></li>
+        <li><a href="admin-contacts.html">联系我们</a></li>
+    </ul>
+</aside>
+<div id="main">
+    <div class="bar">
+        首页
+    </div>
+    <div class="updateBtn"><!--修改资料区域-->
+        <a href="#">修改</a>
+    </div>
+    <div class="profile">
 
-            <div class="left">
-                <div class="photo">
+        <div class="left">
+            <div class="photo">
 
-                </div>
-                <div class="nam"><!--显示姓名栏-->
-                    <i></i>
-                    <span>康勇</span>
-                    <span>(男)</span>
-                </div>
             </div>
-            <ul>
-                <li><span>姓名</span>
-                    <p></p>
-                </li>
-                <li><span>性别</span>
-                    <p></p>
-                </li>
-                <li><span>民族</span>
-                    <p></p>
-                </li>
-                <li><span>身份证号</span>
-                    <p></p>
-                </li>
-                <li><span>学号</span>
-                    <p></p>
-                </li>
-                <li><span>学院</span>
-                    <p></p>
-                </li>
-                <li><span>专业</span>
-                    <p></p>
-                </li>
-                <li><span>班级</span>
-                    <p></p>
-                </li>
-                <li><span>入学日期</span>
-                    <p></p>
-                </li>
-                <li><span>学习形式</span>
-                    <p></p>
-                </li>
-                <li><span>联系方式</span>
-                    <p></p>
-                </li>
-            </ul>
+            <div class="nam"><!--显示姓名栏-->
+                <i></i>
+                <span>康勇</span>
+                <span>(男)</span>
+            </div>
         </div>
-        <div class="news">
-            <div class="mynews"><!--我的消息模块-->
-                <h4>【&nbsp;我的消息&nbsp;】</h4><!--我的消息标题-->
-                <div class="newscontent"><!--消息显示-->
-                    <div class="content"><span>消息内容</span></div>
-                    <div class="time"><span>时间</span></div>
-                </div>
+        <ul>
+            <li><span>姓名</span>
+                <p></p>
+            </li>
+            <li><span>性别</span>
+                <p></p>
+            </li>
+            <li><span>民族</span>
+                <p></p>
+            </li>
+            <li><span>身份证号</span>
+                <p></p>
+            </li>
+            <li><span>学号</span>
+                <p></p>
+            </li>
+            <li><span>学院</span>
+                <p></p>
+            </li>
+            <li><span>专业</span>
+                <p></p>
+            </li>
+            <li><span>班级</span>
+                <p></p>
+            </li>
+            <li><span>入学日期</span>
+                <p></p>
+            </li>
+            <li><span>学习形式</span>
+                <p></p>
+            </li>
+            <li><span>联系方式</span>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+    <div class="news">
+        <div class="mynews"><!--我的消息模块-->
+            <h4>【&nbsp;我的消息&nbsp;】</h4><!--我的消息标题-->
+            <div class="newscontent"><!--消息显示-->
+                <div class="content"><span>消息内容</span></div>
+                <div class="time"><span>时间</span></div>
             </div>
-            <div class="classnews"><!--班级消息模块-->
-                <h4>【&nbsp;班级消息&nbsp;】</h4><!--我的消息标题-->
-                <div class="newscontent"><!--消息显示-->
-                    <div class="content"><span>消息内容</span></div>
-                    <div class="time"><span>时间</span></div>
-                </div>
+        </div>
+        <div class="classnews"><!--班级消息模块-->
+            <h4>【&nbsp;班级消息&nbsp;】</h4><!--我的消息标题-->
+            <div class="newscontent"><!--消息显示-->
+                <div class="content"><span>消息内容</span></div>
+                <div class="time"><span>时间</span></div>
             </div>
-            <div class="schoolnews"><!--校园消息模块-->
-                <h4>【&nbsp;校园消息&nbsp;】</h4><!--校园消息消息标题-->
-                <div class="newscontent"><!--消息显示-->
-                    <div class="content"><span>消息内容</span></div>
-                    <div class="time"><span>时间</span></div>
-                </div>
+        </div>
+        <div class="schoolnews"><!--校园消息模块-->
+            <h4>【&nbsp;校园消息&nbsp;】</h4><!--校园消息消息标题-->
+            <div class="newscontent"><!--消息显示-->
+                <div class="content"><span>消息内容</span></div>
+                <div class="time"><span>时间</span></div>
             </div>
         </div>
     </div>
+</div>
 </body>
 <script src="js/style.js"></script>
+<script src="js/common.js"></script>
+<script src="js/json.js"></script>
+<script>
+    onload=function(){
+        var  oa=document.querySelector('#username');
+        // console.log(1);
+        // console.log(oa);
+        oa.innerHTML=getCookie("username");
+        var x=getXml("xml/basefile.xml","stufile");
+        var username=getCookie("username");
+        var op=document.querySelectorAll('li p');
+        // alert(username);
+        for(var i=0;i<x.length;i++){
+            if(x[i].getElementsByTagName('stucount')[0].innerHTML===username){
+
+                for(var j=3,m=0;j<11*4;j+=4,m++){
+                        op[m].innerHTML=x[i].childNodes[j].innerHTML;
+                }
+                break;
+            }else{
+                // alert(x[i].getElementsByTagName('stuname')[0].innerHTML);
+            }
+        }
+    }
+</script>
 </html>

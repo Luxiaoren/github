@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<input type="text" id="time1"/>
+<input type="text" id="time2"/>
+<input type="button" value="计算时间差值" id="btn" onclick="timediff()">
+</body>
+<script>
+    function  timediff(){
+        var timeold=document.getElementsByTagName("input")[0].value;
+        var timenew=document.getElementsByTagName("input")[1].value;
+        timeold=parseInt(timeold/1000);
+        timenew=parseInt(timenew/1000);
+        var diff=Math.abs(timeold-timenew);
+        var newd=new Date();
+        var oldd=new Date();
+
+        newd.setFullYear(timeold/60)
+
+        /*console.log(timenew);*/
+
+    }
+
+
+
+
+</script>
+</html>

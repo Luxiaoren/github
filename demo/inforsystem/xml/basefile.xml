@@ -1,26 +1,28 @@
 <?xml version="1.0" ?>
 <file>
     <stufile>
+        <stucount>admin3</stucount>
         <stuname>张三</stuname>                             <!--学生姓名-->
         <stusex>男</stusex>                                 <!--学生性别-->
-        <stubir>1998年8月7号</stubir>                       <!--学生出生年-->
         <stuethnic>汉</stuethnic>                           <!--学生民族-->
         <stuidnum>341227199305067869</stuidnum>             <!--学生身份证号-->
+        <stunum>2014014055</stunum>                          <!--学号-->
+        <studepa>信息工程学院</studepa>                      <!--院系-->
+        <stupro>计算机科学与技术</stupro>                   <!--专业-->
+        <stuclass>1401</stuclass>                           <!--班级-->
+        <stuindate>2014年9月1日</stuindate>                  <!--入学日期-->
+        <stuways>普通全日制</stuways>                        <!--学习形式-->
+        <stubir>1998年8月7号</stubir>                       <!--学生出生年-->
         <stucollname>皖西学院</stucollname>                 <!--学校名称-->
         <stueducation>本科</stueducation>                   <!--学历-->
-        <stupro> 计算机科学与技术</stupro>                   <!--专业-->
         <stuyears>4年</stuyears>                            <!--学制-->
         <stuedccat>普通</stuedccat>                         <!--学历类别-->
-        <stuways>普通全日制</stuways>                        <!--学习形式-->
-        <studepa>信息工程学院</studepa>                      <!--院系-->
-        <stuclass>1401</stuclass>                           <!--班级-->
-        <stunum>2014014055</stunum>                          <!--学号-->
-        <stuindate>2014年9月1日</stuindate>                  <!--入学日期-->
         <stuoutdate>2018年7月1日</stuoutdate>                <!--预计毕业日期-->
         <stustatus>在籍（注册学籍）</stustatus>               <!--学籍状态-->
+    </stufile>
 
-
-
+    <stufile>
+        <stucount>admin2</stucount>
         <stuname>李四</stuname>                             <!--学生姓名-->
         <stusex>男</stusex>                                 <!--学生性别-->
         <stubir>1998年8月7号</stubir>                       <!--学生出生年-->
@@ -28,7 +30,7 @@
         <stuidnum>341227199305067869</stuidnum>             <!--学生身份证号-->
         <stucollname>皖西学院</stucollname>                 <!--学校名称-->
         <stueducation>本科</stueducation>                   <!--学历-->
-        <stupro> 计算机科学与技术</stupro>                   <!--专业-->
+        <stupro>计算机科学与技术</stupro>                   <!--专业-->
         <stuyears>4年</stuyears>                            <!--学制-->
         <stuedccat>普通</stuedccat>                         <!--学历类别-->
         <stuways>普通全日制</stuways>                        <!--学习形式-->
@@ -38,7 +40,9 @@
         <stuindate>2014年9月1日</stuindate>                  <!--入学日期-->
         <stuoutdate>2018年7月1日</stuoutdate>                <!--预计毕业日期-->
         <stustatus>在籍（注册学籍）</stustatus>               <!--学籍状态-->
-
+    </stufile>
+    <stufile>
+        <stucount>admin1</stucount>
         <stuname>李泉</stuname>                             <!--学生姓名-->
         <stusex>男</stusex>                                 <!--学生性别-->
         <stubir>1998年8月7号</stubir>                       <!--学生出生年-->
@@ -46,7 +50,7 @@
         <stuidnum>341227199305067869</stuidnum>             <!--学生身份证号-->
         <stucollname>皖西学院</stucollname>                 <!--学校名称-->
         <stueducation>本科</stueducation>                   <!--学历-->
-        <stupro> 计算机科学与技术</stupro>                   <!--专业-->
+        <stupro>计算机科学与技术</stupro>                   <!--专业-->
         <stuyears>4年</stuyears>                            <!--学制-->
         <stuedccat>普通</stuedccat>                         <!--学历类别-->
         <stuways>普通全日制</stuways>                        <!--学习形式-->
@@ -56,24 +60,48 @@
         <stuindate>2014年9月1日</stuindate>                  <!--入学日期-->
         <stuoutdate>2018年7月1日</stuoutdate>                <!--预计毕业日期-->
         <stustatus>在籍（注册学籍）</stustatus>               <!--学籍状态-->
-
-        <stuname>王五</stuname>                             <!--学生姓名-->
+    </stufile>
+    <stufile>
+        <stucount>admin</stucount>
+        <stuname>康勇</stuname>                             <!--学生姓名-->
         <stusex>男</stusex>                                 <!--学生性别-->
-        <stubir>1998年8月7号</stubir>                       <!--学生出生年-->
         <stuethnic>汉</stuethnic>                           <!--学生民族-->
         <stuidnum>341227199305067869</stuidnum>             <!--学生身份证号-->
+        <stunum>2014014055</stunum>                          <!--学号-->
+        <studepa>信息工程学院</studepa>                      <!--院系-->
+        <stupro>计算机科学与技术</stupro>                   <!--专业-->
+        <stuclass>1401</stuclass>                           <!--班级-->
+        <stuindate>2014年9月1日</stuindate>                  <!--入学日期-->
+        <stuways>普通全日制</stuways>                        <!--学习形式-->
+        <stucontact>181010101</stucontact>
+        <stubir>1998年8月7号</stubir>                       <!--学生出生年-->
         <stucollname>皖西学院</stucollname>                 <!--学校名称-->
         <stueducation>本科</stueducation>                   <!--学历-->
-        <stupro> 计算机科学与技术</stupro>                   <!--专业-->
         <stuyears>4年</stuyears>                            <!--学制-->
         <stuedccat>普通</stuedccat>                         <!--学历类别-->
-        <stuways>普通全日制</stuways>                        <!--学习形式-->
-        <studepa>信息工程学院</studepa>                      <!--院系-->
-        <stuclass>1401</stuclass>                           <!--班级-->
-        <stunum>2014014055</stunum>                          <!--学号-->
-        <stuindate>2014年9月1日</stuindate>                  <!--入学日期-->
         <stuoutdate>2018年7月1日</stuoutdate>                <!--预计毕业日期-->
-        <stustatus>在籍（注册学籍）</stustatus>               <!--学籍状态-->
+        <stustatus>在籍（注册学籍）</stustatus>              <!--学籍状态-->
+    </stufile>
+    <stufile>
+        <stucount>chenyuan</stucount>
+        <stuname>陈圆</stuname>                             <!--学生姓名-->
+        <stusex>女</stusex>                                 <!--学生性别-->
+        <stuethnic>汉</stuethnic>                           <!--学生民族-->
+        <stuidnum>341227199305067869</stuidnum>             <!--学生身份证号-->
+        <stunum>2014014055</stunum>                          <!--学号-->
+        <studepa>信息工程学院</studepa>                      <!--院系-->
+        <stupro>计算机科学与技术</stupro>                   <!--专业-->
+        <stuclass>1401</stuclass>                           <!--班级-->
+        <stuindate>2014年9月1日</stuindate>                  <!--入学日期-->
+        <stuways>普通全日制</stuways>                        <!--学习形式-->
+        <stucontact>181010101</stucontact>
+        <stubir>1998年8月7号</stubir>                       <!--学生出生年-->
+        <stucollname>皖西学院</stucollname>                 <!--学校名称-->
+        <stueducation>本科</stueducation>                   <!--学历-->
+        <stuyears>4年</stuyears>                            <!--学制-->
+        <stuedccat>普通</stuedccat>                         <!--学历类别-->
+        <stuoutdate>2018年7月1日</stuoutdate>                <!--预计毕业日期-->
+        <stustatus>在籍（注册学籍）</stustatus>              <!--学籍状态-->
     </stufile>
 
     <tecfile>

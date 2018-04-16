@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../public.css"/>
+    <title>京东列表页</title>
+    <style>
+        #cont{
+            width:1250px;
+            flex-wrap:wrap;
+            margin:100px auto;
+            display: flex;
+            border:1px solid black;
+            text-align: center;
+
+        }
+        #cont .list img{
+            width:250px;
+            height:300px;
+        }
+        #cont .list span{
+            display:block;
+            font:16px/32px "";
+        }
+        #cont .list p{
+            font:18px/36px "";
+        }
+        em{
+            display:inline-block;
+            width:50px;
+            height:30px;
+            background:#3a87ad;
+            border-radius: 5px;
+            font:16px/30px "";
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+<a href="shopcar.html">购物车</a>
+<div id="cont" data-goodid="liyang"></div>
+</body>
+<script>
+    var json = [{
+        goodid:1,
+        price: 5479,
+        src: "../image/facebook.jpg",
+        name: "apple"
+    }, {
+        goodid:2,
+
+        price: 3534,
+        src: "../image/girl.jpg",
+        name: "girl"
+    }, {
+        goodid:3,
+
+        price: 3424,
+        src: "../image/google.jpg",
+        name: "google"
+    }, {
+        goodid:4,
+
+        price: 324242,
+        src: "../image/intel.jpg",
+        name: "intel"
+    }, {
+        goodid:5,
+
+        price: 12313,
+        src: "../image/amd.jpg",
+        name: "amd"
+    },{
+        goodid:6,
+
+        price:32424,
+        src:"../image/bg.jpg",
+        name:"bg"
+    }
+    ];
+    var obej = document.getElementById('cont');
+    var str = "";
+    for (var i = 0; i < json.length; i++) {
+        str += '<div class="list" data-goodid="'+ json[i].goodid +'"><img src="' + json[i].src + '"><span>' + json[i].price + '</span><p>' + json[i].name + '</p><em>添加</em></div>';
+        obej.innerHTML = str;
+    }
+    obej.addEventListener("click",function (ev) {
+        ev=ev||window.event;
+        var source = ev.target;
+        if(source.nodeName==='EM'){
+            var id  = source.parentNode.getAttribute("data-goodid");
+            document.cookie=id+"="+id;
+        }
+    },false);
+</script>
+</html>

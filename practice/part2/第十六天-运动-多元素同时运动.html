@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="public.css"/>
+    <script src="common.js"></script>
+    <style>
+        #box1, #box2, #box3 {
+            height: 100px;
+            width: 1000px;
+            border: 1px solid black;
+            margin: 0 auto;
+            margin-bottom: 50px;
+            position: relative;
+
+
+        }
+
+        #cont1, #cont2, #cont3 {
+            height: 80px;
+            width: 80px;
+            background: red;
+            position: absolute;
+            top: 10px;
+        }
+    </style>
+    <title>多元素同时运动</title>
+</head>
+<body>
+<div id="box1">
+    <div id="cont1">
+
+    </div>
+</div>
+<div id="box2">
+    <div id="cont2">
+
+    </div>
+</div>
+<div id="box3">
+    <div id="cont3">
+
+    </div>
+</div>
+</body>
+<script>
+    let obox1=document.querySelector('#box1');
+    let obox2=document.querySelector('#box2');
+    let obox3=document.querySelector('#box3');
+    let ocont1=document.querySelector('#cont1');
+    let ocont2=document.querySelector('#cont2');
+    let ocont3=document.querySelector('#cont3');
+
+    obox1.addEventListener('mouseover',()=>{
+       move(ocont1,920);
+    });
+    obox1.addEventListener('mouseout',()=>{
+       move(ocont1,0);
+    });
+    obox2.addEventListener('mouseover',()=>{
+       move(ocont2,920);
+    });
+    obox2.addEventListener('mouseout',()=>{
+       move(ocont2,0);
+    });
+    obox3.addEventListener('mouseover',()=>{
+       move(ocont3,920);
+    });
+    obox3.addEventListener('mouseout',()=>{
+       move(ocont3,0);
+    });
+
+</script>
+
+
+</html>

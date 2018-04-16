@@ -10,15 +10,21 @@
 
 
 }
- .updateBtn a{/*修改按钮*/
+
+.updateBtn a { /*修改按钮*/
     display: block;
-    width:100px;
-    height:30px;
-    background:#428bca;
-    font:13px/30px "";
-    color:#fff;
-    text-align:center;
-    margin-right:23px;
+    width: 100px;
+    height: 30px;
+    background: #428bca;
+    font: 13px/30px "";
+    color: #fff;
+    text-align: center;
+    margin-right: 23px;
+    box-sizing: border-box;
+    border:3px solid #428bca;
+}
+.updateBtn a:hover{
+    background: #1b6aaa;
 }
 .profile{/*主要资料显示部分*/
     height:366px;
@@ -112,6 +118,13 @@
     box-sizing: border-box;
     padding-right:10px;
     color:#336199;
+}
+.profile  > ul > li > p{
+    font:14px/31px "";
+    text-align:left;
+    text-indent: 8px;
+
+
 }
 .news{
     width:1090px;

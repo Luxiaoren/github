@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>顶部悬浮框</title>
+    <style>
+        *{margin:0;padding:0;}
+        body{
+            height:3000px;
+        }
+        div{
+            height:200px;
+            width:100%;
+            background:#3a87ad;
+            font:48px "";
+            text-align:center;
+            position:absolute;
+            display: flex;
+        }
+        span{
+            margin:auto;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>顶部悬浮框</span>
+    </div>
+</body>
+<script>
+    var odiv=document.querySelector('div');
+    odiv.style.height="200px";
+    var inum=parseInt(odiv.style.height);
+    onscroll = function(){
+        var num=document.documentElement.scrollTop;
+        inum=200;
+        inum-=num;
+        odiv.style.top=num+"px";
+        odiv.style.height=((inum-num)>=150?(inum-num):150)+"px";
+
+    }
+</script>
+</html>

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="public.css"/>
+    <title>重力</title>
+    <style>
+        *{
+            margin:0;padding:0;
+        }
+        #box{
+            width:800px;
+            height:500px;
+            border:1px solid black;
+            position:relative;
+            margin:50px auto;
+        }
+        #cont{
+            height:50px;
+            width:50px;
+            border-radius:50%;
+            position:absolute;
+            background:black;
+            left:1px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="cont">
+
+        </div>
+    </div>
+</body>
+<script>
+    var obox=document.querySelector('#box');
+    var ocont=document.querySelector('#cont');
+    var target=500;
+    var xspeed=20;
+    var yspeed=10;
+    var timer=null;
+    // alert(ocont.offsetTop);
+    obox.onmouseover=function(){
+        alert(ocont.offsetTop,ocont.offsetLeft,xspeed);
+
+        clearInterval(timer);
+        timer=setInterval(function () {
+            if(target-ocont.offsetTop<=yspeed+parseInt(getComputedStyle(ocont,false)['height'])){
+                // clearInterval(timer);
+                ocont.style.top=450+'px';
+                yspeed=-yspeed;
+            }else if((800-ocont.offsetLeft<xspeed+50)){
+                xspeed=-xspeed;
+            }else if(ocont.offsetLeft<0){
+                ocont.style.left=0+'px';
+                xspeed=-xspeed;
+            }else if(ocont.offsetTop<0){
+                yspeed=-yspeed;
+                ocont.style.top=0+'px';
+            }else{
+                ocont.style.top=ocont.offsetTop+yspeed+'px';
+                ocont.style.left=ocont.offsetLeft+xspeed+'px';
+            }
+            // yspeed+=1;
+            console.log(ocont.offsetTop,ocont.offsetLeft,xspeed);
+        },30);
+    };
+</script>
+</html>

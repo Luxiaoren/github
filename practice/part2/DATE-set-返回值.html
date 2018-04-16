@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    var d = new Date();
+    d.setFullYear(2009);    //设置年
+    d.setMonth(6);          //设置月，超过11，累加年
+    d.setDate(27);          //设置日，超过最大日期，累加月
+    d.setHours(40);         //设置小时，超过24，累加天
+    d.setMinutes(40);       //设置分钟，超过60，累加小时
+    d.setSeconds(40);       //设置秒，超过60，累加分钟
+    d.setMilliseconds(40);  //设置毫秒，超过1000，累加秒
+    d.setTime(10000);    //设置从1970年1月1日过去了多少秒
+
+    console.log(d.setFullYear(2009))          //返回更改后的年月日 时分秒
+</script>
+
+
+</html>

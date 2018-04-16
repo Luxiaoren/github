@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="public.css"/>
+    <style>
+        table {
+            width: 500px;
+            table-layout: fixed;
+            margin: 50px auto;
+            text-align: center;
+
+        }
+        img{
+            width:50px;
+            height:50px;
+        }
+        em{
+            cursor: pointer;
+        }
+    </style>
+    <title>购物车</title>
+</head>
+<body>
+<a href="第十三天-cookie-购物车.html">去购物</a>
+<table border="2" cellspacing="0">
+
+    <thead>
+    <tr>
+        <td>图片</td>
+        <td>名称</td>
+        <td>价格</td>
+        <td>操作</td>
+    </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+</body>
+<script>
+    var json = [{
+        goodid:1,
+        price: 5479,
+        src: "../image/facebook.jpg",
+        name: "apple"
+    }, {
+        goodid:2,
+
+        price: 3534,
+        src: "../image/girl.jpg",
+        name: "girl"
+    }, {
+        goodid:3,
+
+        price: 3424,
+        src: "../image/google.jpg",
+        name: "google"
+    }, {
+        goodid:4,
+
+        price: 324242,
+        src: "../image/intel.jpg",
+        name: "intel"
+    }, {
+        goodid:5,
+
+        price: 12313,
+        src: "../image/amd.jpg",
+        name: "amd"
+    },{
+        goodid:6,
+
+        price:32424,
+        src:"../image/bg.jpg",
+        name:"bg"
+    }
+    ];
+    var otbody = document.querySelector('tbody');
+    var str = "";
+    var cookie = document.cookie;
+    cookie = cookie.split('; ');
+    console.log(cookie);
+    for(var i=0;i<cookie.length;i++){
+        otr=document.createElement('tr');
+        var id=cookie[i].split('=')[0];
+        console.log(id);
+        str="<td><img src='"+ json[id-1].src +"'></td><td>"+ json[id-1].price +"</td><td>"+ json[id-1].name +"</td><td data-goodid='"+ json[id-1].goodid +"'><em>删除</em></td>";
+        otr.innerHTML=str;
+        otbody.appendChild(otr);
+    }
+    otbody.addEventListener("click",function(ev){
+        ev=ev||window.event;
+        var source=ev.target;
+        if(source.nodeName==="EM"){
+           var gid= source.parentNode.getAttribute('data-goodid');
+           var d=new Date();
+           d.setDate(d.getDate()-1);
+           document.cookie=""+ id +"=;expires="+d;
+           source.parentNode.parentNode.remove();
+            console.log(gid);
+        }
+    })
+</script>
+</html>

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>进度条效果高级版</title>
+    <style>
+        *{margin:0;padding:0;}
+        div{
+            height:20px;
+            width:500px;
+            margin:200px auto;
+            border:1px solid #3a87ad;
+        }
+        p{
+            height:100%;
+            background:#000;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p></p>
+    </div>
+</body>
+<script>
+
+
+
+
+
+
+     onload =function(){
+         var pwidth=0;
+         setInterval(function () {
+            if(pwidth===250) {
+                setTimeout(function () {
+
+                    pwidth+=1;
+                }, 1000); }else{
+                pwidth+=1;
+            }
+                op.style.width = pwidth + "px";
+         },10)
+     }
+   /* function panduan(s){
+        if(s>='0'&&s<='9')
+            return 1;
+        if(s>='a'&&a<='z'||s>='A'&&s<='z')
+            return 2;
+        return 3;
+    }
+
+
+    if(panduan(str[i])===1){
+
+    }
+    if(panduan(str[i])===2){
+
+    }
+    function shuchu(op,str,str2){
+        var p=document.getElementById('p');
+        shuchu(p)
+        op.style.textAlign=str;
+        op.innerHTML=str2;
+    }
+        shuchu(op,"left","差");*/
+
+   /*function shuchu(element){
+        alert(element);
+   }
+   function shuchup(){
+        shuchu(p);
+   }
+   function shuchuspan(){
+    shuchu(span);
+   }*/
+
+  /* Array.prototype.kangyong=function(){
+       console.log(1);
+   };
+
+   var str = new Array(2);
+   str.kangyong();*/
+</script>
+</html>

@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/public.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/stu-style-classdate.css"/>
@@ -25,7 +28,7 @@
     <a href="#" id="stu" onclick="changelist(this,stulist,true);">学生模块</a>
     <ul id="stulist">
         <li><a href="stu-basefile.html">基本资料</a></li>
-        <li><a href="#" >班级情况</a></li>
+        <li><a href="#">班级情况</a></li>
         <li><a href="stu-homewok.html">家庭作业</a></li>
         <li><a href="stu-classconf.html">班级通知</a></li>
     </ul>
@@ -43,12 +46,153 @@
         <li><a href="admin-contacts.html">联系我们</a></li>
     </ul>
 </aside>
-<div id="main">
-    <div class="bar">
+<div id="main" class="">
+    <div class="bar">学生 > 班级情况</div>
+
+    <div class="cd">
+        <h4>班级详情</h4>
+        <ul class="classtitle">
+            <li>班级名称</li>
+            <li>所属学院</li>
+            <li>辅导员</li>
+            <li>班长</li>
+            <li>班委成员</li>
+            <li>班级人数</li>
+            <li>班级荣誉</li>
+            <li>备注</li>
+        </ul>
+        <ul class="classcontent">
+            <li>计算机科学与技术1401班</li>
+            <li>电子信息工程学院</li>
+            <li>张辅导员</li>
+            <li>李班长</li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    班委成员&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#"><p>副班长:</p> <span>王二</span></a></li>
+                    <li><a href="#"><p>团支书:</p><span>王二</span></a></li>
+                    <li><a href="#"><p>学习委员:</p><span>王二</span></a></li>
+                    <li><a href="#"><p>体育委员:</p><span>王二</span></a></li>
+                    <li><a href="#"><p>文娱委员:</p><span>王二</span></a></li>
+                    <li><a href="#"><p>信息员:</p><span>王二</span></a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">分离的链接</a></li>
+                </ul>
+            </li>
+            <li>60</li>
+            <li>无</li>
+            <li>无</li>
+        </ul>
+        <h4>班级成员 <span>展开</span></h4>
+        <ul class="memtitle">
+            <li>学号</li>
+            <li>姓名</li>
+            <li>性别</li>
+            <li>民族</li>
+            <li>身份证号</li>
+            <li>家庭住址</li>
+            <li>联系方式</li>
+            <li>邮箱</li>
+            <li>备注</li>
+
+
+        </ul>
+        <ul class="memcontent">
+            <li>
+                <span>2014014013</span>
+                <span>张三</span>
+                <span>男</span>
+                <span>汉</span>
+                <span>341227199305064859</span>
+                <span>安徽省利辛县马店镇康小庄1户小庄1户小庄1户</span>
+                <span>18106212269</span>
+                <span>18106212269@qq.com</span>
+                <span></span>
+            </li>
+            <li>
+                <span>2014014013</span>
+                <span>占三</span>
+                <span>男</span>
+                <span>汉</span>
+                <span>341227199305064859</span>
+                <span>安徽省利水电费撒的风格撒的风格水电费公司的风格水电费</span>
+                <span>18106212269</span>
+                <span>18106212269@qq.com</span>
+                <span></span>
+            </li>
+            <li>
+                <span>2014014013</span>
+                <span>张</span>
+                <span>男</span>
+                <span>汉</span>
+                <span>341227199305064859</span>
+                <span>海水淡化发撒旦法 速度 速度是是是</span>
+                <span>18106212269</span>
+                <span>18106212269@qq.com</span>
+                <span></span>
+            </li>
+            <li>
+                <span>2014014013</span>
+                <span>张三</span>
+                <span>男</span>
+                <span>汉</span>
+                <span>341227199305064859</span>
+                <span>安徽省利发撒旦法按时发生的阿什顿飞暗示法阿斯顿</span>
+                <span>18106212269</span>
+                <span>18106212269@qq.com</span>
+                <span></span>
+            </li>
+            <li>
+                <span>2014014013</span>
+                <span>张三</span>
+                <span>男</span>
+                <span>汉</span>
+                <span>341227199305064859</span>
+                <span>安徽省利速度公司的风格水电费公司代付速度公司代付</span>
+                <span>18106212269</span>
+                <span>18106212269@qq.com</span>
+                <span></span>
+            </li>
+        </ul>
 
     </div>
 
 </div>
+<div id="hiddenp"></div>
 </body>
 <script src="js/style.js"></script>
+<script>
+    var memspan = document.querySelectorAll('.memcontent li span');
+    var hiddenp = document.getElementById('hiddenp');
+
+    for (var i = 0; i < memspan.length; i++) {
+        memspan[i].onmouseover = function (ev) {
+            ev = ev || window.event;
+            hiddenp.innerHTML = this.innerHTML;
+            hiddenp.style.display = 'block';
+            hiddenp.style.left = ev.pageX + 10 + "px";
+            hiddenp.style.top = ev.pageY + 10 + "px";
+            console.log(ev.pageX, ev.pageX);
+        };
+        memspan[i].onmouseout = function (ev) {
+            hiddenp.style.display = 'none';
+        }
+    }
+
+    var ospan = document.querySelector('h4 span');
+    var oul = document.querySelector('ul.memcontent');
+
+    ospan.onclick = function () {
+        if (this.innerHTML === "展开") {
+
+            this.innerHTML = "折叠";
+            oul.style.height = 'auto';
+        } else {
+            oul.style.height = '95px';
+            this.innerHTML = "展开";
+        }
+    }
+</script>
 </html>

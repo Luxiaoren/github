@@ -8,3 +8,66 @@ aside ul#stulist{
 aside ul:nth-of-type(1) li:nth-child(3) a{
     background: #6fb3e0;
 }
+.homework{
+    width: 1090px;
+    margin: 0 auto;
+}
+.homework > h4{
+    font:24px/42px "";
+    color:#393f4b;
+    border-bottom:1px dotted  #e2e2e2;
+    text-align: center;
+    margin-top:22px;
+}
+.homework .content div{
+    border-bottom:1px solid #f0f0f0;
+    width:600px;
+    margin:0 auto;
+    text-indent: 20px;
+    display: flex;
+}
+.homework .content div span{
+    font:16px/32px "";
+    width:100px;
+}
+.homework .content div p{
+    flex:1;
+    word-wrap: break-word;
+    font:14px/28px "";
+    text-indent: 0;
+}
+.submit{
+    margin-top:50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.submit > h4{
+    font:24px/42px "";
+    color:#393f4b;
+    border-bottom:1px dotted  #e2e2e2;
+    text-align: center;
+    margin-top:22px;
+    width:100%;
+}
+.submit label{
+    width:50%;
+    margin-top:30px;
+    height:40px;
+    display: flex;
+}
+.submit textarea{
+    width:100%;
+    margin-top:30px;
+    height:800px;
+    padding:0 10px;
+    font:14px/20px "";
+}
+.submit label span{
+    width:100px;
+    font:20px/40px "";
+}
+.submit label input{
+    width:100%;
+    height:100%;
+}

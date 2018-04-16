@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="public.css"/>
+    <title>Title</title>
+</head>
+<style>
+    div#box{
+        width:400px;
+        height:500px;
+        border:1px solid black;
+        margin:0 auto;
+        text-align: right;
+    }
+    .content{
+        width:390px;
+        height:300px;
+        margin:5px auto;
+        border:1px dotted black;
+        overflow: auto;
+    }
+    textarea{
+        display: block;
+        width:390px;
+        height:100px;
+        margin:0 auto;
+    }
+    button{
+          display:inline-block;
+        width:60px;
+
+      }
+    p{
+        border:0px solid black;
+        overflow: hidden;
+    }
+    span{
+        border:0px solid red;
+        padding:3px 5px;
+        border-radius:3px;
+        max-width: 150px;
+        text-align:left;
+        float:none;
+    }
+</style>
+<body>
+<div id="box">
+    <div class="content"></div>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <button onclick="send()">发送</button>
+</div>
+</body>
+<script>
+    var mesnum=0;
+    function send(){
+        var otextarea= document.getElementsByTagName('textarea')[0];
+        var odiv= document.getElementsByClassName('content')[0];
+        var op = document.createElement('p');
+        var ospan = document.createElement('span');
+        odiv.scrollTop=9000000;
+        ospan.innerHTML=otextarea.value;
+
+        op.appendChild(ospan);
+        odiv.appendChild(op);
+        mesnum+=1;
+        if(mesnum%2!==0){
+            // ospan.style.float='left';
+            // ospan.style.backgroundColor='#D3D3D3';
+            getComputedStyle(ospan,false)['float']='left';
+
+        }else{
+            ospan.style.float='right';
+            ospan.style.backgroundColor='#9ACD32';
+        }
+    }
+</script>
+</html>

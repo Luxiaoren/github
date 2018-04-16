@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="public.css"/>
+    <title>缓冲</title>
+    <style>
+        #box {
+            width: 100px;
+            height: 100px;
+            background: #000;
+            left: 1000px;
+            position: absolute;
+        }
+
+        #b {
+            width: 500px;
+            border: 1px solid black;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+<div id="b">
+
+    <div id="box">
+    </div>
+
+</div>
+</body>
+<script>
+    function move($this, target, pro) {
+        pro = pro || "left";
+        let speed;
+        clearInterval($this.timer);
+        $this.timer = setInterval(() => {
+
+            let w = (target - parseInt(getComputedStyle($this, false)[pro])) / 10;
+            speed = w > 0 ? Math.ceil(w) : Math.floor(w);
+            $this.style[pro] = parseInt(getComputedStyle($this, false)[pro]) + speed + 'px';
+            if (parseInt(getComputedStyle($this, false)[pro]) === target) {
+                clearInterval($this.timer);
+            }
+        }, 30);
+    }
+
+    let obox = document.querySelector('#box');
+    obox.addEventListener('click', () => {
+        move(obox, 500);
+    })
+
+</script>
+</html>

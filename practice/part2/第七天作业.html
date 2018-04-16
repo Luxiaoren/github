@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>第七天作业</title>
+</head>
+<body>
+<input type="text" id="text1" value="" disabled>
+<input type="button" id="btn1" value="生成随机数" onclick="remnumber()"><br>
+<input type="text" id="text2" value="">
+<input type="button" id="btn2" onclick="charnum()" value="统计字符个数">
+<span></span><br>
+</body>
+<script>
+    var str = "1.数字字母混合的验证码";
+    var str2 = "2.aabccd统计每个字符出现的次数，结果显示a 2，b 1，c 2，d 1，去掉重复的字符，使结果显示abcd";
+    var bh = "<br><hr>";
+    document.write(str + bh);
+    document.write(str2 + bh);
+
+    // var ram=parseInt(Math.random()*(65-90)+90)||parseInt(Math.random()*(48-57)+57);
+    // var ram=1||2;
+    function remnumber() {
+        var flag;
+        /*随机标志位 用来表示从哪个区间取得随机数*/
+        var rem;
+        /*一位随机数*/
+        var num = "";
+        /*四次一位随机数拼接*/
+        for (var i = 0; i < 4; i++) {
+            flag = parseInt(Math.random() * (1 - 4) + 4);
+            switch () {
+                case 1:
+                    rem = parseInt(Math.random() * (48 - 58) + 58);
+                    break;
+                case 2:
+                    rem = parseInt(Math.random() * (65 - 91) + 91);
+                    break;
+                case 3:
+                    rem = parseInt(Math.random() * (97 - 114) + 114);
+                    break;
+            }
+            rem = String.fromCharCode(rem);
+            num += rem;
+        }
+
+        document.getElementById('text1').value = num;
+    }
+
+    function charnum() {
+        var str = document.getElementById('text2').value;
+        str === "" && alert("请输入字符串");
+        var arr = {};
+        for (var i = 0; i < str.length; i++) {
+            if (arr[str[i]]) {
+                arr[str[i]]++;
+            } else {
+                arr[str[i]] = 1;
+            }
+        }
+        var strr = "";
+        for (var j in arr) {
+            strr = strr + j + arr[j] + ",";
+        }
+        document.getElementsByTagName('span')[0].innerHTML = strr;
+        0
+    }
+
+</script>
+</html>

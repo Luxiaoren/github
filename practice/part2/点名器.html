@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div id="name"></div>
+<input type="button" value="开始" id="btn" onclick="randomname()">
+
+</body>
+<script>
+    var stuname = ["张三", "李四", "askdfj ",
+        "asdf a", "fasdf ", "adsf asd", "kladsf", "24324 sdf ", "df as"];
+    var index = 0;
+    var name1 = document.getElementById("name");
+    var onoff = true;
+    var timer = null;
+    function randomname() {
+        if (onoff) {
+            clearInterval(timer);
+            timer = setInterval(function () {
+                name1.innerHTML = stuname[index];
+                index++;
+                if (index === stuname.length - 1) {
+                    index = 0;
+                }
+            }, 100);
+            onoff = false;
+        } else {
+            clearInterval(timer);
+            name1.innerHTML = stuname[index];
+            onoff = true;
+        }
+    }
+</script>
+</html>

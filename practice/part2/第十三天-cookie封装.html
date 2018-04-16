@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>cookie封装</title>
+</head>
+<body>
+
+</body>
+<script>
+    function setCookie(key,value,time) {
+        time=time||0;
+        console.log(time);
+        var d=new Date();
+        console.log(d);
+        d.setSeconds(d.getSeconds()+time);
+        console.log(d);
+        document.cookie=key+"="+value+";expires="+d+";path=/";
+    }
+    function removeCookie(key) {
+        setCookie(key,"null",-1);
+    }
+    function getCookie(key) {
+        var str = document.cookie;
+        str=str.split("; ");
+        for(var i= 0;i<str.length;i++){
+            if(str[i].split("=")[0]===key){
+                return str[i].split("=")[1];
+            }
+        }
+        return false;
+    }
+    console.log(getCookie("user"));
+    // removeCookie("name");
+    // setCookie("user","jsjfj",100*6);
+    // setCookie("user1","jsjfj",100*6);
+    // setCookie("user2","jsjfj",100*6);
+    // var d=new Date();
+    // d.setDate(d.getDate()-1);
+    // console.log(d);
+    // document.cookie="name=admin2;expires="+d;
+    // // var d = new Date();
+    // // d.setDate(d.getDate()+day);
+    // // document.cookie = key+"="+value+";expires="+d+";path=/";
+</script>
+</html>

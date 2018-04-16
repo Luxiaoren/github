@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="public.css"/>
+    <script src="common.js"></script>
+    <title>悬浮框高级版</title>
+    <style>
+        #box{
+            height:150px;
+            width:100px;
+            background:black;
+            position:absolute;
+        }
+         body{
+             height:2000px;
+         }
+    </style>
+</head>
+<body>
+    <div id="box">
+
+    </div>
+</body>
+<script>
+    let obox=document.querySelector('#box');
+    let h=parseInt((document.documentElement.clientHeight-obox.offsetHeight)/2);
+    // alert(obox);
+    window.onscroll =function () {
+        // alert(1);
+        let target=h+document.documentElement.scrollTop;
+        move(obox,target,"top");
+    }
+</script>
+</html>

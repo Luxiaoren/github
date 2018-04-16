@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>键盘事件</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            background: black;
+            border: 1px solid #fff;
+        }
+    </style>
+</head>
+<body>
+<div id="head"></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+</body>
+<script>
+    var json = [
+        {
+            top: 0,
+            left: 0
+        }, {
+            top: 0,
+            left: 0
+        }, {
+            top: 0,
+            left: 0
+        }, {
+            top: 0,
+            left: 0
+        }, {
+            top: 0,
+            left: 0
+        }, {
+            top: 0,
+            left: 0
+        }, {
+            top: 0,
+            left: 0
+        }, {
+            top: 0,
+            left: 0
+        }
+    ];
+    var ohead = document.getElementById('head');
+    var obody = document.getElementsByTagName('div');
+    var food;
+    var foodx;
+    var foody;
+    foodx = parseInt(Math.random() * 1200);
+    foody = parseInt(Math.random() * 600);
+    foodx -= (foodx % 50);
+    foody -= (foody % 50);
+    food = true;
+
+    function reset() {
+        for (var i = json.length - 1; i > 0; i--) {
+
+            json[i].left = json[i - 1].left;
+            json[i].top = json[i - 1].top;
+        }
+
+    }
+
+    function redraw() {
+        for (var j = 1; j < json.length; j++) {
+            obody[j].style.left = json[j].left + "px";
+            obody[j].style.top = json[j].top + "px";
+        }
+    }
+
+    function judge(way) {
+        if (way === 37) {
+            for (var i = 0; i < json.length; i++) {
+                if (parseInt(ohead.style.left) - 50 === json[i].left && parseInt(ohead.style.top) === json[i].top) {
+                    return false
+                }
+            }
+        }
+        if (way === 38) {
+            for (var j = 0; j < json.length; j++) {
+                if (parseInt(ohead.style.top) - 50 === json[j].top && parseInt(ohead.style.left) === json[j].left) {
+                    return false;
+                }
+            }
+        }
+        if (way === 39) {
+            for (var k = 0; k < json.length; k++) {
+                if (parseInt(ohead.style.left) + 50 === json[k].left && parseInt(ohead.style.top) === json[k].top) {
+                    return false;
+                }
+            }
+        }
+        if (way === 40) {
+            for (var m = 0; m < json.length; m++) {
+                if (parseInt(ohead.style.top) + 50 === json[m].top && parseInt(ohead.style.left) === json[m].left) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    function drawfood() {
+        var p = document.createElement('p');
+        var op = document.getElementsByTagName('p');
+        for (var i = 0; i < op.length; i++) {
+            op[i].remove();
+        }
+        p.style.height = '50px';
+        p.style.width = '50px';
+        p.style.backgroundColor = 'red';
+        p.style.position = 'absolute';
+        p.style.left = foodx + 'px';
+        p.style.top = foody + 'px';
+        document.body.appendChild(p);
+        return true;
+    }
+
+    function addbody() {
+        var div = document.createElement('div');
+        document.body.appendChild(div);
+        var jleft= json[json.length - 2].left - json[json.length - 1].left >= 0 ? (json[json.length - 2].left - json[json.length - 1].left === 0 ? json[json.length - 1].left : json[json.length - 1].left - 50) : json[json.length - 1].left + 50;
+        var jtop= json[json.length - 2].top - json[json.length - 1].top >= 0 ? (json[json.length - 2].top - json[json.length - 1].top === 0 ? json[json.length - 1].top : json[json.length - 1].top - 50) : json[json.length - 1].top + 50;
+        var newjson='{"top":'+ jtop+',"left":'+ jleft+'}';
+        json.push(JSON.parse(newjson));
+        return true;
+    }
+
+    document.onkeydown = function (ev) {
+
+        ev = ev || window.event;
+        var way = ev.keyCode;
+        var flag = true;
+        var isexit;
+        drawfood();
+        if (!food) {
+            do{
+                isexit=false;
+                foodx = parseInt(Math.random() * 1200);
+                foody = parseInt(Math.random() * 600);
+                foodx -= (foodx % 50);
+                foody -= (foody % 50);
+                for (var i = 0; i < json.length; i++) {
+                    if (foodx === json[i].left && foody === json[i].top) {
+                        isexit = true;
+                        break;
+                    }
+                }
+
+
+            }while (isexit);
+            food = true;
+            drawfood();
+        }
+
+        switch (way) {
+            case 37:
+                flag = judge(37);
+                if (flag) {/*没有撞到身体*/
+                    ohead.style.left = ohead.offsetLeft - 50 + "px";
+                    if (parseInt(ohead.style.left) === foodx&&parseInt(ohead.style.top)===foody) {
+                        addbody();
+                        food = false;
+                    }
+                }
+                break;
+            case 38:
+                flag = judge(38);
+                if (flag) {
+                    ohead.style.top = ohead.offsetTop - 50 + "px";
+
+                }if (parseInt(ohead.style.left) === foodx&&parseInt(ohead.style.top)===foody) {
+                addbody();
+                food = false;
+            }
+                break;
+            case 39:
+                flag = judge(39);
+                if (flag) {
+                    ohead.style.left = ohead.offsetLeft + 50 + "px";
+                    if (parseInt(ohead.style.left) === foodx&&parseInt(ohead.style.top)===foody) {
+                        addbody();
+                        food = false;
+                    }
+                }
+                break;
+            case 40:
+                flag = judge(40);
+                if (flag) {
+                    ohead.style.top = ohead.offsetTop + 50 + "px";
+                    if (parseInt(ohead.style.left) === foodx&&parseInt(ohead.style.top)===foody) {
+                        addbody();
+                        food = false;
+                    }
+                }
+                break;
+
+        }
+        if (flag) {
+            reset();
+            json[0].left = ohead.offsetLeft;
+            json[0].top = ohead.offsetTop;
+            redraw();
+        }
+
+         console.log(ohead.style.left,ohead.style.top);
+         // console.log();
+         console.log(foodx,foody);
+    }
+</script>
+</html>

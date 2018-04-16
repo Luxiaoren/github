@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="public.css"/>
+    <script src="common.js"></script>
+    <title>侧边栏分享</title>
+    <style>
+        #box {
+            width: 200px;
+            height: 300px;
+            background-color: gray;
+            font:14px/28px "";
+            position: absolute;
+            left:-200px;
+        }
+        li{
+            text-indent:30px;
+            cursor: pointer;
+        }
+        span{
+            position:absolute;
+            left:200px;
+            background:#478fca;
+            font:15px/30px "";
+            padding:5px 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <span>分享到</span>
+    <ul>
+        <li>分享1</li>
+        <li>分享2</li>
+        <li>分享3</li>
+        <li>分享4</li>
+    </ul>
+</div>
+</body>
+<script>
+    let obox=document.querySelector('#box');
+    obox.addEventListener("mouseover",()=>{
+        move(obox,0);
+    });
+    obox.addEventListener("mouseout",()=>{
+       move(obox,-200);
+    })
+</script>
+</html>

@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="public.css"/>
+    <title>简易万年历</title>
+    <style>
+        ul {
+            height: 400px;
+            width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+            justify-content: space-around;
+            margin: auto;
+            margin-top: 100px;
+            box-sizing: border-box;
+            padding-top: 10px;
+        }
+
+        li {
+            height: 80px;
+            width: 80px;
+            background: gray;
+            border: 1px solid black;
+            font: 18px "";
+            text-align: center;
+            box-sizing: border-box;
+            padding-top: 10px;
+            cursor: pointer;
+        }
+
+        span {
+            line-height: 30px;
+        }
+
+        div {
+            height: 100px;
+            width: 300px;
+            margin: auto;
+            border: 1px solid black;
+            text-indent: 10px;
+        }
+
+        h4 {
+            font: 20px/40px "";
+        }
+
+        div p {
+            font: 16px "";
+        }
+    </style>
+</head>
+
+<body>
+<a href=""></a>
+<img src="" alt="">
+<ul>
+    <li><span>1</span>
+        <p>Jan</p></li>
+    <li><span>2</span>
+        <p>Feb</p></li>
+    <li><span>3</span>
+        <p>Mar</p></li>
+    <li><span>4</span>
+        <p>Apr</p></li>
+    <li><span>5</span>
+        <p>May</p></li>
+    <li><span>6</span>
+        <p>Jun</p></li>
+    <li><span>7</span>
+        <p>Jul</p></li>
+    <li><span>8</span>
+        <p>Aug</p></li>
+    <li><span>9</span>
+        <p>Sep</p></li>
+    <li><span>10</span>
+        <p>Oct</p></li>
+    <li><span>11</span>
+        <p>Nov</p></li>
+    <li><span>12</span>
+        <p>Dec</p></li>
+</ul>
+<div>
+    <div id="div">
+        <h4>万年历</h4>
+        <p>万年历内容</p>
+    </div>
+</div>
+
+
+</body>
+<script>
+
+    var json = [
+        {
+            title: "这是一月",
+            content: "这是一月内容"
+        },
+        {
+            title: "这是二月",
+            content: "这是二月内容"
+        },
+        {
+            title: "这是三月",
+            content: "这是三月内容"
+        },
+        {
+            title: "这是四月",
+            content: "这是四月内容"
+        },
+        {
+            title: "这是五月",
+            content: "这是五月内容"
+        },
+        {
+            title: "这是六月",
+            content: "这是六月内容"
+        },
+        {
+            title: "这是七月",
+            content: "这是七月内容"
+        },
+        {
+            title: "这是八月",
+            content: "这是八月内容"
+        },
+        {
+            title: "这是九月",
+            content: "这是九月内容"
+        },
+        {
+            title: "这是十月",
+            content: "这是十月内容"
+        },
+        {
+            title: "这是十一月",
+            content: "这是十一月内容"
+        },
+        {
+            title: "这是十二月",
+            content: "这是十二月内容"
+        }
+
+    ];
+
+
+    var oli = document.querySelectorAll('li');
+
+    var odiv = document.querySelector('#div');
+
+    for (var i = 0; i < oli.length; i++) {
+        oli[i].index = i;
+        oli[i].onclick = function () {
+
+            for (var j = 0; j < oli.length; j++) {
+                oli[j].style.background = 'gray';
+            }
+            this.style.background = 'white';
+
+            odiv.children[0].innerHTML = json[this.index].title;
+            odiv.children[1].innerHTML = json[this.index].content;
+        }
+    }
+
+
+
+</script>
+</html>

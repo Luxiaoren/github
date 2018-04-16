@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../public.css"/>
+    <title>京东列表页</title>
+    <style>
+        #cont{
+            width:1250px;
+            flex-wrap:wrap;
+            margin:100px auto;
+            display: flex;
+            border:1px solid black;
+            text-align: center;
+
+        }
+        #cont .list img{
+            width:250px;
+            height:300px;
+        }
+        #cont .list span{
+            display:block;
+            font:16px/32px "";
+        }
+        #cont .list p{
+            font:18px/36px "";
+        }
+    </style>
+</head>
+<body>
+<div id="cont"></div>
+</body>
+<script>
+    var json = [{
+        price: 5479,
+        src: "../image/facebook.jpg",
+        name: "apple"
+    }, {
+        price: 3534,
+        src: "../image/girl.jpg",
+        name: "girl"
+    }, {
+        price: 3424,
+        src: "../image/google.jpg",
+        name: "google"
+    }, {
+        price: 324242,
+        src: "../image/intel.jpg",
+        name: "intel"
+    }, {
+        price: 12313,
+        src: "../image/amd.jpg",
+        name: "amd"
+    },{
+        price:32424,
+        src:"../image/bg.jpg",
+        name:"bg"
+    }
+    ];
+    var obej = document.getElementById('cont');
+    var str = "";
+    for (var i = 0; i < json.length; i++) {
+        str += '<div class="list"><img src="' + json[i].src + '"><span>' + json[i].price + '</span><p>' + json[i].name + '</p></div>';
+        obej.innerHTML = str;
+    }
+</script>
+</html>

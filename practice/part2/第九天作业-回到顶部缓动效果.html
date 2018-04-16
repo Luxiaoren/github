@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>回到顶部缓动效果</title>
+    <style>
+        *{margin:0;padding:0;}
+        body{
+            height:5000px;
+            background:#3a87ad;
+        }
+        span{
+            position:absolute;
+            bottom:0;
+            height:40px;
+            width:200px;
+            background:#535353;
+            text-align:center;
+            font:18px/40px "";
+            cursor: pointer;
+            right:0;
+        }
+    </style>
+</head>
+<body>
+<span>回到顶部</span>
+</body>
+<script>
+
+    var ospan=document.querySelector('span');
+    onscroll=function(){
+        var bspan=document.documentElement.scrollTop;
+        ospan.style.bottom=(-bspan)+"px";
+    };
+
+    ospan.onclick=function(){
+        var timer = setInterval(function () {
+       document.documentElement.scrollTop-=20;
+       if(document.documentElement.scrollTop===0){
+           clearInterval(timer);
+       }
+
+        },1)
+
+    }
+    /* var str="1asfas";
+     var num=false,word=false;
+
+   /*for(var i=0;i<str.length;i++){
+       /* if(str[i]>='0'&&str[i]<='9'){
+            num=true;
+        }
+        if(str[i]>='a'&&str[i]<='z'||str[i]>='A'&&str[i]<='Z'){
+            word=true;
+        }
+    }
+    if(num&&word){
+        alert("正确");
+    }else{
+        alert("错误");
+    }*/
+
+</script>
+</html>

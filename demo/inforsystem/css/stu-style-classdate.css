@@ -1,10 +1,158 @@
-aside a#stu{
-    background:#fff;
+aside a#stu {
+    background: #fff;
 }
-aside ul#stulist{
-    height:144px;
+
+aside ul#stulist {
+    height: 144px;
 
 }
-aside ul:nth-of-type(1) li:nth-child(2) a{
+a{
+    text-decoration: none;
+}
+aside ul:nth-of-type(1) li:nth-child(2) a {
     background: #6fb3e0;
+}
+
+.cd {
+    width: 1090px;
+    margin: 0 auto;
+    border: 1px solid black;
+    height:1000px;
+    border-left:none;
+    border-right:none;
+
+}
+
+.cd > h4 {
+    font:24px/42px "";
+    color:#393f4b;
+    border-bottom:1px dotted  #e2e2e2;
+    text-align: center;
+    margin-top:22px;
+}
+ul.classtitle,ul.memtitle{/*班级标题*/
+    display: flex;
+    width:100%;
+    border-top:1px solid #dddddd;
+    border-bottom:2px solid #dddddd;
+    border-right:1px solid #dddddd;
+    margin-top:12px;
+    background:#f2f2f2;
+}
+ul.classtitle li,ul.memtitle li{
+    height:34px;
+    font:14px/34px "";
+    color:#707070;
+    border-left:1px solid #dddddd;
+    flex: 1;
+    text-indent:8px;
+
+}
+ul.classtitle > li:nth-child(1){
+    flex-basis: 100px;
+}
+ul.classcontent{
+    display: flex;
+    border-right:1px solid #dddddd;
+    flex-wrap: wrap;
+}
+ul.classcontent > li{
+    flex: 1;
+    text-indent: 8px;
+    box-sizing: border-box;
+    border-top:1px solid #dddddd;
+    border-bottom:1px solid #dddddd;
+    border-left:1px solid #dddddd;
+    height:40px;
+    font:12px/40px "";
+    display: flex;
+    margin:auto;
+    /*white-space: nowrap;*/
+    /*overflow: hidden;*/
+    /*text-overflow: ellipsis;*/
+
+
+}
+ul.classcontent > li:nth-child(1){
+   flex-basis: 100px;
+}
+ul.classcontent > li a{
+    text-decoration: none;
+}
+ul.dropdown-menu li{
+    display: flex;
+    padding:0;
+}
+ul.dropdown-menu li a {
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    border:0px solid black;
+    padding-left:0;
+    padding-right:0;
+}
+ul.dropdown-menu li a p{
+    text-align: right;
+
+    border:0px solid black;
+    width:50%;
+}
+ul.dropdown-menu li a span{
+    width:50%;
+    border:0px solid black;
+}
+
+ul.memtitle li:nth-child(5){
+    flex-basis: 100px;
+}
+ul.memtitle li:nth-child(6){
+    flex-basis: 150px;
+}
+#hiddenp{
+    position: absolute;
+    font:14px/28px "";
+    padding:5px 8px;
+    display: none;
+    background:gray;
+    color:#fff;
+}
+.cd > h4:nth-of-type(2){
+    position: relative;
+}
+.cd > h4:nth-of-type(2) > span{
+    position:absolute;
+    right:0;
+    height:28px;
+    font:14px/28px "";
+    top:0;bottom:0;
+    margin: auto;
+    background:#6FB3E0;
+    border-radius: 5px;
+    padding:0 10px;
+    cursor: pointer;
+}
+ul.memcontent{
+    overflow: hidden;
+    height:95px;
+}
+ul.memcontent li{
+    display: flex;
+    border:1px solid #ddd;
+}
+ul.memcontent li span{
+    flex: 1;
+    border-left:1px solid #ddd;
+    text-indent:8px;
+    font:12px/28px "";
+    white-space: nowrap;
+    overflow: hidden;
+}
+ul.memcontent li span:nth-child(5){
+    flex-basis: 100px;
+
+}
+ul.memcontent li span:nth-child(6){
+    flex-basis: 150px;
+
+
 }

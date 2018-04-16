@@ -25,7 +25,7 @@
     <a href="#" id="stu" onclick="changelist(this,stulist,true);return false;">学生模块</a>
     <ul id="stulist">
         <li><a href="stu-basefile.html">基本资料</a></li>
-        <li><a href="stu-classdate.html" >班级情况</a></li>
+        <li><a href="stu-classdate.html">班级情况</a></li>
         <li><a href="stu-homewok.html">家庭作业</a></li>
         <li><a href="">班级通知</a></li>
     </ul>
@@ -45,10 +45,71 @@
 </aside>
 <div id="main">
     <div class="bar">
+        学生 > 班级通知
+    </div>
+    <div class="conf margin">
+        <h4>班级通知</h4>
+        <div class="confContent">
+            <ul id="con-ul">
+                <li><p>测试标题测试标题测试标题</p>
+                    <span data-span-flag="right">  </span>
+                    <div>
+                        士大夫撒打发士大夫萨芬士大夫撒地方撒地方撒地方撒地方阿斯蒂芬阿斯蒂芬阿斯蒂芬阿斯弗阿斯蒂芬撒地方撒地方撒地方撒打发士大夫阿斯顿
+                    </div>
+                </li>
+                <li><p>测试标题测试标题测试标题</p>
+                    <span data-span-flag="right">  </span></li>
+                <li><p>测试标题测试标题测试标题</p>
+                    <span data-span-flag="right">  </span></li>
+                <li><p>测试标题测试标题测试标题</p>
+                    <span data-span-flag="right">  </span></li>
+                <li><p>测试标题测试标题测试标题</p>
+                    <span data-span-flag="right">  </span></li>
+            </ul>
 
+        </div>
     </div>
 
 </div>
 </body>
 <script src="js/style.js"></script>
+<script src="js/common.js"></script>
+<script>
+    window.onload = function () {
+        var oul = document.querySelector("#con-ul");
+        var oli=document.querySelectorAll('#con-ul li');
+        oul.onclick = function (ev) {
+            ev = ev || window.event;
+            var target = ev.target || ev.srcElement;
+            // alert(ev.target.nodeName);
+            if (target.nodeName === "SPAN") {
+                if (target.getAttribute('data-span-flag') === 'right') {
+                    for(var i=0;i<oli.length;i++){
+                        oli[i].children[1].style.background = 'url(image/i-10.png) no-repeat center';
+                        oli[i].children[1].style.backgroundSize = '40%';
+                        oli[i].children[0].style['text-indent'] = '20px';
+                        oli[i].style['height'] = '40px';
+                        oli[i].children[1].setAttribute('data-span-flag', 'right');
+
+                    }
+                    target.style.background = 'url(image/i-11.png) no-repeat center';
+                    target.style.backgroundSize = '38% 60%';
+                    target.previousElementSibling.style['text-indent']='300px';
+                    target.parentNode.style.height='300px';
+                    // target.style.transition='all 2s';
+
+                    target.setAttribute('data-span-flag', 'down');
+                } else {
+                    target.style.background = 'url(image/i-10.png) no-repeat center';
+                    target.style.backgroundSize = '40%';
+                    target.previousElementSibling.style['text-indent']='20px';
+                    target.parentNode.style.height='40px';
+                    target.setAttribute('data-span-flag', 'right');
+
+
+                }
+            }
+        }
+    }
+</script>
 </html>

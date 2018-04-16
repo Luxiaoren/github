@@ -1,10 +1,71 @@
-aside a#stu{
-    background:#fff;
+aside a#stu {
+    background: #fff;
 }
-aside ul#stulist{
-    height:144px;
+
+aside ul#stulist {
+    height: 144px;
 
 }
-aside ul:nth-of-type(1) li:nth-child(4) a{
+
+aside ul:nth-of-type(1) li:nth-child(4) a {
     background: #6fb3e0;
+}
+
+.conf > h4{
+    font:24px/42px "";
+    color:#393f4b;
+    border-bottom:1px dotted  #e2e2e2;
+    text-align: center;
+    margin-top:22px;
+
+}
+.margin{
+    width:1090px;
+    margin:0 auto;
+}
+.confContent{
+    margin-top:20px;
+    font:15px/40px "";
+}
+.confContent ul{
+
+
+    border:0px solid black;
+}
+.confContent ul li{
+    background:#EDF3F4;
+    display: flex;
+    height: 40px;
+    margin-bottom:10px;
+    overflow: hidden;
+    position:relative;
+    transition:  height .5s linear ;
+
+}
+.confContent ul li p{
+    flex:1;
+    text-indent: 20px;
+    height:40px;
+    transition:  text-indent .5s linear ;
+}
+.confContent ul li span {
+    width: 60px;
+    height: 40px;
+    background:  url(../image/i-10.png) no-repeat center ;
+    background-size:40%;
+    text-align: center;
+    font: 15px/30px "";
+    cursor: pointer;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color:#fff;
+}
+.confContent ul li div{
+    position: absolute;
+    top:40px;
+    padding:0 200px 0 100px;
+    line-height:20px;
+
+
 }

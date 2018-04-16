@@ -1,1 +1,141 @@
-.margin{width:1024px;}
+.margin {
+    width: 1024px;
+    margin: 0 auto
+}
+
+#t {
+    height: 29px;
+    background: url(../image/w-1.png) repeat-x;
+}
+
+#top {
+    height: 29px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#top .login span, .login a {
+    font: 12px/29px "";
+    color: #666;
+}
+
+a.active {
+    color: #ff6622;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu a, .menu span {
+    font: 12px/29px "";
+    color: #666;
+}
+
+.menu span {
+    margin: 0 19px;
+}
+
+.menu a:nth-of-type(1) {
+    padding: 0 15px 0 19px;
+    background: url(../image/w-2.png) no-repeat left, url(../image/w-3.png) no-repeat right;
+}
+
+header {
+    background: #999;
+    height: 161px;
+
+}
+
+.header-top {
+    display: flex;
+}
+
+.header-top > img {
+    margin: 29px 48px 0 12px;
+    width: 297px;
+    height: 65px;
+}
+
+.header-top .search {
+    width: 432px;
+    margin-top: 24px;
+}
+
+.header-top .search p:nth-child(1) {
+
+}
+
+.header-top .search p:nth-child(1) > a {
+    margin-right: 26px;
+    font: 12px/22px "";
+    color: #888;
+}
+
+.header-top .search p:nth-child(1) > a:hover {
+    color: #6e7880;
+    font-weight: 700;
+}
+
+.header-top .search p:nth-child(3) a {
+    font: 12px/38px "";
+    color: #252525;
+}
+
+.header-top .search label {
+    display: flex;
+}
+
+.header-top .search label input {
+    border: none;
+}
+
+.header-top .search label input:nth-child(1) {
+    width: 302px;
+    height: 34px;
+    box-sizing: border-box;
+    border: 2px solid #6e7880;
+    border-right: none;
+}
+
+.header-top .search label input:nth-child(2) {
+    width: 64px;
+    height: 34px;
+    background: #6e7880;
+    color: #fff;
+    margin-right: 2px;
+}
+
+.header-top .search label input:nth-child(3) {
+    width: 64px;
+    height: 34px;
+    background: #333;
+    color: #fff;
+}
+
+.header-top > span {
+    width:110px;
+    height:60px;
+    font:12px/22px "";
+    color:#666;
+    margin-top:19px;
+    margin-left:37px;
+}
+nav{
+    height:41px;
+    background:url(../image/w-5.png) center repeat-x;
+    display: flex;
+    justify-content: space-around;
+    margin-top:2px;
+}
+nav a{
+    font:700 14px/41px "";
+    color:#fff;
+    width:142px;
+    text-align: center;
+}
+nav a:hover{
+    background: #4ea544;
+    color:#e8ca93;
+
+}

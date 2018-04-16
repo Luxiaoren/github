@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="public.css"/>
+    <title>各行变色</title>
+    <style>
+        ul{
+            display:flex;
+            flex-direction:column;
+            height:600px;
+            width:500px;
+            margin:100px auto;
+        }
+        li{
+            flex:1;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+</ul>
+</body>
+<script>
+    var oli = document.getElementsByTagName('li');
+    for (var i = 0;i<oli.length;i++){
+    if(i%2!==0){
+            oli[i].style.background='blue';
+        }
+    }
+</script>
+</html>

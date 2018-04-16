@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="public.css"/>
+    <title>模拟下拉菜单</title>
+    <style>
+        input{
+
+
+        }
+        input[type=text]{
+            flex:1;
+        }
+        div{
+            margin:100px auto;
+            width:300px;
+            height:40px;
+            border:1px solid black;
+            display: flex;
+            position: relative;
+        }
+        ul{
+            width:270px;
+            position: absolute;
+            top:40px;
+            border:1px solid black;
+            font:14px/28px "";
+            text-indent:20px;
+            display: none;
+        }
+        li{
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+<div>
+    <input type="text">
+    <input type="submit" value="搜索">
+    <ul>
+        <li>地下城与勇士</li>
+        <li>魔兽世界国服</li>
+        <li>魔兽世界台服</li>
+        <li>热月江湖</li>
+        <li>大话西游2</li>
+        <li>幻想世界</li>
+    </ul>
+</div>
+</body>
+<script>
+    var oli = document.getElementsByTagName('li');
+    var oul = document.getElementsByTagName('ul')[0];
+    var otext= document.getElementsByTagName('input')[0];
+
+    otext.onmouseover=function (ev) {
+        oul.style.display='block';
+        ev.cancelBubble=true;
+    };
+    otext.onclick=function (ev) {
+        oul.style.display='block';
+        ev.cancelBubble=true;
+        for(var j=0;j<oli.length;j++){
+            oli[j].style.backgroundColor='';
+        }
+    };
+    document.onclick=function (ev) {
+        oul.style.display='none';
+        ev.cancelBubble=true;
+    };
+    for(var i=0;i<oli.length;i++){
+        oli[i].onmouseover=function (ev) {
+            for(var j=0;j<oli.length;j++){
+                oli[j].style.backgroundColor='';
+            }
+            this.style.backgroundColor='gray';
+            otext.value=this.innerHTML;
+        }
+    }
+
+</script>
+</html>
