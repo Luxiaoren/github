@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="public.css"/>
+    <title>多属性运动</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background: #000;
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+<script>
+    function getStyle(obj, attr) {/*获取样式*/
+        return obj.currentStyle ? obj.currentStyle() : getComputedStyle(obj, false)[attr];
+    }
+
+    let odiv = document.querySelector('div');
+
+    function movement(obj, attrObj, fn) {/*运动*/
+        let speed;
+        let iNow;
+        obj.num=0;
+        obj.timer=setInterval(() => {
+            for (let attr in  attrObj) {
+                if (attrObj.hasOwnProperty(attr)) {
+                    if (attr === "opacity") {
+
+                        iNow = getStyle(obj, attr) * 100;
+                        // console.log(speed);
+                    }else {
+                        iNow = parseInt(getStyle(obj, attr));
+                    }
+                    speed = (attrObj[attr] - iNow) / 10 > 0 ? Math.ceil((attrObj[attr] - iNow) / 10) : Math.floor((attrObj[attr] - iNow) / 10);
+                    if(attr==="opacity"){
+                        obj.style.opacity=(iNow+speed)/100;
+                        obj.style.filter=`alpha(opacity=${iNow+speed})`;
+                    }else{
+                        obj.style[attr]=iNow+speed+'px';
+                    }
+
+                    if(attrObj[attr]===iNow){
+                        obj.num+=1;
+                        console.log(attrObj[attr],iNow,obj.num,Object.keys(attrObj));
+                        if(obj.num===Object.keys(attrObj).length){
+                            clearInterval(obj.timer);
+                            if(fn){
+                                fn();
+                            }
+                        }
+                    }
+
+
+                }
+
+            }
+
+        }, 30)
+    }
+odiv.addEventListener('click',()=>{
+    movement(odiv, {height: 200,opacity:20},()=>{
+        movement(odiv,{width:150})
+    });
+
+});
+</script>
+</html>

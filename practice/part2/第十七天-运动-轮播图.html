@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="public.css"/>
+    <title>简易轮播图三连击</title>
+    <style>
+        #box {
+            width: 1130px;
+            height: 300px;
+            position: relative;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        #imgbox{
+            position: absolute;
+            left: 0;
+        }
+        #imgbox a {
+            display: block;
+            width: 1130px;
+            height: 300px;
+            float: left;
+        }
+
+        #imgbox a img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #next {
+            height: 40px;
+            width: 40px;
+            background: #2d3237;
+            position: absolute;
+            color: white;
+            font: 16px/40px "";
+            cursor: pointer;
+            text-indent: 3px;
+            right: 0;
+            top: 130px;
+            opacity: .5;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <div id="imgbox">
+        <a href=""><img src="http://img.zcool.cn/community/019e2f5ad55151a801204029becf1c.jpg@1380w" alt=""></a>
+        <a href=""><img src="http://img.zcool.cn/community/01d49d5ad55bada801204029e57c2e.png@1380w" alt=""></a>
+        <a href=""><img src="http://img.zcool.cn/community/01b9b45ad55bbaa801213867ef6fa9.png@1380w" alt=""></a>
+        <a href=""><img src="http://img.zcool.cn/community/019e2f5ad55151a801204029becf1c.jpg@1380w" alt=""></a>
+
+    </div>
+    <div id="next"> > ></div>
+</div>
+</body>
+<script src="common.js"></script>
+<script src="move.js"></script>
+<script>
+    let oimgbox = document.querySelector('#imgbox');
+    let onext = document.querySelector('#next');
+    oimgbox.style.width = oimgbox.children.length * 1130 + 'px';
+    let index=0;
+    // console.log(onext.index);
+
+    onext.addEventListener('click',()=>{
+        if(index===oimgbox.children.length-1){
+            index=1;
+            oimgbox.style.left=0;
+        }else{
+            index+=1;
+        }
+        // console.log(onext.index);
+        movement(oimgbox,{left:-index*oimgbox.children[0].offsetWidth});
+    });
+</script>
+</html>

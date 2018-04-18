@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="public.css"/>
+    <script src="common.js"></script>
+    <title>左下角弹出框</title>
+    <style>
+        #box{
+            height:80px;
+            width:600px;
+            position:fixed;
+            left:-550px;
+            top:500px;
+            display: flex;
+        }
+        #m_box{
+            width:580px;
+            box-sizing: border-box;
+            border-top:3px solid rgba(0,0,0,.6);
+            background:rgba(0,0,0,.5);
+        }
+        #btn{
+            width:20px;
+            background:rgba(0,0,0,1);
+            border-radius: 0 5px 5px 0;
+
+        }
+        #btn span{
+            display: block;
+            font:14px "";
+            color:#fff;
+            text-indent: 4px;
+            cursor: pointer;
+            margin-top:20px;
+        }
+    </style>
+</head>
+<body>
+        <div id="box">
+            <div id="m_box"></div>
+            <div id="btn">
+                <span> > </span>
+            </div>
+        </div>
+</body>
+<script>
+    let obox=document.querySelector('#box');
+    let obtn=document.querySelector('#btn span');
+    obox.flag=true;
+    obtn.addEventListener('click',()=>{
+        if(obox.flag){
+            movement(obox,{left:-580},()=>{
+                movement(obox,{left:0})
+            });
+            obox.flag=false;
+            obtn.innerHTML="<";
+        }else{
+            movement(obox,{left:-580},()=>{
+                movement(obox,{left:-550})
+            });
+            obox.flag=true;
+            obtn.innerHTML=">";
+        }
+    })
+
+</script>
+</html>

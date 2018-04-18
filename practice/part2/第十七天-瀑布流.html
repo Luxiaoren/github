@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="public.css"/>
+    <title>瀑布流</title>
+    <style>
+        #box {
+            position: relative;
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+
+        .boxImg {
+            /*position: absolute;*/
+            float: left;
+            padding: 5px;
+        }
+
+        .img {
+            padding: 4px;
+            border: 1px solid black;
+            border-radius: 4px;
+        }
+
+        .img img {
+            width: 200px;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="box">
+    <div class="boxImg">
+        <div class="img">
+            <img src="../image/4.png" alt="">
+        </div>
+    </div>
+    <div class="boxImg">
+        <div class="img">
+            <img src="../image/37288.jpg" alt="">
+        </div>
+    </div>
+    <div class="boxImg">
+        <div class="img">
+            <img src="../image/111.png" alt="">
+        </div>
+    </div>
+    <div class="boxImg">
+        <div class="img">
+            <img src="../image/600943.jpg" alt="">
+        </div>
+    </div>
+    <div class="boxImg">
+        <div class="img">
+            <img src="../image/2.png" alt="">
+        </div>
+    </div>
+    <div class="boxImg">
+        <div class="img">
+            <img src="../image/girl.jpg" alt="">
+        </div>
+    </div>
+    <div class="boxImg">
+        <div class="img">
+            <img src="../image/4.png" alt="">
+        </div>
+    </div>
+    <div class="boxImg">
+        <div class="img">
+            <img src="../image/37288.jpg" alt="">
+        </div>
+    </div>
+    <div class="boxImg">
+        <div class="img">
+            <img src="../image/111.png" alt="">
+        </div>
+    </div>
+    <div class="boxImg">
+        <div class="img">
+            <img src="../image/600943.jpg" alt="">
+        </div>
+    </div>
+    <div class="boxImg">
+        <div class="img">
+            <img src="../image/2.png" alt="">
+        </div>
+    </div>
+    <div class="boxImg">
+        <div class="img">
+            <img src="../image/girl.jpg" alt="">
+        </div>
+    </div>
+    <div class="boxImg">
+        <div class="img">
+            <img src="../image/amd.jpg" alt="">
+        </div>
+    </div>
+    <div class="boxImg">
+        <div class="img">
+            <img src="../image/facebook.jpg" alt="">
+        </div>
+    </div>
+    <div class="boxImg">
+        <div class="img">
+            <img src="../image/amd.jpg" alt="">
+        </div>
+    </div>
+    <div class="boxImg">
+        <div class="img">
+            <img src="../image/facebook.jpg" alt="">
+        </div>
+    </div>
+    <div class="boxImg">
+        <div class="img">
+            <img src="../image/4.png" alt="">
+        </div>
+    </div>
+    <div class="boxImg">
+        <div class="img">
+            <img src="../image/37288.jpg" alt="">
+        </div>
+    </div>
+    <div class="boxImg">
+        <div class="img">
+            <img src="../image/111.png" alt="">
+        </div>
+    </div>
+    <div class="boxImg">
+        <div class="img">
+            <img src="../image/600943.jpg" alt="">
+        </div>
+    </div>
+    <div class="boxImg">
+        <div class="img">
+            <img src="../image/2.png" alt="">
+        </div>
+    </div>
+    <div class="boxImg">
+        <div class="img">
+            <img src="../image/girl.jpg" alt="">
+        </div>
+    </div>
+    <div class="boxImg">
+        <div class="img">
+            <img src="../image/amd.jpg" alt="">
+        </div>
+    </div>
+    <div class="boxImg">
+        <div class="img">
+            <img src="../image/facebook.jpg" alt="">
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    let obox = document.querySelector('#box');
+    let oboxChild = obox.children;
+    let oboxChildNum = document.documentElement.clientWidth / oboxChild[0].offsetWidth;
+    oboxChildNum = parseInt(oboxChildNum);
+    obox.style.width = oboxChildNum * oboxChild[0].offsetWidth + 'px';
+    let heightArr = [];
+    let minHeight;
+    for (let i = 0; i < oboxChildNum; i++) {
+        heightArr.push(oboxChild[i].offsetHeight);
+    }
+    for (let i = oboxChildNum; i < oboxChild.length; i++) {
+        minHeight = getMin(heightArr);
+        minIndex = heightArr.indexOf(minHeight);
+        oboxChild[i].style.position = 'absolute';
+        oboxChild[i].style.left = minIndex * oboxChild[0].offsetWidth + 'px';
+        oboxChild[i].style.top = heightArr[minIndex] + 'px';
+        console.log(i, minIndex * oboxChild[0].offsetWidth, heightArr[minIndex]);
+        heightArr[minIndex] += oboxChild[i].offsetHeight;
+    }
+
+    console.log(getMin(heightArr));
+
+
+    function getMin(arr) {
+        let min = arr[0];
+        for (let i = 1; i < arr.length; i++) {
+            min = min > arr[i] ? arr[i] : min;
+        }
+        return min;
+    }
+</script>
+</html>
