@@ -75,22 +75,31 @@
                     <li><span>学生性别</span>
                         <p></p>
                     </li>
-                    <li><span>出生年月</span>
-                        <p></p>
-                    </li>
-                    <li><span>学生民族</span>
+                    <li><span>民族</span>
                         <p></p>
                     </li>
                     <li><span>学生身份证号</span>
                         <p></p>
                     </li>
-                    <li><span>学校名称</span>
+                    <li><span>学号</span>
                         <p></p>
                     </li>
-                    <li><span>学历</span>
+                    <li><span>学院</span>
                         <p></p>
                     </li>
                     <li><span>专业</span>
+                        <p></p>
+                    </li>
+                    <li><span>班级</span>
+                        <p></p>
+                    </li>
+                    <li><span>入学日期</span>
+                        <p></p>
+                    </li>
+                    <li><span>学习形式</span>
+                        <p></p>
+                    </li>
+                    <li><span>联系方式</span>
                         <p></p>
                     </li>
                     <li><span>学制</span>
@@ -99,19 +108,13 @@
                     <li><span>学历类别</span>
                         <p></p>
                     </li>
-                    <li><span>学习形式</span>
+                    <li><span>出生年月</span>
                         <p></p>
                     </li>
-                    <li><span>院系</span>
+                    <li><span>学校名称</span>
                         <p></p>
                     </li>
-                    <li><span>班级</span>
-                        <p></p>
-                    </li>
-                    <li><span>学号</span>
-                        <p></p>
-                    </li>
-                    <li><span>入学日期</span>
+                    <li><span>学历</span>
                         <p></p>
                     </li>
                     <li><span>预计毕业日期</span>
@@ -659,28 +662,49 @@
 <script src="js/style.js"></script>
 <script>
 
-    var liHtml = document.getElementsByTagName('li');
-    /*获取页面所有li的*/
-    /*console.log(liHtml[liHtml.length-7]);*/
-    var licontent = [];
-    /*定义新数组用于存储课表所在的li*/
-    for (var j = 0, i = liHtml.length - 7; i < liHtml.length; i++, j++) {/*取课表所在li*/
-        licontent[j] = liHtml[i];
-        /*赋值给新数组*/
-    }
-    for (i = 0; i < licontent.length; i++) {
-        licontent[i].onclick = function () {
-            addsch(this);
-        };
-        licontent[i].onmouseover = function () {
-            // this.style.background='#000';
+    // var liHtml = document.getElementsByTagName('li');
+    // /*获取页面所有li的*/
+    // /*console.log(liHtml[liHtml.length-7]);*/
+    // var licontent = [];
+    // /*定义新数组用于存储课表所在的li*/
+    // for (var j = 0, i = liHtml.length - 7; i < liHtml.length; i++, j++) {/*取课表所在li*/
+    //     licontent[j] = liHtml[i];
+    //     /*赋值给新数组*/
+    // }
+    // for (i = 0; i < licontent.length; i++) {
+    //     licontent[i].onclick = function () {
+    //         addsch(this);
+    //     };
+    //     licontent[i].onmouseover = function () {
+    //         // this.style.background='#000';
+    //     }
+    // }
+    // /*for(var i=7;i<liHtml.length;i++){
+    //     liHtml[i].onclick=function(){
+    //         alert(this);
+    //     }
+    // }*/
+    onload=function(){
+        var  oa=document.querySelector('#username');
+        // console.log(1);
+        // console.log(oa);
+        oa.innerHTML=getCookie("username");
+        var x=getXml("xml/basefile.xml","stufile");
+        var username=getCookie("username");
+        var op=document.querySelectorAll('li p');
+        // alert(username);
+        for(var i=0;i<x.length;i++){
+            if(x[i].getElementsByTagName('stucount')[0].innerHTML===username){
+
+                for(m=0;m<20;m++){
+                    op[m].innerHTML=x[i].children[m+1].innerHTML;
+                }
+                break;
+            }else{
+                // alert(x[i].getElementsByTagName('stuname')[0].innerHTML);
+            }
         }
     }
-    /*for(var i=7;i<liHtml.length;i++){
-        liHtml[i].onclick=function(){
-            alert(this);
-        }
-    }*/
 
 </script>
 

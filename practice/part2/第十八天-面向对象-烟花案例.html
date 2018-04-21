@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="public.css"/>
+    <title>烟花</title>
+    <style>
+        #contanire {
+            width: 900px;
+            height: 600px;
+            background: #222;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .fire {
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            bottom: 0;
+        }
+
+        .sfire {
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+<div id="contanire"></div>
+
+</body>
+<script src="common.js"></script>
+<script>
+    //
+    <!--点击桌面-->
+    //
+    <!--创建烟花-->
+    //
+    <!--移动烟花-->
+    //
+    <!--烟花死亡-->
+    //
+    <!--创建小烟花-->
+    //
+    <!--移动小烟花-->
+    //
+    <!--小烟花死亡-->
+    function Fire(cont, ev) {
+        this.cont = cont;
+        this.posX = ev.offsetX;
+        this.posY = ev.offsetY;
+
+        this.init();
+    }
+
+    Fire.prototype = {
+
+        constructor: Fire,
+        init: function () {/*烟花初始化*/
+            this.div = document.createElement('div');
+            this.div.className = "fire";
+            this.div.style['backgroundColor'] = this.randowColor();
+            this.div.style['left'] = this.posX + 'px';
+            this.cont.appendChild(this.div);
+            this.move(this.div);
+        },
+        move: function () {
+            /*烟花移动*/
+            let div = this.div;
+            let smallFireInit = this.smallFireInit;
+            movement(this.div, {top: this.posY}, function () {
+                div.remove();
+                this.smallFireInit();
+            }.bind(this));
+
+
+            // this.smallFireInit();
+            // this.div.remove();
+        },
+
+        smallFireInit: function () {
+            /*小烟花初始化*/
+
+            let divarr = [];
+            for (let i = 0; i < 10; i++) {
+                let sdiv = document.createElement('div');
+                sdiv.className = "sfire";
+
+                sdiv.style['backgroundColor'] = this.randowColor();
+
+                sdiv.style['left'] = this.posX + 'px';
+
+                sdiv.style['top'] = this.posY + 'px';
+
+                this.cont.appendChild(sdiv);
+
+                divarr.push(sdiv);
+            }
+            this.smallFireMove(divarr);
+        },
+        smallFireMove: function (divarr) {
+            /*小烟花移动*/
+            console.log(divarr);
+            for (let i = 0, y = 0; i < divarr.length; i++, y += 36) {
+
+                let t = Math.sin(Math.PI / 180 * y) * 100;
+
+                let l = Math.cos(Math.PI / 180 * y) * 100;
+                // console.log(l,t);
+
+                t = parseInt(t);
+                l = parseInt(l);
+                console.log(this.posX, l + this.posX, this.posY, t + this.posY);
+
+                movement(divarr[i], {left: (l + this.posX), top: (t + this.posY)},function () {
+
+            this.smallFireDie(divarr[i]);
+                }.bind(this));
+            }
+        },
+        smallFireDie: function (div) {
+            /*小烟花死亡*/
+                // movement(div,{top:1000})
+                div.remove();
+        },
+        test:function () {
+
+        },
+        randowColor: function () {
+            let r = Math.round(Math.random() * 255);
+
+            let g = Math.round(Math.random() * 255);
+
+            let b = Math.round(Math.random() * 255);
+
+            if (r < 10) {
+                r = "0" + r;
+            }
+            if (g < 10) {
+                g = "0" + g;
+            }
+            if (b < 10) {
+                b = "0" + b;
+            }
+            return `rgb(${r},${g},${b})`;
+        }
+
+
+    };
+    let ocon = document.querySelector('#contanire');
+
+    ocon.addEventListener('click', function (ev) {
+        ev = ev || window.event;
+        new Fire(this, ev);
+    })
+
+
+</script>
+
+</html>

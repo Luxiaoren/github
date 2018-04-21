@@ -70,7 +70,7 @@
     };
     document.onclick=function (ev) {
         oul.style.display='none';
-        ev.cancelBubble=true;
+        ev.stopPropagation();
     };
     for(var i=0;i<oli.length;i++){
         oli[i].onmouseover=function (ev) {

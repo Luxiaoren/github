@@ -1,16 +1,21 @@
-// json.push(JSON.parse(newjson));
-var studentjson = [
-    {
-        name: "kangyong",
-        sex: "男",
-        minzu: "汉",
-        idCardnum: "341227199305064859",
-        schoolnum: "2014014013",
-        xueyuan: "电子与信息工程",
-        major: "计算机科学与技术",
-        classnum: "1401班",
-        inSchoolDate: "2014-09-01",
-        studyxingshi: "本科",
-        contact: "13231231331"
+onload=function(){
+    var  oa=document.querySelector('#username');
+    // console.log(1);
+    // console.log(oa);
+    oa.innerHTML=getCookie("username");
+    var x=getXml("xml/basefile.xml","stufile");
+    var username=getCookie("username");
+    var op=document.querySelectorAll('li p');
+    // alert(username);
+    for(var i=0;i<x.length;i++){
+        if(x[i].getElementsByTagName('stucount')[0].innerHTML===username){
+
+            for(var j=3,m=0;j<11*4;j+=4,m++){
+                op[m].innerHTML=x[i].childNodes[j].innerHTML;
+            }
+            break;
+        }else{
+            // alert(x[i].getElementsByTagName('stuname')[0].innerHTML);
+        }
     }
-];
+}

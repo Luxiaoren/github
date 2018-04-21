@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #container{
+            width: 80%;
+            height: 600px;
+            border: 2px solid red;
+            background: #000;
+            margin:20px auto;
+            cursor: pointer;
+            position: relative;
+            left: 0;
+            top: 0;
+            overflow: hidden;
+        }
+        .fire{
+            width: 10px;
+            height:10px;
+            position: absolute;
+            bottom: 0;
+        }
+        .small-fire{
+            width: 10px;
+            height:10px;
+            position: absolute;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+<div id="container"></div>
+</body>
+<script src="move.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    //	OOA
+    //	1.选中元素,点击事件,记录鼠标位置
+    //	2.创建主体烟花
+    //	3.初始化主体烟花
+    //	4.主体烟花运动
+
+    //	OOD
+    //	选中元素,点击事件,记录鼠标位置
+    //	var ocont = document.getElementById("container");
+    //	ocont.onclick = function(){
+    //		//记录鼠标位置
+    //		new Fire();
+    //	}
+    //
+    //	function Fire(){
+    ////		创建主体烟花
+    //		this.init()
+    //	}
+    //
+    //	Fire.prototype.init = function(){
+    ////		初始化主体烟花
+    //		this.move();
+    //	}
+    //	Fire.prototype.move = function(){
+    ////		主体烟花运动
+    //	}
+
+    //	OOP
+    window.onload = function(){
+        var ocont = document.getElementById("container");
+        ocont.onclick = function(eve){
+            //记录鼠标位置
+            var e = eve || window.event;
+            var target = {
+                left:e.offsetX,
+                top:e.offsetY
+            }
+            new Fire(target,this);
+        }
+    }
+
+    function Fire(target,parent){
+//		创建主体烟花
+        this.parent = parent;
+        this.target = target;
+        this.ele = document.createElement("div");
+        this.init();
+    }
+
+    Fire.prototype.randomColor = function(){
+        var r = Math.round(Math.random()*255).toString(16);
+        var g = Math.round(Math.random()*255).toString(16);
+        var b = Math.round(Math.random()*255).toString(16);
+        return "#"+this.zero(r)+this.zero(g)+this.zero(b);
+    }
+    Fire.prototype.zero = function(n){
+        if(n<10 || n.length == 1){
+            return "0" + n;
+        }else{
+            return n;
+        }
+    }
+
+    Fire.prototype.init = function(){
+//		初始化主体烟花
+        this.ele.className = "fire";
+        this.ele.style.background = this.randomColor();
+        this.ele.style.left = this.target.left + "px";
+        this.parent.appendChild(this.ele);
+        this.move();
+    }
+
+    Fire.prototype.move = function(){
+//		主体烟花运动
+        move(this.ele,this.target,function(){
+            this.ele.remove();
+            this.smallFire();
+        }.bind(this));
+    }
+
+    //	1.主体烟花消失后显示小烟花
+    //	2.将小烟花的初始位置放在鼠标单击的位置(主体烟花消失的位置)
+    //	3.让小烟花在画布中运动到随机位置
+    //		3.1 做圆周运动
+
+    //	Fire.prototype.smallFire = function(){
+    //		var random = Math.round(Math.random()*10+10);
+    //		for(var i=0;i<random;i++){
+    //			let div = document.createElement("div");
+    //			div.className = "small-fire";
+    //			div.style.background = this.randomColor();
+    //			div.id = i;
+    //			div.style.left = this.target.left + "px";
+    //			div.style.top = this.target.top + "px";
+    //			this.parent.appendChild(div);
+    //			var target = {
+    //				left:Math.round(Math.random()*900),
+    //				top:Math.round(Math.random()*500)
+    //			}
+    //			move(div,target,function(){
+    //				div.remove();
+    //			});
+    //		}
+    //	}
+    Fire.prototype.smallFire = function(){
+        var r = Math.round(Math.random()*100+100);
+        for(var i=0;i<12;i++){
+            let div = document.createElement("div");
+            div.className = "small-fire";
+            div.style.background = this.randomColor();
+            div.id = i;
+            div.style.left = this.target.left + "px";
+            div.style.top = this.target.top + "px";
+            this.parent.appendChild(div);
+            var target = {
+                left:Math.round(Math.sin(Math.PI/180*30*i)*r) + this.target.left,
+                top:Math.round(Math.cos(Math.PI/180*30*i)*r) + this.target.top
+            }
+            move(div,target,function(){
+                div.remove();
+            });
+        }
+    }
+
+
+
+</script>
+</html>

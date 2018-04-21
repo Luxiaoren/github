@@ -24,31 +24,31 @@
 <div></div>
 </body>
 <script>
-    // var eventLister={
-    //   addEvent:function(element,eventType,fn){
-    //         if(element.addEventListener){
-    //             element.addEventListener(eventType,fn,false);
-    //         }else{
-    //            
-    //         }
-    //   }
-    // };
-    // var odiv = document.getElementsByTagName('div')[0];
-    // odiv.onmousedown= function (ev) {
-    //     ev=ev||window.event;
-    //    var x=ev.offsetX;
-    //    var y=ev.offsetY;
-    //     document.onmousemove = function (ev) {
-    //         ev = ev || window.event;
-    //         odiv.style.left = ev.pageX -x + 'px';
-    //         odiv.style.top = ev.pageY -y + 'px';
-    //
-    //     }
-    //
-    // };
-    // odiv.onmouseup=function(){
-    //     document.onmousemove=null;
-    // }
+    var eventLister={
+      addEvent:function(element,eventType,fn){
+            if(element.addEventListener){
+                element.addEventListener(eventType,fn,false);
+            }else{
+
+            }
+      }
+    };
+    var odiv = document.getElementsByTagName('div')[0];
+    odiv.onmousedown= function (ev) {
+        ev=ev||window.event;
+       var x=ev.offsetX;
+       var y=ev.offsetY;
+        document.onmousemove = function (ev) {
+            ev = ev || window.event;
+            odiv.style.left = ev.clientX -x + 'px';
+            odiv.style.top = ev.clientY -y + 'px';
+
+        }
+
+    };
+    odiv.onmouseup=function(){
+        document.onmousemove=null;
+    }
 
     // function kangyong () {
     //

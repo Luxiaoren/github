@@ -32,7 +32,7 @@
             height: 100%;
         }
 
-        #next {
+        #next ,#befor{
             height: 40px;
             width: 40px;
             background: #2d3237;
@@ -44,6 +44,9 @@
             right: 0;
             top: 130px;
             opacity: .5;
+        }
+        #befor{
+            left:0;
         }
     </style>
 </head>
@@ -57,6 +60,7 @@
 
     </div>
     <div id="next"> > ></div>
+    <div id="befor"> < < </div>
 </div>
 </body>
 <script src="common.js"></script>
@@ -64,6 +68,7 @@
 <script>
     let oimgbox = document.querySelector('#imgbox');
     let onext = document.querySelector('#next');
+    let obefor = document.querySelector('#befor');
     oimgbox.style.width = oimgbox.children.length * 1130 + 'px';
     let index=0;
     // console.log(onext.index);
@@ -74,6 +79,18 @@
             oimgbox.style.left=0;
         }else{
             index+=1;
+        }
+        // console.log(onext.index);
+        movement(oimgbox,{left:-index*oimgbox.children[0].offsetWidth});
+    });
+    obefor.addEventListener('click',()=>{
+
+        console.log(1);
+        if(index===0){
+            index=oimgbox.children.length-2;
+            oimgbox.style.left=-oimgbox.children[0].offsetWidth*(oimgbox.children.length-1)+'px';
+        }else{
+            index-=1;
         }
         // console.log(onext.index);
         movement(oimgbox,{left:-index*oimgbox.children[0].offsetWidth});

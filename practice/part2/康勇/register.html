@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/public.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <title>注册</title>
+</head>
+<body>
+<div id="content">
+    <span id="tips">注意 <i>*</i>为必填项</span>
+    <span id="warns"></span>
+    <h4>账户详细资料</h4>
+    <label> <span>用户名称</span><input type="text" id="userName"/> </label>
+    <label> <span>登录密码</span><input type="text" id="password"/> </label>
+    <label> <span>重复登陆密码</span><input type="text" id="repeatPass"/> </label>
+    <label> <span>密码安全级别</span> <i></i><i></i><i></i></label>
+    <h4>个人信息资料</h4>
+    <label> <span>电子邮件</span><input type="text" id="email"/> </label>
+    <label> <span>真实姓名</span><input type="text" id="realName"/> </label>
+    <label> <span>中奖通知手机</span><input type="text" id="tel"/> </label>
+    <label> <span>验证码</span><input type="text" id="confirmCode"/><b></b></label>
+    <label><input type="submit" id="submit" value="注册"><input type="checkbox" id="check"><em>十天内免登陆</em></label>
+
+</div>
+</body>
+<script src="js/style.js"></script>
+<script>
+    let ousername = document.querySelector('#userName');
+    let opassword = document.querySelector('#password');
+    let orepeatPass = document.querySelector('#repeatPass');
+    let oemail = document.querySelector('#email');
+    let orealName = document.querySelector('#realName');
+    let otel = document.querySelector('#tel');
+    let oconfirmCode = document.querySelector('#confirmCode');
+    let osubmit = document.querySelector('#submit');
+    let owarn = document.querySelector('#warns');
+    let oi = document.querySelectorAll('label i');
+    let ob = document.querySelector('label b');
+    let ocheck=document.querySelector('#check');
+
+    let code = parseInt(Math.random() * (9999 - 1000) + 1000);
+    ob.innerHTML = code;
+    let nameReg = /^[a-z0-9A-Z_]{6,18}$/;
+
+    let passReg = /^.{6,16}$/;
+    let passReg1 = /\d{1,}/;
+    let passReg2 = /[a-zA-Z]{1,}/;
+    let passReg3 = /[^a-zA-Z0-9]{1,}/;
+    let emaReg = /^([a-z0-9\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+    let reaReg = /^[\u2E80-\u9FFF]+$/;
+    let telReg = /^1[0-9]{10}$/;
+
+    ousername.addEventListener('blur', function () {
+        let re = nameReg.test(this.value);
+
+        if (!re) {
+            owarn.style.display = "block";
+            owarn.innerHTML = "用户名不合法，请重新输入！";
+            this.flag = false;
+
+        } else {
+            owarn.style.display = "none";
+            this.flag = true;
+
+        }
+    });
+
+    opassword.addEventListener('blur', function () {
+        flase = false;
+
+        let re = passReg.test(this.value);
+
+        if (!re) {
+            owarn.style.display = "block";
+
+            owarn.innerHTML = "密码不合法，请重新输入";
+            this.flag = false;
+
+        } else {
+            owarn.style.display = "none";
+
+            this.flag = true;
+
+        }
+
+    });
+
+    orepeatPass.addEventListener('blur', function () {
+        if (this.value !== opassword.value) {
+            owarn.style.display = "block";
+            this.flag = false;
+
+            owarn.innerHTML = "两次密码不同，请重新输入";
+        } else {
+            owarn.style.display = "none";
+            this.flag=true;
+        }
+    });
+    orepeatPass.addEventListener('input', function () {
+        let re = passReg.test(this.value);
+        let re1 = passReg1.test(this.value);
+        let re2 = passReg2.test(this.value);
+        let re3 = passReg3.test(this.value);
+        this.rflag = 0;
+        if (this.value === "") {
+            oi[0].style['background'] = "white";
+            oi[1].style['background'] = "white";
+            oi[2].style['background'] = "white";
+        }
+        if (!re) {
+            this.flag = false;
+
+        } else {
+            if (re1) {
+                this.rflag += 1;
+            }
+            if (re2) {
+                this.rflag += 1;
+            }
+            if (re3) {
+                this.rflag += 1;
+            }
+
+            if (this.rflag === 1) {
+
+                oi[0].style['background'] = "red";
+                oi[1].style['background'] = "white";
+                oi[2].style['background'] = "white";
+            }
+            if (this.rflag === 2) {
+
+                oi[0].style['background'] = "white";
+                oi[1].style['background'] = "orange";
+                oi[2].style['background'] = "white";
+            }
+            if (this.rflag === 3) {
+
+                oi[0].style['background'] = "white";
+                oi[1].style['background'] = "white";
+                oi[2].style['background'] = "blue";
+            }
+            this.flag = true;
+
+        }
+    });
+    oemail.addEventListener('blur', function () {
+        let re = emaReg.test(this.value);
+
+        if (!re) {
+            owarn.style.display = "block";
+            this.flag = false;
+
+            owarn.innerHTML = "邮箱不合法，请重新输入";
+        } else {
+            owarn.style.display = "none";
+
+            this.flag = true;
+
+        }
+    });
+    orealName.addEventListener('blur', function () {
+        let re = reaReg.test(this.value);
+
+        if (!re) {
+            owarn.style.display = "block";
+            this.flag = false;
+
+            owarn.innerHTML = "姓名不合法，请重新输入";
+        } else {
+            owarn.style.display = "none";
+
+            this.flag = true;
+
+        }
+    });
+    otel.addEventListener('blur', function () {
+        let re = telReg.test(this.value);
+
+        if (!re) {
+            owarn.style.display = "block";
+            this.flag = false;
+
+            owarn.innerHTML = "姓名不合法，请重新输入";
+        } else {
+            owarn.style.display = "none";
+
+            this.flag = true
+
+        }
+    });
+    oconfirmCode.addEventListener('blur', function () {
+        if (this.value !== ob.innerHTML) {
+            owarn.innerHTML = "验证码不正确，请重新输入";
+            this.flag = false;
+
+        } else {
+            this.flag = true;
+        }
+    });
+    ob.addEventListener('click', function () {
+        code = parseInt(Math.random() * (9999 - 1000) + 1000);
+        ob.innerHTML = code;
+    });
+    osubmit.addEventListener('click', function () {
+        let oinput=document.querySelectorAll('input');
+        console.log(oinput[0].flag);
+        this.flag=true;
+        for(let i=0;i<oinput.length-2;i++){
+            if(oinput[i].flag!==true){
+                this.flag=false;
+            }
+            console.log(oinput[i].value,oinput[i].flag);
+        }
+        if(this.flag){
+            alert("注册成功");
+            if(ocheck.checked){
+
+                setCookie("username",ousername.value,10*24*60*60);
+                setCookie("password",opassword.value,10*24*60*60);
+                setCookie("logtype",1,10*24*60*60);
+            }else{
+                setCookie("username",ousername.value,-10*24*60*60);
+                setCookie("password",opassword.value,-10*24*60*60);
+                setCookie("logtype",1,-10*24*60*60);
+            }
+        }else{
+            // alert(ocheck.checked);
+        }
+    })
+</script>
+</html>

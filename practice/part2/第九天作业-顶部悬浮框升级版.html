@@ -32,12 +32,10 @@
 </body>
 <script>
     var odiv=document.querySelector('div');
-    odiv.style.height="200px";
-    var inum=parseInt(odiv.style.height);
+
+    var inum=parseInt(odiv.offsetHeight);
     onscroll = function(){
         var num=document.documentElement.scrollTop;
-        inum=200;
-        inum-=num;
         odiv.style.top=num+"px";
         odiv.style.height=((inum-num)>=150?(inum-num):150)+"px";
 

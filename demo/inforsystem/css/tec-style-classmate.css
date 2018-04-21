@@ -8,3 +8,95 @@ aside ul#teclist{
 aside ul#teclist li:nth-child(3) a{
     background: #6fb3e0;
 }
+.margin{
+    width: 1119px;
+    margin: 0 auto;
+}
+.className{
+    font:16px/32px "";
+    border-bottom:1px dotted black;
+    margin-top:50px;
+    text-indent: 10px;
+    position: relative;
+}
+.btn{
+    position: absolute;
+    right:0;
+    top:0;
+    font:15px/25px "";
+    background:#6FB3E0;
+    width:50px;
+    height:25px;
+    border-radius:5px;
+    color:#fff;
+    text-align:center;
+    cursor: pointer;
+    text-indent: 0px;
+
+}
+.classInfo{
+
+    background:#F2F2F2;
+    /*display: none;*/
+    overflow: hidden;
+}
+.classInfo ul{
+
+}
+.classInfo ul li{
+    display: flex;
+    background:#fff;
+    font:13px/28px "";
+
+
+}
+.classInfo ul li span{
+
+
+
+}
+.classInfo ul li p{
+    text-indent:10px;
+    text-align:left;
+    flex:1;
+    border-left:1px solid gray;
+    box-sizing: border-box;
+}
+.classInfo ul li:nth-child(1){
+    border-bottom:2px solid gray;
+    background:#F2F2F2;
+    font:15px/28px "";
+
+
+}
+.classInfo ul li p:nth-child(1){
+    flex-basis:50px;
+}
+.classInfo ul li p:nth-child(5){
+    flex-basis:100px;
+}
+.classInfo ul li p:nth-child(6){
+    flex-basis:200px;
+}
+.classInfo ul li p:nth-child(7){
+    flex-basis:80px;
+}
+.classInfo ul li p:nth-child(8){
+    flex-basis:100px;
+}
+.infoTitle{
+    border-bottom:1px solid gray;
+}
+
+#rightmeun{
+    position: absolute;
+    top:0;
+    left:0;
+    width:80px;
+    height:30px;
+    font:12px/30px "";
+    background:#F2F2F2;
+    display: none;
+    text-indent: 4px;
+    cursor: pointer;
+}

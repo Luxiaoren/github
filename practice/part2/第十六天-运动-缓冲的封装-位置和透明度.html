@@ -37,14 +37,14 @@
         let speed;
         clearInterval($this.timer);
         $this.timer = setInterval(() => {
-            if(pro==="opacity"){
-                speed=(getComputedStyle($this,false)[pro]-target)/10;
-                $this.style[pro]=getComputedStyle($this,false)[pro]-speed;
-                console.log(getComputedStyle($this,false)[pro]);
-                if(Math.floor(getComputedStyle($this,false)[pro]*100)===target*100||Math.ceil(getComputedStyle($this,false)[pro]*100)===target*100){
+            if (pro === "opacity") {
+                speed = (getComputedStyle($this, false)[pro] - target) / 10;
+                $this.style[pro] = getComputedStyle($this, false)[pro] - speed;
+                console.log(getComputedStyle($this, false)[pro]);
+                if (Math.floor(getComputedStyle($this, false)[pro] * 100) === target * 100 || Math.ceil(getComputedStyle($this, false)[pro] * 100) === target * 100) {
                     clearInterval($this.timer);
                 }
-            }else{
+            } else {
                 let w = (target - parseInt(getComputedStyle($this, false)[pro])) / 10;
                 speed = w > 0 ? Math.ceil(w) : Math.floor(w);
                 $this.style[pro] = parseInt(getComputedStyle($this, false)[pro]) + speed + 'px';
@@ -58,7 +58,7 @@
 
     let obox = document.querySelector('#box');
     obox.addEventListener('click', () => {
-        move(obox,500);
+        move(obox, 500);
     })
 
 </script>

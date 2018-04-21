@@ -31,16 +31,20 @@
 
 
 
-
+var op=document.querySelector('p');
      onload =function(){
          var pwidth=0;
-         setInterval(function () {
+         var timer=setInterval(function () {
             if(pwidth===250) {
                 setTimeout(function () {
 
                     pwidth+=1;
+
                 }, 1000); }else{
                 pwidth+=1;
+                if(pwidth===500){
+                    clearInterval(timer);
+                }
             }
                 op.style.width = pwidth + "px";
          },10)

@@ -45,10 +45,94 @@
 </aside>
 <div id="main">
     <div class="bar">
+        教师 > 班级情况
+    </div>
+    <div id="classList" class="margin">
+        <div class="className">
+            计科1401班
+            <div class="btn">展开</div>
+        </div>
+        <div class="classInfo">
+            <ul class="clear">
+                <li><span>班级名称:</span><p>计算机科学与技术1401班</p></li>
+                <li><span>班级人数:</span><p>60</p></li>
+                <li><span>班&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;长:</span><p>李班长</p></li>
+                <li><span>班委成员:</span><p>张三，李四，王二，李五</p></li>
+                <li><span>最近活动:</span><p>无</p></li>
 
+            </ul>
+        </div>
+        <div class="className">
+            计科1401班
+            <div class="btn">展开</div>
+        </div>
+        <div class="classInfo">
+            <ul class="clear">
+                <li><span>班级名称:</span><p>计算机科学与技术1401班</p></li>
+                <li><span>班级人数:</span><p>60</p></li>
+                <li><span>班&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;长:</span><p>李班长</p></li>
+                <li><span>班委成员:</span><p>张三，李四，王二，李五</p></li>
+                <li><span>最近活动:</span><p>无</p></li>
+
+            </ul>
+        </div>
+        <div id="addBtn"></div>
     </div>
 
 </div>
 </body>
 <script src="js/style.js"></script>
+<script src="js/common.js"></script>
+<script>
+    let op=document.querySelectorAll('li p');
+    let obtn=document.querySelectorAll('.btn');
+    onload=function(){
+      for(let i=0;i<op.length;i++){
+          let str=getCookie(`tec-classdate${i}`);
+          if(str){
+              op[i].innerHTML=str;
+          }
+      }
+    };
+    for(let i=0;i<obtn.length;i++){
+        obtn[i].onclick=function () {
+
+            let dis=getComputedStyle(this.parentNode.nextElementSibling,false)['display'];
+            if(dis==="block"){
+                this.parentNode.nextElementSibling.style.display="none";
+                this.innerHTML="展开";
+
+            }else{
+                this.parentNode.nextElementSibling.style.display="block";
+                this.innerHTML="折叠";
+
+            }
+        }
+    }
+    for(let i=0;i<op.length;i++){
+        op[i].onclick=function(){
+            this.index=i;
+            let myinput=document.createElement('input');
+            myinput.type="text";
+            myinput.style.height="30px";
+            myinput.style.width="400px";
+            myinput.style.background="#F2F2F2";
+            myinput.style.border=0;
+            myinput.style.outline="none";
+            myinput.value=this.innerHTML;
+            this.innerHTML="";
+            this.appendChild(myinput);
+            myinput.focus();
+            myinput.onclick=function (ev) {
+                ev.stopPropagation();
+            };
+            let that=this;
+            myinput.onblur=function () {
+                that.innerHTML=this.value;
+                setCookie(`tec-classdate${that.index}`,this.value,3*60*60);
+            }
+
+        }
+    }
+</script>
 </html>

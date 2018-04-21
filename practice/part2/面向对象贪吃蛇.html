@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="public.css"/>
+    <title>贪吃蛇</title>
+    <style>
+        #content {
+            height: 515px;
+            width: 815px;
+            margin: 30px auto;
+            background: #C8C8C8;
+            position: relative;
+        }
+
+        .food {
+            height: 30px;
+            width: 30px;
+            position: absolute;
+        }
+
+        .snake {
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            background: #000;
+            border: 1px solid #fff;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+<div id="content"></div>
+<button onclick="window.history.go(0);" >重新开始</button>
+</body>
+<script src="common.js"></script>
+<script>
+    function Food() {
+        this.width = 30;
+        this.height = 30;
+        this.color = "red";
+        this.posX = 0;
+        this.posY = 0;
+        this.init();
+        this.food = null;
+    }
+
+    Food.prototype = {
+        constructor: Food,
+        init: function () {
+            this.odiv = document.getElementById("content");
+            this.areaLeft = 0;
+            this.areaRight = this.odiv.offsetWidth - this.width;
+            this.areaTop = 0;
+            this.areaBottom = this.odiv.offsetHeight - this.height;
+        },
+        drowFood: function () {
+            this.posX = Math.round(Math.random() * (this.areaLeft - this.areaRight) + this.areaRight);
+            this.posY = Math.round(Math.random() * (this.areaTop - this.areaBottom) + this.areaBottom);
+            this.posX = this.posX - this.posX % this.width;
+            this.posY = this.posY - this.posY % this.height;
+            console.log(this.posX, this.posY);
+            if (!this.food) {
+                this.food = document.createElement('div');
+            }
+            this.food.className = "food";
+            this.food.style['backgroundColor'] = this.color;
+            this.food.style['left'] = this.posX + 'px';
+            this.food.style['top'] = this.posY + 'px';
+            this.odiv.appendChild(this.food);
+
+        },
+        removeFood: function () {
+
+            this.food.remove();
+            this.food = false;
+        }
+    };
+
+    /*蛇类*/
+    function Snake() {
+        this.snakeHeadX = null;
+        /*蛇头的横轴坐标*/
+        this.snakeHeadY = null;
+        /*蛇头的纵轴坐标*/
+        this.snakeLength = 5;
+        /*蛇身长度*/
+        this.snakeBody = [];
+        /*蛇神的坐标*/
+        this.snakeDir = null;
+        /*蛇走的方向*/
+        this.snakeSize = 30;
+        /*蛇的尺寸*/
+        this.snake = false;
+        /*蛇的状态*/
+        this.headColor = "green";
+        this.snakeArrX = [];
+        this.snakeArrY = [];
+        this.snakeBody = [];
+        this.timer = null;
+        this.t = false;
+        this.init();
+
+    }
+
+    Snake.prototype = {
+        constructor: Snake,
+        init: function () {
+            this.odiv = document.getElementById("content");
+            this.areaLeft = 0;
+            this.areaRight = this.odiv.offsetWidth - this.snakeSize;
+            this.areaTop = 0;
+            this.areaBottom = this.odiv.offsetHeight - this.snakeSize;
+
+            do {
+                this.snakeHeadX = this.getRandom(this.areaLeft, this.areaRight);
+                this.snakeHeadY = this.getRandom(this.areaTop, this.areaBottom);
+                this.snakeHeadX = this.snakeHeadX - this.snakeHeadX % this.snakeSize;
+                this.snakeHeadY = this.snakeHeadY - this.snakeHeadY % this.snakeSize;
+                this.snakeDir = this.getRandom(1, 4);
+                /*随机方向 1：左 2：上 3：右　４：下*/
+                this.snake = true;
+                switch (this.snakeDir) {
+                    case 1:
+                        this.snake = !(this.snakeHeadX + (this.snakeLength) * this.snakeSize > this.areaRight);
+                        break;
+                    case 2:
+                        this.snake = !(this.snakeHeadY + (this.snakeLength) * this.snakeSize > this.areaBottom);
+                        break;
+                    case 3:
+                        this.snake = !(this.snakeHeadX - (this.snakeLength - 1) * this.snakeSize < this.areaLeft);
+                        break;
+                    case 4:
+                        this.snake = !(this.snakeHeadY - (this.snakeLength - 1) * this.snakeSize < this.areaTop);
+                        break;
+
+                }
+            } while (!this.snake);
+            this.snakeArrX.push(this.snakeHeadX);
+            this.snakeArrY.push(this.snakeHeadY);
+            this.addBody(this.snakeDir, this.snakeLength - 1);
+            console.log(this.snakeDir, this.snakeLength - 1);
+            this.drowBody();
+
+
+            // this.snake=!(this.snakeDir===1&&(this.snakeHeadX+(this.snakeLength-1)*this.snakeSize>this.areaRight));
+            // this.snake=!(this.snakeDir===2&&(this.snakeHeadX+(this.snakeLength-1)*this.snakeSize>this.areaRight));
+            // this.snake=!(this.snakeDir===3&&(this.snakeHeadX+(this.snakeLength-1)*this.snakeSize>this.areaRight));
+            // this.snake=!(this.snakeDir===4&&(this.snakeHeadX+(this.snakeLength-1)*this.snakeSize>this.areaRight));
+
+
+        },
+        moveHead: function () {
+            this.t = true;
+            this.timer = setInterval(() => {
+                for (let i = this.snakeLength - 1; i > 0; i--) {
+                    this.snakeArrX[i] = this.snakeArrX[i - 1];
+                    this.snakeArrY[i] = this.snakeArrY[i - 1];
+
+                }
+                switch (this.snakeDir) {
+                    case 1:
+                        this.snakeArrX[0] -= this.snakeSize;
+
+                        break;
+                    case 2:
+                        this.snakeArrY[0] -= this.snakeSize;
+                        break;
+                    case 3:
+                        this.snakeArrX[0] += this.snakeSize;
+                        break;
+                    case 4:
+                        this.snakeArrY[0] += this.snakeSize;
+                        break;
+
+                }
+
+
+                if (this.snakeArrX[0] === f.posX && this.snakeArrY[0] === f.posY) {
+                    f.drowFood();
+                    this.addBody();
+
+                    console.log(this.snakeArrX.length, this.snakeArrY.length,this.snakeLength);
+                }
+                for(let i=1;i<this.snakeLength;i++){
+                    if(this.snakeArrX[0] === this.snakeArrX[i] && this.snakeArrY[0] ===this.snakeArrY[i]){
+                        clearInterval(this.timer);
+                        alert("死了");
+                        return ;
+                    }
+
+                }
+                if(this.snakeArrX[0]<this.areaLeft||this.snakeArrX[0]>this.areaRight||this.snakeArrY[0]<this.areaTop||this.snakeArrY[0]>this.areaBottom){
+                    clearInterval(this.timer);
+                    alert("死了");
+                    return ;
+                }
+                this.snakeBody[0].style['left'] = this.snakeArrX[0] + 'px';
+                this.snakeBody[0].style['top'] = this.snakeArrY[0] + 'px';
+
+                for (let i = this.snakeLength - 1; i > 0; i--) {
+
+                    this.snakeBody[i].style['left'] = this.snakeArrX[i] + 'px';
+                    this.snakeBody[i].style['top'] = this.snakeArrY[i] + 'px';
+
+                }
+            }, 200)
+        },
+        moveBody: function () {
+
+            return 0;
+
+        },
+        drowBody: function () {
+
+            for (let i = 0; i < this.snakeArrX.length; i++) {
+                let oBody = document.createElement('div');
+                oBody.className = "snake";
+                oBody.style['left'] = this.snakeArrX[i] + 'px';
+                oBody.style['top'] = this.snakeArrY[i] + 'px';
+                if (i === 0) {
+                    oBody.style['backgroundColor'] = this.headColor;
+                }
+                this.snakeBody.push(oBody);
+                this.odiv.appendChild(oBody);
+
+            }
+
+
+        },
+        addBody: function (dir, num) {
+            if (this.snakeArrX.length !== 1 && this.snakeArrY.length !== 1) {
+                /*书签，接下来要写当蛇的长度为5的分支*/
+
+                /*判断最后一位的运行方向，判断方法为倒数第一位的坐标和倒数第二的坐标相减*/
+                let length = this.snakeArrX.length;
+                let xx = this.snakeArrX[length - 1] - this.snakeArrX[length - 2];
+                let yy = this.snakeArrY[length - 1] - this.snakeArrY[length - 2];
+                if (xx < 0 && yy === 0) {
+                    /*此时说明最后的运行方向是向右*/
+                    dir = 3;
+                }
+                if (xx > 0 && yy === 0) {
+                    /*此时说明最后的方向是向左*/
+                    dir = 1;
+                }
+                if (xx === 0 && yy > 0) {
+                    /*此时说明运行方向是向上*/
+                    dir = 2;
+                }
+                if (xx === 0 && yy < 0) {
+                    dir = 4;
+                }
+
+
+
+
+
+                switch (dir) {
+                    case 1:
+                        this.snakeArrX.push(this.snakeArrX[this.snakeArrX.length-1]+this.snakeSize);
+                        this.snakeArrY.push(this.snakeArrY[this.snakeArrY.length-1]);
+                        break;
+                    case 2:
+                        this.snakeArrX.push(this.snakeArrX[this.snakeArrX.length-1]);
+                        this.snakeArrY.push(this.snakeArrY[this.snakeArrY.length-1]+this.snakeSize);
+                        break;
+                    case 3:
+                        this.snakeArrX.push(this.snakeArrX[this.snakeArrX.length-1]-this.snakeSize);
+                        this.snakeArrY.push(this.snakeArrY[this.snakeArrY.length-1]);
+                        break;
+                    case 4:
+                        this.snakeArrX.push(this.snakeArrX[this.snakeArrX.length-1]);
+                        this.snakeArrY.push(this.snakeArrY[this.snakeArrY.length-1]-this.snakeSize);
+                        break;
+                }
+                this.snakeLength += 1;
+                let div = document.createElement('div');
+                div.className = "snake";
+                div.style['left'] = this.snakeArrX[this.snakeLength - 1] + 'px';
+                div.style['top'] = this.snakeArrY[this.snakeLength - 1] + 'px';
+                console.log( this.snakeArrX[this.snakeLength - 1] , this.snakeArrY[this.snakeLengt - 1]);
+                this.snakeBody.push(div);
+                this.odiv.appendChild(div);
+
+            }
+            else {
+                switch (dir) {
+                    case 1:
+                        for (let i = 1; i <= num; i++) {
+                            this.snakeArrX.push(this.snakeHeadX + i * this.snakeSize);
+                            this.snakeArrY.push(this.snakeHeadY);
+                        }
+                        break;
+                    case 2:
+                        for (let i = 1; i <= num; i++) {
+                            this.snakeArrX.push(this.snakeHeadX);
+                            this.snakeArrY.push(this.snakeHeadY + i * this.snakeSize);
+                        }
+                        break;
+                    case 3:
+                        for (let i = 1; i <= num; i++) {
+                            this.snakeArrX.push(this.snakeHeadX - i * this.snakeSize);
+                            this.snakeArrY.push(this.snakeHeadY);
+                        }
+                        break;
+                    case 4:
+                        for (let i = 1; i <= num; i++) {
+                            this.snakeArrX.push(this.snakeHeadX);
+                            this.snakeArrY.push(this.snakeHeadY - i * this.snakeSize);
+                        }
+                        break;
+                }
+            }
+
+
+
+
+        },
+        getRandom: function (start, end) {
+            return Math.round(Math.random() * (start - end) + end);
+        },
+        outputTest: function () {
+            // console.log(this.snakeHeadX, this.snakeHeadY, this.snakeDir);
+            // console.log(this.snakeArrX,this.snakeArrY,this.snakeDir);
+        }
+    };
+
+
+    let s = new Snake();
+    let f = new Food();
+    f.drowFood();
+
+
+    document.onkeydown = function (e) {
+        if (!s.t && !(e.keyCode === 37 && s.snakeDir === 3 || e.keyCode === 38 && s.snakeDir === 4 || e.keyCode === 39 && s.snakeDir === 1 ||
+                e.keyCode === 40 && s.snakeDir === 2)
+        )
+            s.moveHead();
+
+        switch (e.keyCode) {
+            case 37:
+                if (s.snakeDir !== 3) s.snakeDir = 1;
+                break;
+            case 38:
+                if (s.snakeDir !== 4) s.snakeDir = 2;
+                break;
+            case 39:
+                if (s.snakeDir !== 1) s.snakeDir = 3;
+                break;
+            case 40:
+                if (s.snakeDir !== 2) s.snakeDir = 4;
+                break;
+        }
+    };
+    s.outputTest();
+
+
+</script>
+</html>
