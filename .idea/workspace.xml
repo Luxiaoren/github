@@ -25,29 +25,29 @@
       <file leaf-file-name="tec-style-classdate.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo/inforsystem/css/tec-style-classdate.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1463">
-              <caret line="77" column="30" lean-forward="false" selection-start-line="77" selection-start-column="30" selection-end-line="77" selection-end-column="30" />
+            <state relative-caret-position="215">
+              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="35" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tec-classmate.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/demo/inforsystem/tec-classmate.html">
+      <file leaf-file-name="tec-homework.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/demo/inforsystem/tec-homework.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11">
-              <caret line="246" column="0" lean-forward="true" selection-start-line="246" selection-start-column="0" selection-end-line="246" selection-end-column="0" />
-              <folding>
-                <element signature="n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="e#6307#6313#0" expanded="true" />
-                <element signature="e#6313#6319#0" expanded="true" />
-                <element signature="e#6319#6325#0" expanded="true" />
-                <element signature="e#6325#6331#0" expanded="true" />
-                <element signature="e#6331#6337#0" expanded="true" />
-                <element signature="e#6337#6343#0" expanded="true" />
-                <element signature="e#6343#6349#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="353">
+              <caret line="76" column="22" lean-forward="true" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tec-style-homework.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo/inforsystem/css/tec-style-homework.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="557">
+              <caret line="58" column="12" lean-forward="false" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -55,8 +55,8 @@
       <file leaf-file-name="tec-style-classmate.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo/inforsystem/css/tec-style-classmate.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+            <state relative-caret-position="209">
+              <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="19" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -143,12 +143,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/practice/part2/第十六天-运动-缓冲的简单封装.html" />
         <option value="$PROJECT_DIR$/demo/inforsystem/js/common.js" />
         <option value="$PROJECT_DIR$/practice/part2/第十六天-运动-悬浮框.html" />
         <option value="$PROJECT_DIR$/practice/part2/第十六天-运动-分享侧边栏.html" />
         <option value="$PROJECT_DIR$/practice/part2/第十六天-运动-多元素同时运动.html" />
-        <option value="$PROJECT_DIR$/practice/part2/let测试.html" />
         <option value="$PROJECT_DIR$/practice/part2/第十七天-运动-多属性同时变化.html" />
         <option value="$PROJECT_DIR$/practice/part2/第十七天-运动-多属性同时变化和链式运动.html" />
         <option value="$PROJECT_DIR$/practice/part2/第十七天-运动-简易轮播图.html" />
@@ -161,7 +159,6 @@
         <option value="$PROJECT_DIR$/demo/inforsystem/stu-classconf.html" />
         <option value="$PROJECT_DIR$/demo/inforsystem/stu-classdate.html" />
         <option value="$PROJECT_DIR$/demo/inforsystem/stu-homewok.html" />
-        <option value="$PROJECT_DIR$/demo/inforsystem/tec-homework.html" />
         <option value="$PROJECT_DIR$/practice/part2/第十八天-面向对象.html" />
         <option value="$PROJECT_DIR$/practice/part2/common.js" />
         <option value="$PROJECT_DIR$/practice/part2/movement测试.html" />
@@ -194,6 +191,9 @@
         <option value="$PROJECT_DIR$/demo/inforsystem/css/tec-style-classdate.css" />
         <option value="$PROJECT_DIR$/demo/inforsystem/css/tec-style-classmate.css" />
         <option value="$PROJECT_DIR$/demo/inforsystem/tec-classmate.html" />
+        <option value="$PROJECT_DIR$/practice/part2/let测试.html" />
+        <option value="$PROJECT_DIR$/demo/inforsystem/css/tec-style-homework.css" />
+        <option value="$PROJECT_DIR$/demo/inforsystem/tec-homework.html" />
       </list>
     </option>
   </component>
@@ -209,7 +209,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="29" />
     <option name="width" value="1260" />
     <option name="height" value="735" />
@@ -230,6 +230,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <expand>
@@ -284,55 +285,33 @@
               <item name="demo" type="462c0819:PsiDirectoryNode" />
               <item name="inforsystem" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="github" type="b2602c69:ProjectViewProjectNode" />
-              <item name="github" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="inforsystem" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="github" type="b2602c69:ProjectViewProjectNode" />
-              <item name="github" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="inforsystem" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="github" type="b2602c69:ProjectViewProjectNode" />
-              <item name="github" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="inforsystem" type="462c0819:PsiDirectoryNode" />
-              <item name="xml" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\luxiaoren\Desktop\github\practice\part2" />
+      <recent name="D:\千峰课件\github\demo\aiyeyou\css" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\luxiaoren\Desktop\github\practice\part2\part2-test\css" />
       <recent name="C:\Users\luxiaoren\Desktop\github\practice\image" />
       <recent name="C:\Users\luxiaoren\Desktop\github\practice\part2" />
       <recent name="C:\Users\luxiaoren\Desktop\github\demo\inforsystem" />
       <recent name="C:\Users\luxiaoren\Desktop\github\bootstrap" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\luxiaoren\Desktop\github\practice\part2" />
-      <recent name="D:\千峰课件\github\demo\aiyeyou\css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -347,7 +326,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.tec-classmate.html">
+  <component name="RunManager" selected="JavaScript Debug.let测试.html">
     <configuration name="第十六天-运动-重力.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/github/practice/part2/第十六天-运动-重力.html" />
     <configuration name="第十七天-运动-多属性同时变化和链式运动.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/github/practice/part2/第十七天-运动-多属性同时变化和链式运动.html" />
     <configuration name="第十七天-运动-简易轮播图三连击.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/github/practice/part2/第十七天-运动-简易轮播图三连击.html" />
@@ -357,11 +336,11 @@
     <configuration name="第十七天-放大镜.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/github/practice/part2/第十七天-放大镜.html" />
     <configuration name="第十七天-瀑布流.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/github/practice/part2/第十七天-瀑布流.html" />
     <configuration name="第十一天作业-模拟下拉菜单.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/github/practice/part2/第十一天作业-模拟下拉菜单.html" />
-    <configuration name="第二天作业.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/github/practice/part2/第二天作业.html" />
     <configuration name="第九天作业.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/github/practice/part2/第九天作业.html" />
     <configuration name="原型和原型链.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/github/practice/part2/原型和原型链.html" />
     <configuration name="动画.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/github/practice/动画.html" />
     <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/github/demo/inforsystem/index.html" />
+    <configuration name="let测试.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/github/practice/part2/let测试.html" />
     <configuration name="register.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/github/practice/part2/part2-test/register.html" />
     <configuration name="tec-classdate.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/github/demo/inforsystem/tec-classdate.html" />
     <configuration name="tec-classmate.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/github/demo/inforsystem/tec-classmate.html" />
@@ -369,18 +348,17 @@
     <configuration name="test.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/github/practice/part2/test.html" />
     <configuration name="common.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="common.js" working-dir="$PROJECT_DIR$/demo/inforsystem/js" />
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.第十七天-放大镜.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.test.html" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.第九天作业.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.第十七天-放大镜.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.test.html" />
       <item index="3" class="java.lang.String" itemvalue="Node.js.common.js" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.tec-classmate.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.let测试.html" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.tec-classmate.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-        <item index="2" class="java.lang.String" itemvalue="Node.js.common.js" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.test.html" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.let测试.html" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.common.js" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.test.html" />
       </list>
     </recent_temporary>
   </component>
@@ -439,14 +417,16 @@
       <workItem from="1524221604410" duration="7819000" />
       <workItem from="1524273213624" duration="16075000" />
       <workItem from="1524295605945" duration="2033000" />
+      <workItem from="1524447097994" duration="4294000" />
+      <workItem from="1524483189842" duration="7811000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="770241000" />
+    <option name="totallyTimeSpent" value="782346000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2061012" sideWeight="0.8785489" order="0" side_tool="false" content_ui="combo" />
@@ -527,222 +507,38 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/demo/inforsystem/stu-homewok.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="36" column="53" lean-forward="false" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/inforsystem/tec-homework.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="26" lean-forward="false" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice/part2/原型和原型链.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="9" lean-forward="false" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice/part2/move.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice/part2/第十八天-面向对象-烟花案例-教师代码.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="28" column="18" lean-forward="false" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice/part2/第十八天-面向对象-烟花案例.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-179">
-          <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice/part2/第十一天-贪吃蛇-升级版.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice/part2/第十八天-面向对象.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice/part2/面向对象贪吃蛇.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-160">
-          <caret line="227" column="45" lean-forward="true" selection-start-line="227" selection-start-column="45" selection-end-line="227" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice/part2/京东列表页.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-882">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice/part2/寻找第几天.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-393">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice/part2/排序.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice/part2/点击切换页.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice/part2/点名器.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="32" column="21" lean-forward="false" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice/part2/第九天作业-进度条效果高级版.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="45" column="41" lean-forward="true" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice/part2/第九天作业-顶部悬浮框升级版.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="35" column="39" lean-forward="false" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice/part2/第十一天作业-模拟下拉菜单.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1368">
-          <caret line="72" column="28" lean-forward="false" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice/part2/第十一天作业-表格的即时编辑.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice/part2/第十七天-作业-左下角弹出框.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1045">
-          <caret line="55" column="43" lean-forward="false" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice/part2/第十七天-放大镜.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1862">
-          <caret line="98" column="56" lean-forward="false" selection-start-line="98" selection-start-column="56" selection-end-line="98" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice/part2/第十七天-运动-多属性同时变化和链式运动.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1178">
-          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice/part2/第十七天-瀑布流.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3135">
-          <caret line="165" column="23" lean-forward="false" selection-start-line="165" selection-start-column="23" selection-end-line="165" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice/part2/第十六天-运动-重力.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1007">
-          <caret line="53" column="31" lean-forward="false" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice/part2/第十六天-运动-缓冲-位置.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice/part2/第十七天-运动-轮播图.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1349">
-          <caret line="71" column="49" lean-forward="false" selection-start-line="71" selection-start-column="49" selection-end-line="71" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice/part2/第十六天-运动-缓冲的封装-位置和透明度.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="988">
-          <caret line="52" column="17" lean-forward="false" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice/part2/考试复习.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="66" column="19" lean-forward="false" selection-start-line="66" selection-start-column="19" selection-end-line="66" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/practice/part2/move.js" />
+    <entry file="file://$PROJECT_DIR$/practice/part2/第十八天-面向对象-烟花案例-教师代码.html" />
+    <entry file="file://$PROJECT_DIR$/practice/part2/第十八天-面向对象-烟花案例.html" />
+    <entry file="file://$PROJECT_DIR$/practice/part2/第十一天-贪吃蛇-升级版.html" />
+    <entry file="file://$PROJECT_DIR$/practice/part2/第十八天-面向对象.html" />
+    <entry file="file://$PROJECT_DIR$/practice/part2/面向对象贪吃蛇.html" />
+    <entry file="file://$PROJECT_DIR$/practice/part2/京东列表页.html" />
+    <entry file="file://$PROJECT_DIR$/practice/part2/寻找第几天.html" />
+    <entry file="file://$PROJECT_DIR$/practice/part2/排序.html" />
+    <entry file="file://$PROJECT_DIR$/practice/part2/点击切换页.html" />
+    <entry file="file://$PROJECT_DIR$/practice/part2/点名器.html" />
+    <entry file="file://$PROJECT_DIR$/practice/part2/第九天作业-进度条效果高级版.html" />
+    <entry file="file://$PROJECT_DIR$/practice/part2/第九天作业-顶部悬浮框升级版.html" />
+    <entry file="file://$PROJECT_DIR$/practice/part2/第十一天作业-模拟下拉菜单.html" />
+    <entry file="file://$PROJECT_DIR$/practice/part2/第十一天作业-表格的即时编辑.html" />
+    <entry file="file://$PROJECT_DIR$/practice/part2/第十七天-作业-左下角弹出框.html" />
+    <entry file="file://$PROJECT_DIR$/practice/part2/第十七天-放大镜.html" />
+    <entry file="file://$PROJECT_DIR$/practice/part2/第十七天-运动-多属性同时变化和链式运动.html" />
+    <entry file="file://$PROJECT_DIR$/practice/part2/第十七天-瀑布流.html" />
+    <entry file="file://$PROJECT_DIR$/practice/part2/第十六天-运动-重力.html" />
+    <entry file="file://$PROJECT_DIR$/practice/part2/第十六天-运动-缓冲-位置.html" />
+    <entry file="file://$PROJECT_DIR$/practice/part2/第十六天-运动-缓冲的封装-位置和透明度.html" />
+    <entry file="file://$PROJECT_DIR$/practice/part2/考试复习.html" />
     <entry file="file://$PROJECT_DIR$/practice/part2/part2-test/css/public.css" />
-    <entry file="file://$PROJECT_DIR$/practice/part2/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/practice/part2/common.js" />
     <entry file="file://$PROJECT_DIR$/practice/part2/part2-test/js/style.js" />
     <entry file="file://$PROJECT_DIR$/practice/part2/part2-test/register.html" />
     <entry file="file://$PROJECT_DIR$/practice/part2/part2-test/css/style.css" />
     <entry file="file://$PROJECT_DIR$/practice/part2/part2-test/success.html" />
     <entry file="file://$PROJECT_DIR$/practice/part2/part2-test/login.html" />
-    <entry file="file://$PROJECT_DIR$/practice/part2/第十二天-拖拽效果.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="36" column="4" lean-forward="false" selection-start-line="36" selection-start-column="4" selection-end-line="47" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice/part2/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="10" lean-forward="false" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/practice/part2/第十二天-拖拽效果.html" />
+    <entry file="file://$PROJECT_DIR$/practice/part2/test.html" />
     <entry file="file://$PROJECT_DIR$/demo/inforsystem/js/json.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
@@ -777,7 +573,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2033">
           <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -850,37 +645,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/inforsystem/css/tec-style-classdate.css">
+    <entry file="file://$PROJECT_DIR$/practice/part2/let测试.html" />
+    <entry file="file://$PROJECT_DIR$/practice/part2/第十七天-运动-轮播图.html" />
+    <entry file="file://$PROJECT_DIR$/demo/inforsystem/tec-classmate.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1463">
-          <caret line="77" column="30" lean-forward="false" selection-start-line="77" selection-start-column="30" selection-end-line="77" selection-end-column="30" />
-          <folding />
+        <state relative-caret-position="228">
+          <caret line="131" column="10" lean-forward="true" selection-start-line="131" selection-start-column="10" selection-end-line="131" selection-end-column="10" />
+          <folding>
+            <element signature="n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demo/inforsystem/css/tec-style-classmate.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+        <state relative-caret-position="209">
+          <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="19" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/inforsystem/tec-classmate.html">
+    <entry file="file://$PROJECT_DIR$/demo/inforsystem/css/tec-style-classdate.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11">
-          <caret line="246" column="0" lean-forward="true" selection-start-line="246" selection-start-column="0" selection-end-line="246" selection-end-column="0" />
-          <folding>
-            <element signature="n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#6307#6313#0" expanded="true" />
-            <element signature="e#6313#6319#0" expanded="true" />
-            <element signature="e#6319#6325#0" expanded="true" />
-            <element signature="e#6325#6331#0" expanded="true" />
-            <element signature="e#6331#6337#0" expanded="true" />
-            <element signature="e#6337#6343#0" expanded="true" />
-            <element signature="e#6343#6349#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="215">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="35" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/inforsystem/css/tec-style-homework.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="58" column="12" lean-forward="false" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/inforsystem/tec-homework.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="76" column="22" lean-forward="true" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>

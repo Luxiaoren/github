@@ -8,3 +8,58 @@ aside ul#teclist{
 aside ul#teclist li:nth-child(4) a{
     background: #6fb3e0;
 }
+#homework{
+
+}
+.margin{
+    width:1119px;
+    margin:0 auto;
+}
+.className{
+    font:16px/32px "";
+    border-bottom:1px dotted black;
+    margin-top:50px;
+    text-indent: 10px;
+    position: relative;
+    margin-bottom: 30px;
+}
+.btn{
+    position: absolute;
+    right:0;
+    top:0;
+    font:15px/25px "";
+    background:#6FB3E0;
+    width:50px;
+    height:25px;
+    border-radius:5px;
+    color:#fff;
+    text-align:center;
+    cursor: pointer;
+    text-indent: 0px;
+
+}
+.hw{
+    height:30px;
+    background:#EDF3F4;
+    width:1000px;
+    margin:0 auto;
+    display:flex;
+    border:1px solid gray;
+    margin-bottom:5px;
+    border-radius:5px ;
+    font:15px/30px "";
+    justify-content: space-between;
+    text-indent:5px;
+}
+.stuname{
+    width:100px;
+    border-right:1px solid gray;
+}
+.time{
+    width:150px;
+
+    border-left:1px solid black;
+}
+.hwCont{
+    flex:1;
+}
