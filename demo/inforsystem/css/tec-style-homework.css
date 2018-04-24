@@ -62,4 +62,21 @@ aside ul#teclist li:nth-child(4) a{
 }
 .hwCont{
     flex:1;
+    position: relative;
+}
+.watch,.download{
+    position:absolute;
+    top:5px;
+    right:0;
+    background:#438EB9;
+    border-radius: 5px;
+    height:20px;
+    font:14px/20px "";
+    width:50px;
+    text-align:center;
+    color:#fff;
+    cursor:pointer;
+}
+.watch{
+    right:70px;
 }
